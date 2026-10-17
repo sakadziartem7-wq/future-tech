@@ -1,0 +1,25 @@
+{
+  "name": "future-tech",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Blog website template",
+  "scripts": {
+    "build": "gulp build"
+  },
+  "browserslist": [
+    "last 2 versions",
+    "> 0.5%",
+    "not dead"
+  ],
+  "devDependencies": {
+    "autoprefixer": "^10.6.1",
+    "browser-sync": "^3.0.4",
+    "gulp": "^5.0.1",
+    "gulp-postcss": "^10.0.0",
+    "gulp-sass": "^6.0.1",
+    "gulp-sourcemaps": "^3.0.0",
+    "gulp-terser": "^2.1.0",
+    "postcss": "^8.5.30",
+    "sass": "^1.105.2"
+  }
+}
