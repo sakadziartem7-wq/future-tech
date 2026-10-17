@@ -1,3 +1,24 @@
+@use '../abstracts/variables' as *;
+@use '../abstracts/mixins' as *;
+
 .header {
-    
+    background:$dark-10 ;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    height: 75px;
+
+    &__row {
+        @include flex(space-between, center, 12px);
+    }
+
+    &__icon {
+        width: 125px;
+        height: 35px;
+   }
+
+   .burger {
+    width: 34px;
+    height: 34px;
+    color: #ffff;
+   }
 }

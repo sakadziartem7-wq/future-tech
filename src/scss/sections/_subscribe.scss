@@ -4,27 +4,57 @@
 .subscribe {
     background-color: $dark-08;
     height: 74px;
+    padding-top: 41px;
+    padding-bottom: 15px;
 
-    @media (min-width: $laptop) {}
-
+    @media (min-width: $laptop) {
+        height: 45px;
+        padding-top: 12px;
+        padding-bottom: 12px;
+    }
+    
+    @media (min-width: $desktop) {
+        height: 67px;
+        padding-top:20px;
+        padding-bottom: 20px;
+    }
+    
     &__link {
         color: $grey-60;
         @include flex(space-between, center, 12px);
 
+    @media (min-width: $laptop) {
+         @include flex(center, center, 10px);              
+    }
+
         span {
-            padding-top: 41px;
-            padding-bottom: 15px;
+            font-family:$inter ;
             font-size: 12px;
             font-style: normal;
             font-weight: 400;
             line-height: 150%;
             letter-spacing: -0.36px;
+            color:$grey-60 ;
+
+            @media (min-width: $laptop) {
+                max-width: 451px;
+                font-size: 14px;              
+            }
+
+            @media (min-width: $desktop) {
+                font-size: 18px;
+            }
 
         }
 
         .icon {
             width: 20px;
             height: 20px;
+
+        @media (min-width: $desktop) {
+            width: 24px;
+            height: 24px;
+    }
         }
     }
 }
