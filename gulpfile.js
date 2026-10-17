@@ -12,7 +12,7 @@ const isBuild = process.argv.includes('build');
 
 const paths = {
   html: 'src/**/*.html',
-  styles: 'src/scss/main.scss',
+  styles: ['src/scss/pages/*.scss', '!src/scss/pages/_*.scss'],
   stylesWatch: 'src/scss/**/*.scss',
   scripts: 'src/js/**/*.js',
   assets: ['src/assets/**/*', '!src/assets/**/.gitkeep'],

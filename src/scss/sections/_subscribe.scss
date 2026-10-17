@@ -1,0 +1,19 @@
+@use '../abstracts/variables' as *;
+@use '../abstracts/mixins' as *;
+
+.subscribe {
+    background-color: $dark-08;
+
+    @media (min-width: $laptop) {}
+
+    &__link {
+        color: $grey-60;
+        text-decoration: none;
+        @include flex(space-between, center, 12px);
+
+        .icon {
+            width: 20px;
+            height: 20px;
+        }
+    }
+}
