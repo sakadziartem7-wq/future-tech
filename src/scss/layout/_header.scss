@@ -47,7 +47,6 @@
                 top: 100%;
                 left: 0;
                 right: 0;
-                z-index: 10;
                 padding: 16px 0;
                 background: $dark-10;
                 color:$grey-50 ;
@@ -62,7 +61,7 @@
             @include flex(center, center, 24px);
         }
     }
-S
+
     &__link {
         padding: 10px 18px;
         border: 1px solid transparent;
