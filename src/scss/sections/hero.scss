@@ -1,5 +1,39 @@
 @use '../abstracts/variables' as *;
 @use '../abstracts/mixins' as *;
 .hero {
-    background: red;
+    background:$dark-15;
+    padding-top: 40px;
+
+    &__sabtext {
+        font-size: 18px;
+        color: $dark-40;
+        font-family:$font-kumbh ;
+        font-weight: 500;
+        letter-spacing: -0.54px;
+        line-height: 120%;
+    }
+
+    &__content {
+        max-width: 358px;
+    }
+
+    &__title {
+        margin-top: 14px;
+        margin-bottom: 10px;
+        font-size: 30px;
+        color:$white ;
+        font-family:$font-kumbh ;
+        line-height: 120%;
+        font-weight: 500;
+        letter-spacing: -0.9px;
+    }
+
+    &__text {
+        font-size: 14px;
+        color:$grey-50 ;
+        font-family:$inter ;
+        line-height: 150%;
+        font-weight: 400;
+        letter-spacing: -0.42px;
+    }
 }
