@@ -2,23 +2,103 @@
 @use '../abstracts/mixins' as *;
 
 .header {
-    background:$dark-10 ;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    background: $dark-10;
+    padding: 20px 0;
     height: 75px;
 
+     @media (min-width: $laptop) {
+        height: 81px;
+        }
+
+    @media (min-width:$desktop) {
+            height: 103px;
+            padding-top: 27px;
+            padding-bottom: 27px;
+        }
+
     &__row {
-        @include flex(space-between, center, 12px);
+      @include flex(flex-start, center, 0);   
     }
 
     &__icon {
         width: 125px;
         height: 35px;
-   }
 
-   .burger {
+        @media (min-width: $laptop) {
+            width: 143px;
+            height: 40px;
+        }
+
+        
+        @media (min-width: $desktop) {
+            width:179px;
+            height: 50px;
+    }
+    }
+
+    &__menu {
+        display: none;
+
+        @media (min-width: $laptop) {
+            color: $grey-50;
+            font-family: $inter;
+            font-size: 14px;
+            margin-left: auto;
+            max-width: 100%;
+            @include flex(center, center, 24px);
+        }
+    }
+
+    &__link {
+        padding: 10px 18px;
+        border: 1px solid transparent;
+        border-radius: 6px;
+        transition:all 0.3s;
+
+        &:hover,
+        &--active {
+            color: $white;
+            background: $dark-20;
+            border-color: $dark-25;
+        }
+    }
+
+    &__button {
+        display: none;
+
+        @media (min-width: $laptop) {
+            display: block;
+            margin-left: auto;
+            width: 103px;
+            height: 41px;
+        }
+
+        @media (min-width:$desktop) {
+            width: 137px;
+            height: 55px;
+            
+        }
+    }
+}
+
+
+
+.burger {
     width: 34px;
     height: 34px;
-    color: #ffff;
-   }
+    padding: 0;
+    border: none;
+    background: none;
+    margin-left: auto;
+    color: $white;
+
+    &__icon {
+        width: 100%;
+        height: 100%;
+        fill: currentColor;
+    }
+
+    @media (min-width: $laptop) {
+        display: none;
+    }
 }

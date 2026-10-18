@@ -2,18 +2,15 @@
 
 .container {
     max-width: 358px;
-    padding: 0 16px;
-    box-sizing: border-box;
     margin: 0 auto;
+    width: 100%;
 
         @media (min-width: $laptop) {
-            min-width: 1280px ;
-            padding: 0 80px;
+            max-width: 1280px ;
         }
 
         @media (min-width: $desktop) {
-            min-width: 1596px ;
-            padding: 0 162px;
+            max-width: 1596px ;
         }
 
 }
