@@ -60,6 +60,11 @@
             max-width: 100%;
             @include flex(center, center, 24px);
         }
+
+        @media (min-width:$desktop) {
+            font-size: 18px;
+            
+        }
     }
 
     &__link {
@@ -88,8 +93,7 @@
 
         @media (min-width:$desktop) {
             width: 137px;
-            height: 55px;
-            
+            height: 55px;  
         }
     }
 }
