@@ -90,6 +90,7 @@
 
     &__avatars {
         padding: 8px;
+         @include flex(flex-start, center, 0); 
     }
 
 }
