@@ -51,12 +51,17 @@
 
     &__list {
          @include flex(flex-start, center, 0);
+         
     }
 
     &__item {
+         background:$dark-08 ;
+        position: relative;
+        z-index: 2;
         width: 33.33%;
         padding-top: 20px;
         padding-bottom: 20px;
+        
 
         &:nth-child(1n) {
             padding-right: 20px;
@@ -113,9 +118,10 @@
 
       &__abstract {
         position: absolute;
-        top: 371px;
+        top: 340px;
         left: -22px;
-        z-index: -1;             
+        z-index: -1; 
+         transform: rotate(35deg);           
     }
 
     &__img {
