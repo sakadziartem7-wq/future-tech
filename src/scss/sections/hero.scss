@@ -93,4 +93,8 @@
          @include flex(flex-start, center, 0); 
     }
 
+    &__img {
+        max-width: 40px;
+        height: 40px;
+    } 
 }
