@@ -7,18 +7,18 @@
     height: 75px;
     position: relative;
 
-     @media (min-width: $laptop) {
+    @media (min-width: $laptop) {
         height: 81px;
-        }
+    }
 
     @media (min-width:$desktop) {
-            height: 103px;
-            padding-top: 27px;
-            padding-bottom: 27px;
-        }
+        height: 103px;
+        padding-top: 27px;
+        padding-bottom: 27px;
+    }
 
     &__row {
-      @include flex(flex-start, center, 0);   
+        @include flex(flex-start, center, 0);
     }
 
     &__icon {
@@ -30,26 +30,27 @@
             height: 40px;
         }
 
-        
+
         @media (min-width: $desktop) {
-            width:179px;
+            width: 179px;
             height: 50px;
-    }
+        }
     }
 
     &__menu {
         display: none;
+        z-index: 10;
 
         &__open {
-          @include flex(flex-start, center, 0);
             flex-direction: column;
-              position: absolute;
-                top: 100%;
-                left: 0;
-                right: 0;
-                padding: 16px 0;
-                background: $dark-10;
-                color:$grey-50 ;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            right: 0;
+            padding: 16px 0;
+            background: $dark-10;
+            color: $grey-50;
+            @include flex(flex-start, center, 0);
         }
 
         @media (min-width: $laptop) {
@@ -63,7 +64,6 @@
 
         @media (min-width:$desktop) {
             font-size: 18px;
-            
         }
     }
 
@@ -71,7 +71,7 @@
         padding: 10px 18px;
         border: 1px solid transparent;
         border-radius: 6px;
-        transition:all 0.3s;
+        transition: all 0.3s;
 
         &:hover,
         &--active {
@@ -93,7 +93,7 @@
 
         @media (min-width:$desktop) {
             width: 137px;
-            height: 55px;  
+            height: 55px;
         }
     }
 }
