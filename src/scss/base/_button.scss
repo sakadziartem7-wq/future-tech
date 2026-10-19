@@ -4,11 +4,11 @@
     color: $dark-08;
     font-family:$inter ;
     border-radius: 6px;
-    background:$yellow-55 ;
+    background: $yellow-55 ;
     cursor: pointer;
     transition: all 0.3s;
 
     &:hover {
-        background: $yellow-60;
+        background: $yellow-80;
     }
 }
