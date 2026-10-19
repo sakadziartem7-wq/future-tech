@@ -19,7 +19,8 @@ gulp build
 ```
 
 Пока работаем делаем только gulp в терминале
-`gulp` открывает сайт на http://localhost:3000.
+`gulp
+` открывает сайт на http://localhost:3000.
 
 Когда хотим выложить сайт на github-pages делаем gulp build
  `gulp build` собирает `dist` для GitHub Pages.
