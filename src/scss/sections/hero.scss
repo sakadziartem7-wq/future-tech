@@ -1,15 +1,25 @@
 @use '../abstracts/variables' as *;
 @use '../abstracts/mixins' as *;
+
 .hero {
-    background:$dark-15;
+    position: relative;
     padding-top: 40px;
     padding-bottom: 30px;
     
 
+    &__hr {
+        position: absolute;
+        top: 250px;
+        left: 0;
+        width: 100%;
+        height: 1px;
+        background-color: $dark-20;
+    }
+
     &__sabtext {
         font-size: 18px;
         color: $dark-40;
-        font-family:$font-kumbh ;
+        font-family: $font-kumbh ;
         font-weight: 500;
         letter-spacing: -0.54px;
         line-height: 120%;
@@ -23,8 +33,8 @@
         margin-top: 14px;
         margin-bottom: 10px;
         font-size: 30px;
-        color:$white ;
-        font-family:$font-kumbh ;
+        color: $white ;
+        font-family: $font-kumbh ;
         line-height: 120%;
         font-weight: 500;
         letter-spacing: -0.9px;
@@ -32,8 +42,8 @@
 
     &__text {
         font-size: 14px;
-        color:$grey-50 ;
-        font-family:$inter ;
+        color: $grey-50 ;
+        font-family: $inter ;
         line-height: 150%;
         font-weight: 400;
         letter-spacing: -0.42px;
@@ -43,41 +53,50 @@
 
     &__list {
         display: flex;
-        border-top: 1px solid $dark-20;
-        width: fit-content;
     }
 
     &__item {
+        width: 33.33%;
         padding-top: 20px;
         padding-bottom: 20px;
-        padding-left: 16px;
-        padding-right: 20px;
-        border-left: 1px solid $dark-20;
-        border-right: 1px solid $dark-20;
-        border-bottom: 1px solid $dark-20;
+
+        &:nth-child(1n) {
+            padding-right: 20px;
+        }
+
+        &:nth-child(2n) {
+            padding-left: 16px;
+            padding-right: 20px;
+            border-left: 1px solid $dark-20;
+            border-right: 1px solid $dark-20;
+        }
+
+        &:nth-child(3n) {
+            padding-left: 16px;
+        }
     }
 
-    &__value{
-        color:$white ;
+    &__value {
+        color: $white ;
         font-size: 24px;
-        font-family:$inter;
+        font-family: $inter;
         letter-spacing: -0.72px;
         line-height: 150%;
         font-weight: 600;
     }
 
     &__plus {
-        color:$yellow-55 ;
+        color: $yellow-55 ;
     }
 
-    &__label  {
+    &__label {
         font-size: 14px;
-        max-width:84px;
+        max-width: 84px;
         letter-spacing: -0.42px;
         line-height: 150%;
-        font-family:$inter ;
+        font-family: $inter ;
         font-weight: 400;
-        color:$grey-60 ;
+        color: $grey-60 ;
     }
 
     &__resources {
@@ -92,11 +111,11 @@
 
     &__avatars {
         padding: 8px;
-         @include flex(flex-start, center, 0); 
+        @include flex(flex-start, center, 0);
     }
 
     &__img {
         min-width: 40px;
         height: 40px;
-    } 
+    }
 }
