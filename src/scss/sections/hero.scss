@@ -4,8 +4,6 @@
 .hero {
     position: relative;
     padding-top: 40px;
-    padding-bottom: 30px;
-    
 
     &__hr {
         position: absolute;
@@ -52,7 +50,7 @@
 
 
     &__list {
-        display: flex;
+         @include flex(flex-start, center, 0);
     }
 
     &__item {
@@ -100,7 +98,6 @@
     }
 
     &__resources {
-        position: relative;
         background: $dark-10;
         border-radius: 8px;
         width: fit-content;
@@ -114,8 +111,23 @@
         @include flex(flex-start, center, 0);
     }
 
+      &__abstract {
+        position: absolute;
+        top: 371px;
+        left: -22px;
+        z-index: -1;             
+    }
+
     &__img {
         min-width: 40px;
         height: 40px;
+
+          &:nth-child(2n) {
+            margin-left: -15px;
+          }
+
+             &:nth-child(3n) {
+            margin-left: -15px;
+          }
     }
 }
