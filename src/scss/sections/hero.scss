@@ -14,7 +14,6 @@
         line-height: 120%;
     }
 
-    
     &__content {
         max-width: 358px;
     }
@@ -51,8 +50,22 @@
         padding-left: 16px;
         padding-right: 20px;
         border-left: 1px solid $dark-20;
+        border-right: 1px solid $dark-20;
+        border-bottom: 1px solid $dark-20;
     }
 
+    &__value{
+        color:$white ;
+        font-size: 24px;
+        font-family:$inter;
+        letter-spacing: -0.72px;
+        line-height: 150%;
+        font-weight: 600;
+    }
+
+    &__plus {
+        color:$yellow-55 ;
+    }
 
     &__label  {
         font-size: 14px;
@@ -63,4 +76,19 @@
         font-weight: 400;
         color:$grey-60 ;
     }
+
+    &__resources {
+        position: relative;
+        background: $dark-10;
+        border-radius: 8px;
+        width: 134px;
+        height: 56px;
+        margin-top: 100px;
+        margin-left: 48px;
+    }
+
+    &__avatars {
+        padding: 8px;
+    }
+
 }
