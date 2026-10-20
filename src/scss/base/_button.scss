@@ -3,7 +3,6 @@
 .button {
     color: $dark-08;
     font-family:$inter ;
-    border-radius: 6px;
     background: $yellow-55 ;
     cursor: pointer;
     transition: all 0.3s;
@@ -11,4 +10,21 @@
     &:hover {
         background: $yellow-80;
     }
-}
+
+        &--dark {
+            border: 1px solid $dark-15;
+            background: $dark-08;
+            color: $grey-60;
+            font-family:$inter;
+             cursor: pointer;
+            transition: all 0.3s;
+
+        &:hover {
+            background: $grey-80;
+                    }
+            
+        }
+
+
+    
+ }

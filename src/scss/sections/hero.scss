@@ -14,13 +14,7 @@
         background-color: $dark-20;
     }
 
-    &__top {
-         @media (min-width: $laptop) {
-            display: flex;
-            flex-direction: row;
-    }
-    }
-
+    
     &__sabtext {
         font-size: 18px;
         color: $dark-40;
@@ -171,4 +165,88 @@
         letter-spacing: -0.42px;
 
     }
+
+    &__button {
+        width: 310px;
+        height: 49px;
+        margin-top: 20px;
+        border-radius: 8px;
+        font-size: 14px;
+        @include flex(center, center, 8px);
+    }
+
+    &__arrow {    
+        width: 14px;
+        height: 14px;
+    }
+
+    &__bottom {
+        position: absolute;
+        left: 0;
+        margin-top: 40px;
+        background-color: $dark-20; 
+        width: 100%;
+        height: 1px;
+    }
+
+    &__group {
+          @include flex(flex-start, stretch, 0);
+    flex-direction: column
+
+    }
+
+&__element {
+    padding-top: 30px;
+     position: relative;
+}
+
+&__element-icon {
+    width: 30px;
+    margin-top: 30px;
+    height: 30px;
+}
+
+    &__caption {
+        color: $white;
+        margin-top: 16px;
+        font-family:$inter ;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 150%;
+        letter-spacing: -0.48px;
+    }
+
+    &__head {
+        color: $grey-60;
+        font-family: $inter;
+        margin-top: 2px;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 150%;
+        letter-spacing: -0.42px;
+   
+    }
+
+    &__subtitle {
+        color: $grey-60;
+        font-family:$font-kumbh;
+        font-size: 14px;
+        margin-top: 10px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 150%;
+        letter-spacing: -0.42px;
+
+    }
+
+    &__pointer {
+        position: absolute;
+        top: 89px;   
+        right: 15px;
+        width: 40px;
+        height: 40px;
+    }
+
 }

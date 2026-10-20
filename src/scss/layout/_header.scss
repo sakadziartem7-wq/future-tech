@@ -89,11 +89,13 @@
             margin-left: auto;
             width: 103px;
             height: 41px;
+            border-radius: 6px;
         }
 
         @media (min-width:$desktop) {
             width: 137px;
             height: 55px;
+            border-radius: 10px;
         }
     }
 }
