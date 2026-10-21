@@ -14,7 +14,7 @@
         background-color: $dark-20;
 
         @media (min-width: $laptop) {
-            top: 335px;
+            top: 344px;
             width: 55%;
     } 
     }
@@ -78,7 +78,7 @@
         font-weight: 400;
         letter-spacing: -0.42px;
 
-         span {
+        span {
             display: none;
         }
 
@@ -86,7 +86,7 @@
            font-size: 16px;
            max-width: 705px;
 
-           span {
+        span {
             display: inline-block
            }
     }
@@ -149,6 +149,12 @@
         font-family: $inter ;
         font-weight: 400;
         color: $grey-60 ;
+
+        
+    @media (min-width: $laptop) {
+        max-width: 199px;
+        margin-top: 2px;
+    } 
     }
 
     &__side {
@@ -248,6 +254,12 @@
         border-radius: 8px;
         font-size: 14px;
         @include flex(center, center, 8px);
+
+
+        @media (min-width: $laptop) {
+            width: 180px;
+            height: 49px;
+    }
     }
 
     &__arrow {
@@ -267,9 +279,9 @@
         top: 0;
         bottom: 0;
         left: 55%;    
-        width: 1px;
-        height: auto;
-          
+        width: 2px;
+        height: 66%;
+         z-index: 3;
     } 
     }
 
@@ -314,13 +326,37 @@
                 transform: translateX(-50%);
                 border-top: 1px solid $dark-20;
             }
+
         }
     
     @media (min-width: $laptop) {
-       width: 33%;       
+       width: 33%;  
+       padding-top: 40px; 
+       padding-right: 50px;
+       padding-bottom: 40px;
+
+            &:nth-child(2n)::before {
+                top: 0;
+                left: -98px;
+                width: 1px;
+                height: 100%;
+                transform: none;
+                border-top: none;
+                background-color: $dark-20;
+}
+
+            &:nth-child(3n)::before {
+                top: 0;
+                left: -98px;
+                width: 1px;
+                height: 100%;
+                transform: none;
+                border-top: none;
+                background-color: $dark-20;
+}
     }
-        
-    }
+}
+       
 
     &__element-icon {
         width: 30px;
@@ -396,3 +432,4 @@
 
 
 }
+
