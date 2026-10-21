@@ -14,7 +14,6 @@
         background-color: $dark-20;
     }
 
-
     &__sabtext {
         font-size: 18px;
         color: $dark-40;
@@ -192,7 +191,7 @@
 
     &__group {
         @include flex(flex-start, stretch, 0);
-        flex-direction: column
+        flex-direction: column;
     }
 
     &__element {
