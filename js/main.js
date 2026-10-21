@@ -1,3 +1,1 @@
-// add - добавить
-// remove - удалить
-// toggle - сменить
+const burger=document.getElementById("burger"),menu=document.getElementById("menu");burger.addEventListener("click",()=>{menu.classList.toggle("header__menu--open")});
