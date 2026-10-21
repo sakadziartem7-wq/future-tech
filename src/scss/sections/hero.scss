@@ -233,7 +233,7 @@
     }
     
     &__row {
-        @include flex(space-between, center, 16px);
+        @include flex(space-between, center, 0);
     }
 
 
