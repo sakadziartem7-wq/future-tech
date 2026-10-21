@@ -4,6 +4,7 @@
 .hero {
     position: relative;
     padding-top: 40px;
+    overflow: hidden;
 
     &__hr {
         position: absolute;
@@ -48,10 +49,8 @@
         margin-bottom: 30px;
     }
 
-
     &__list {
         @include flex(flex-start, center, 0);
-
     }
 
     &__item {
@@ -61,7 +60,7 @@
         width: 33.33%;
         padding-top: 20px;
         padding-bottom: 20px;
-
+        min-height: 118px;
 
         &:nth-child(1n) {
             padding-right: 20px;
@@ -103,6 +102,7 @@
     }
 
     &__side {
+        position: relative;
         padding-left: 40px;
         padding-top: 100px;
         box-sizing: border-box;
@@ -122,11 +122,15 @@
     }
 
     &__abstract {
+        width: 423px;
+        height: auto;
+        object-fit: cover;
         position: absolute;
-        top: 340px;
-        left: -22px;
+        top: -15px;
+        left: -55px;
         z-index: -1;
-        transform: rotate(35deg);
+        transform: rotate(49deg);
+        opacity: .5;
     }
 
     &__img {
@@ -162,7 +166,6 @@
         font-weight: 400;
         line-height: 150%;
         letter-spacing: -0.42px;
-
     }
 
     &__button {
@@ -212,7 +215,7 @@
             }
         }
 
-         &:nth-child(3n) {
+        &:nth-child(3n) {
             position: relative;
 
             &::before {
@@ -231,11 +234,10 @@
         width: 30px;
         height: 30px;
     }
-    
+
     &__row {
         @include flex(space-between, center, 0);
     }
-
 
     &__caption {
         color: $white;
@@ -257,7 +259,6 @@
         font-weight: 400;
         line-height: 150%;
         letter-spacing: -0.42px;
-
     }
 
     &__subtitle {
@@ -270,12 +271,10 @@
         font-weight: 400;
         line-height: 150%;
         letter-spacing: -0.42px;
-
     }
 
     &__pointer {
         width: 40px;
         height: 40px;
     }
-
 }
