@@ -3,7 +3,7 @@
 
 .hero {
     position: relative;
-    padding-top: 40px;
+
     overflow: hidden;
 
     &__hr {
@@ -14,6 +14,12 @@
         height: 1px;
         background-color: $dark-20;
     }
+
+        &__top {
+           @media (min-width: $laptop) {
+             @include flex(flex-start, center, 0); 
+    }  
+        }
 
     &__sabtext {
         font-size: 18px;
@@ -26,6 +32,13 @@
 
     &__content {
         max-width: 358px;
+        padding-top: 40px;
+        padding-bottom: 30px;
+
+         @media (min-width: $laptop) {
+          max-width: 717px;
+          padding-bottom: 100px;
+    } 
     }
 
     &__title {
@@ -46,7 +59,6 @@
         line-height: 150%;
         font-weight: 400;
         letter-spacing: -0.42px;
-        margin-bottom: 30px;
     }
 
     &__list {
@@ -105,6 +117,7 @@
         position: relative;
         padding-left: 40px;
         padding-top: 100px;
+        padding-bottom: 40px ;
         box-sizing: border-box;
     }
 
@@ -172,7 +185,6 @@
         width: 310px;
         height: 49px;
         margin-top: 20px;
-        margin-bottom: 40px;
         border-radius: 8px;
         font-size: 14px;
         @include flex(center, center, 8px);
@@ -186,7 +198,7 @@
     &__bottom {
         position: absolute;
         left: 0;
-        bottom: 552px;
+        bottom: 572px;
         background-color: $dark-20;
         width: 100%;
         height: 1px;
@@ -199,6 +211,7 @@
 
     &__element {
         padding-top: 30px;
+        padding-bottom: 30px;
         position: relative;
 
         &:nth-child(2n) {
@@ -266,7 +279,6 @@
         font-family: $font-kumbh;
         font-size: 14px;
         margin-top: 10px;
-        margin-bottom: 30px;
         font-style: normal;
         font-weight: 400;
         line-height: 150%;
