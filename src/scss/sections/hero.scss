@@ -14,7 +14,8 @@
         background-color: $dark-20;
 
         @media (min-width: $laptop) {
-            top: 327px;
+            top: 335px;
+            width: 55%;
     } 
     }
 
@@ -76,6 +77,19 @@
         line-height: 150%;
         font-weight: 400;
         letter-spacing: -0.42px;
+
+         span {
+            display: none;
+        }
+
+        @media (min-width: $laptop) {
+           font-size: 16px;
+           max-width: 705px;
+
+           span {
+            display: inline-block
+           }
+    }
     }
 
     &__list {
@@ -143,6 +157,13 @@
         padding-top: 100px;
         padding-bottom: 40px ;
         box-sizing: border-box;
+
+        @media (min-width: $laptop) {
+           padding-left: 50px;
+           padding-bottom: 50px;
+           max-width: 473px;
+           padding-top: 182px;
+    } 
     }
 
     &__resources {
@@ -150,7 +171,7 @@
         border-radius: 100px;
         border: 1px solid $dark-15;
         width: fit-content;
-        height: 56px;
+        height: auto;
     }
 
     &__avatars {
@@ -181,6 +202,11 @@
         &:nth-child(3n) {
             margin-left: -15px;
         }
+
+        @media (min-width: $laptop) {
+            width: 50px;
+            height: 50px;
+    }
     }
 
     &__sab-title {
@@ -192,6 +218,11 @@
         font-weight: 500;
         line-height: 150%;
         letter-spacing: -0.54px;
+
+            @media (min-width: $laptop) {
+            font-size: 20px;
+            margin-top: 20px;
+    } 
     }
 
     &__sab-text {
@@ -203,6 +234,11 @@
         font-weight: 400;
         line-height: 150%;
         letter-spacing: -0.42px;
+
+        @media (min-width: $laptop) {
+            font-size: 16px;
+            margin-top: 6px;
+    } 
     }
 
     &__button {
@@ -230,7 +266,7 @@
     @media (min-width: $laptop) {
         top: 0;
         bottom: 0;
-        left: 50%;    
+        left: 55%;    
         width: 1px;
         height: auto;
           
@@ -289,6 +325,11 @@
     &__element-icon {
         width: 30px;
         height: 30px;
+
+        @media (min-width: $laptop) {
+           width: 40px;
+           height: 40px;
+    } 
     }
 
     &__row {
@@ -304,6 +345,11 @@
         font-weight: 500;
         line-height: 150%;
         letter-spacing: -0.48px;
+
+        @media (min-width: $laptop) {
+            font-size: 18px;
+            margin-top: 20px;
+    } 
     }
 
     &__head {
@@ -315,6 +361,11 @@
         font-weight: 400;
         line-height: 150%;
         letter-spacing: -0.42px;
+
+        @media (min-width: $laptop) {
+            font-size: 16px;
+       
+    } 
     }
 
     &__subtitle {
@@ -326,10 +377,22 @@
         font-weight: 400;
         line-height: 150%;
         letter-spacing: -0.42px;
+
+        @media (min-width: $laptop) {
+            font-size: 16px;
+            margin-top: 20px;
+    } 
     }
 
     &__pointer {
         width: 40px;
         height: 40px;
+
+        @media (min-width: $laptop) {
+            width: 44px;
+            height: 44px;
+    } 
     }
+
+
 }
