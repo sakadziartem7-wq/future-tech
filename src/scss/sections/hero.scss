@@ -18,6 +18,10 @@
             width: 55%;
             z-index: 3;
         }
+
+        @media (min-width: $desktop) {
+            top: 548px;
+            }
     }
 
     &__top {
@@ -34,12 +38,18 @@
         letter-spacing: -0.54px;
         line-height: 120%;
 
-
         @media (min-width: $laptop) {
             font-size: 22px;
             margin-bottom: 14px;
             letter-spacing: -0.66px;
         }
+
+        @media (min-width: $desktop) {
+            font-size:30px;
+            letter-spacing: -2.1px;
+            max-width: 893px;
+            margin-bottom: 30px;
+            }
     }
 
     &__content {
@@ -52,6 +62,12 @@
             padding-top: 3px;
             padding-bottom: 100px;
         }
+
+         @media (min-width: $desktop) {
+            padding-top: 150px;
+            padding-bottom:100px;
+            max-width: 893px;
+            }
     }
 
     &__title {
@@ -69,6 +85,13 @@
             margin-bottom: 14px;
             letter-spacing: -1.65px;
         }
+
+         @media (min-width: $desktop) {
+            font-size: 70px;
+            letter-spacing: -2.1px;
+            max-width: 893px;
+            margin-top: 20px;
+            }
     }
 
     &__text {
@@ -91,6 +114,11 @@
                 display: inline-block
             }
         }
+
+        @media (min-width: $desktop) {
+            font-size: 18px;
+            max-width: 893px;
+            }
     }
 
     &__list {
@@ -139,6 +167,14 @@
             &:nth-child(3n) {
                 padding-left: 40px;
             }
+
+            @media (min-width: $desktop) {
+            &:nth-child(2n) {
+                padding-left: 50px;
+                padding-top: 50px;
+                padding-bottom: 50px;
+            }
+            }
         }
     }
 
@@ -153,6 +189,10 @@
         @media (min-width: $laptop) {
             font-size: 30px;
         }
+
+          @media (min-width: $desktop) {
+            font-size: 40px;
+            }
     }
 
     &__plus {
@@ -172,6 +212,10 @@
             max-width: 199px;
             margin-top: 2px;
         }
+
+          @media (min-width: $desktop) {
+            font-size: 18px;
+            }
     }
 
     &__side {
@@ -187,6 +231,14 @@
             max-width: 473px;
             padding-top: 182px;
         }
+
+
+        @media (min-width: $desktop) {
+            padding-top: 355px;
+            padding-left: 80px;
+            padding-bottom: 80px;
+            max-width: 573px;
+            }
     }
 
     &__resources {
@@ -230,6 +282,11 @@
             width: 50px;
             height: 50px;
         }
+
+          @media (min-width: $desktop) {
+            width: 60px;
+            height: 60px;
+            }
     }
 
     &__sab-title {
@@ -246,6 +303,11 @@
             font-size: 20px;
             margin-top: 20px;
         }
+
+          @media (min-width: $desktop) {
+                font-size: 24px;
+                margin-top: 30px;
+            }
     }
 
     &__sab-text {
@@ -263,6 +325,11 @@
             margin-top: 6px;
             min-width: 473px;
         }
+
+        @media (min-width: $desktop) {
+                font-size: 18px;
+                margin-top: 14px;
+            }
     }
 
     &__button {
@@ -273,11 +340,17 @@
         font-size: 14px;
         @include flex(center, center, 8px);
 
-
         @media (min-width: $laptop) {
             width: 180px;
             height: 49px;
         }
+
+          @media (min-width: $desktop) {
+            width: 231px;
+            height: 63px;
+            border-radius: 12px;
+            font-size: 18px;
+            }
     }
 
     &__arrow {
@@ -301,6 +374,10 @@
             height: 66%;
             z-index: 3;
         }
+
+        @media (min-width: $desktop) {
+            height: 75%;
+            }
     }
 
     &__hr-bootom {
