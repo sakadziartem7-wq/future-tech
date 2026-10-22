@@ -8,6 +8,11 @@
         @include flex(flex-start, flex-star, );
         flex-wrap: wrap;
 
+            @media (min-width: $laptop) {
+        @include flex(flex-start, space-between, 24px);
+        flex-wrap: nowrap;
+    }
+
     }
 
 
@@ -41,4 +46,19 @@
         font-size: 14px;
         color: $dark-40;
     }
+
+    &__sub-title {
+        font-size: 16px;
+        font-family: $inter;
+        color: $white;
+        font-weight: 500;
+        line-height: 130%;
+        letter-spacing: -0.48px;
+
+    }
+
+       &__arrow {
+        width: 12px;
+        height: 13px;
+       }
 }
