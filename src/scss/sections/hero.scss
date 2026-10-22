@@ -14,19 +14,27 @@
         background-color: $dark-20;
 
         @media (min-width: $laptop) {
-            top: 340px;
+            top: 433px;
             width: 55%;
             z-index: 3;
         }
 
         @media (min-width: $desktop) {
-            top: 548px;
-            }
+            top: 550px;
+        }
     }
 
     &__top {
         @media (min-width: $laptop) {
-            @include flex(flex-start, center, 0);
+            @include flex(flex-start, flex-end, 0);
+        }
+    }
+
+    &__main {
+        @media (min-width: $laptop) {
+            z-index: 2;
+            position: relative;
+            background-color: $dark-08;
         }
     }
 
@@ -45,11 +53,11 @@
         }
 
         @media (min-width: $desktop) {
-            font-size:30px;
+            font-size: 30px;
             letter-spacing: -2.1px;
             max-width: 893px;
             margin-bottom: 30px;
-            }
+        }
     }
 
     &__content {
@@ -59,15 +67,15 @@
 
         @media (min-width: $laptop) {
             max-width: 717px;
-            padding-top: 3px;
+            padding-top: 100px;
             padding-bottom: 100px;
         }
 
-         @media (min-width: $desktop) {
+        @media (min-width: $desktop) {
             padding-top: 150px;
-            padding-bottom:100px;
+            padding-bottom: 100px;
             max-width: 893px;
-            }
+        }
     }
 
     &__title {
@@ -86,12 +94,12 @@
             letter-spacing: -1.65px;
         }
 
-         @media (min-width: $desktop) {
+        @media (min-width: $desktop) {
             font-size: 70px;
             letter-spacing: -2.1px;
             max-width: 893px;
             margin-top: 20px;
-            }
+        }
     }
 
     &__text {
@@ -118,7 +126,7 @@
         @media (min-width: $desktop) {
             font-size: 18px;
             max-width: 893px;
-            }
+        }
     }
 
     &__list {
@@ -169,11 +177,11 @@
             }
 
             @media (min-width: $desktop) {
-            &:nth-child(2n) {
-                padding-left: 50px;
-                padding-top: 50px;
-                padding-bottom: 50px;
-            }
+                &:nth-child(2n) {
+                    padding-left: 50px;
+                    padding-top: 50px;
+                    padding-bottom: 50px;
+                }
             }
         }
     }
@@ -190,9 +198,9 @@
             font-size: 30px;
         }
 
-          @media (min-width: $desktop) {
+        @media (min-width: $desktop) {
             font-size: 40px;
-            }
+        }
     }
 
     &__plus {
@@ -213,9 +221,9 @@
             margin-top: 2px;
         }
 
-          @media (min-width: $desktop) {
+        @media (min-width: $desktop) {
             font-size: 18px;
-            }
+        }
     }
 
     &__side {
@@ -232,13 +240,12 @@
             padding-top: 182px;
         }
 
-
         @media (min-width: $desktop) {
             padding-top: 355px;
             padding-left: 80px;
             padding-bottom: 80px;
             max-width: 573px;
-            }
+        }
     }
 
     &__resources {
@@ -264,6 +271,18 @@
         z-index: -1;
         transform: rotate(49deg);
         opacity: .5;
+
+        @media (min-width: $laptop) {
+            top: -102px;
+            left: -90px;
+        }
+
+        @media (min-width: $desktop) {
+            width: 894px;
+            transform: rotate(35deg);
+            top: -102px;
+            left: -90px;
+        }
     }
 
     &__img {
@@ -283,10 +302,10 @@
             height: 50px;
         }
 
-          @media (min-width: $desktop) {
+        @media (min-width: $desktop) {
             width: 60px;
             height: 60px;
-            }
+        }
     }
 
     &__sab-title {
@@ -304,10 +323,10 @@
             margin-top: 20px;
         }
 
-          @media (min-width: $desktop) {
-                font-size: 24px;
-                margin-top: 30px;
-            }
+        @media (min-width: $desktop) {
+            font-size: 24px;
+            margin-top: 30px;
+        }
     }
 
     &__sab-text {
@@ -327,9 +346,9 @@
         }
 
         @media (min-width: $desktop) {
-                font-size: 18px;
-                margin-top: 14px;
-            }
+            font-size: 18px;
+            margin-top: 14px;
+        }
     }
 
     &__button {
@@ -345,12 +364,12 @@
             height: 49px;
         }
 
-          @media (min-width: $desktop) {
+        @media (min-width: $desktop) {
             width: 231px;
             height: 63px;
             border-radius: 12px;
             font-size: 18px;
-            }
+        }
     }
 
     &__arrow {
@@ -370,14 +389,14 @@
             top: 0;
             bottom: 0;
             left: 55%;
-            width: 2px;
-            height: 66%;
+            width: 1px;
+            height: 562px;
             z-index: 3;
         }
 
         @media (min-width: $desktop) {
             height: 75%;
-            }
+        }
     }
 
     &__hr-bootom {
@@ -506,7 +525,6 @@
 
         @media (min-width: $laptop) {
             font-size: 16px;
-
         }
     }
 
@@ -535,6 +553,4 @@
             height: 44px;
         }
     }
-
-
 }

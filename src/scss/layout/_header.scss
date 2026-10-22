@@ -40,6 +40,19 @@
     &__menu {
         display: none;
         z-index: 10;
+        color: $grey-50;
+        font-family: $inter;
+        font-size: 14px;
+
+        @media (min-width: $laptop) {
+            margin-left: auto;
+            max-width: 100%;
+            @include flex(center, center, 4px);
+        }
+
+        @media (min-width:$desktop) {
+            font-size: 18px;
+        }
 
         &--open {
             flex-direction: column;
@@ -49,21 +62,7 @@
             right: 0;
             padding: 16px 0;
             background: $dark-10;
-            color: $grey-50;
             @include flex(flex-start, center, 0);
-        }
-
-        @media (min-width: $laptop) {
-            color: $grey-50;
-            font-family: $inter;
-            font-size: 14px;
-            margin-left: auto;
-            max-width: 100%;
-            @include flex(center, center, 24px);
-        }
-
-        @media (min-width:$desktop) {
-            font-size: 18px;
         }
     }
 
@@ -71,9 +70,14 @@
         padding: 10px 18px;
         border: 1px solid transparent;
         border-radius: 6px;
-        transition: all 2s;
+        transition: all .3s;
 
-        &:hover,
+        &:hover {
+            color: $grey-50;
+            background: $dark-15;
+            border-color: $dark-25;
+        }
+
         &--active {
             color: $white;
             background: $dark-20;
