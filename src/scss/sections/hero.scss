@@ -14,8 +14,9 @@
         background-color: $dark-20;
 
         @media (min-width: $laptop) {
-            top: 344px;
+            top: 340px;
             width: 55%;
+            z-index: 3;
     } 
     }
 
@@ -126,6 +127,19 @@
         &:nth-child(3n) {
             padding-left: 16px;
         }
+
+        @media (min-width: $laptop) {
+           &:nth-child(2n){
+            padding-left: 40px;
+           }
+           
+    }
+
+            @media (min-width: $laptop) {
+           &:nth-child(3n){
+            padding-left: 40px;
+           }
+        }
     }
 
     &__value {
@@ -135,6 +149,10 @@
         letter-spacing: -0.72px;
         line-height: 150%;
         font-weight: 600;
+
+        @media (min-width: $laptop) {
+          font-size: 30px;
+    } 
     }
 
     &__plus {
@@ -149,7 +167,6 @@
         font-family: $inter ;
         font-weight: 400;
         color: $grey-60 ;
-
         
     @media (min-width: $laptop) {
         max-width: 199px;
@@ -283,6 +300,17 @@
         height: 66%;
          z-index: 3;
     } 
+    }
+
+    &__hr-bootom {
+            @media (min-width: $laptop) {
+                position: absolute;
+                left: 0;
+                   bottom: 243px;
+        background-color: $dark-20;
+        width: 100%;
+        height: 1px;
+   }
     }
 
     &__group {
