@@ -5,25 +5,20 @@
     padding-top: 40px;
 
     &__top {
-        @include flex(flex-start, flex-star, );
+        @include flex(flex-start, flex-start, );
         flex-wrap: wrap;
 
-            @media (min-width: $laptop) {
-        @include flex(flex-start, space-between, 24px);
-        flex-wrap: nowrap;
+        @media (min-width: $laptop) {
+            @include flex(flex-start, flex-star, 0);
+            flex-wrap: nowrap;
+        }
     }
-
-    }
-
-
 
     &__manus {
         width: 50%;
         margin-bottom: 40px;
         @include flex(flex-start, flex-start, 8px);
         flex-direction: column;
-
-
     }
 
     &__title {
@@ -54,11 +49,62 @@
         font-weight: 500;
         line-height: 130%;
         letter-spacing: -0.48px;
-
+        width: 100%;
     }
 
-       &__arrow {
+    &__wrap {
+        @include flex(flex-start, center, 12px);
+        flex-wrap: wrap;
+
+        @media (min-width: $laptop) {
+            @include flex(flex-start, flex-start, 0);
+            flex-direction: column;
+        }
+    }
+
+    &__resource {
+        border-radius: 6px;
+        color: $dark-40;
+        font-size: 14px;
+        background: $dark-08;
+        border: 1px solid $dark-15;
+        height: 37px;
+        @include flex(center, center, 8px);
+
+        &_Whitepapers {
+            width: 130px;
+
+        }
+
+        &_Ebooks {
+            width: 97px;
+
+        }
+
+        &_Reports {
+            width: 100px;
+        }
+
+        &_Research {
+            width: 156px;
+        }
+
+        @media (min-width: $laptop) {
+            @include flex(flex-start, center, 8px);
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 150%;
+            letter-spacing: -0.42px;
+            margin-top: 36px;
+
+
+        }
+    }
+
+
+    &__arrow {
         width: 12px;
         height: 13px;
-       }
+    }
 }
