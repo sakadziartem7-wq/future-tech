@@ -17,14 +17,14 @@
             top: 340px;
             width: 55%;
             z-index: 3;
-    } 
+        }
     }
 
-        &__top {
-           @media (min-width: $laptop) {
-             @include flex(flex-start, center, 0); 
-    }  
+    &__top {
+        @media (min-width: $laptop) {
+            @include flex(flex-start, center, 0);
         }
+    }
 
     &__sabtext {
         font-size: 18px;
@@ -34,12 +34,12 @@
         letter-spacing: -0.54px;
         line-height: 120%;
 
-        
+
         @media (min-width: $laptop) {
-            font-size: 22px; 
+            font-size: 22px;
             margin-bottom: 14px;
-          letter-spacing: -0.66px;
-    }
+            letter-spacing: -0.66px;
+        }
     }
 
     &__content {
@@ -47,11 +47,11 @@
         padding-top: 40px;
         padding-bottom: 30px;
 
-         @media (min-width: $laptop) {
-          max-width: 717px;
-          padding-top: 3px;
-          padding-bottom: 100px;
-    } 
+        @media (min-width: $laptop) {
+            max-width: 717px;
+            padding-top: 3px;
+            padding-bottom: 100px;
+        }
     }
 
     &__title {
@@ -65,10 +65,10 @@
         letter-spacing: -0.9px;
 
         @media (min-width: $laptop) {
-            font-size: 55px; 
+            font-size: 55px;
             margin-bottom: 14px;
             letter-spacing: -1.65px;
-    } 
+        }
     }
 
     &__text {
@@ -84,18 +84,18 @@
         }
 
         @media (min-width: $laptop) {
-           font-size: 16px;
-           max-width: 705px;
+            font-size: 16px;
+            max-width: 705px;
 
-        span {
-            display: inline-block
-           }
-    }
+            span {
+                display: inline-block
+            }
+        }
     }
 
     &__list {
         @include flex(flex-start, center, 0);
-        
+
     }
 
     &__item {
@@ -108,10 +108,10 @@
         min-height: 118px;
 
         @media (min-width: $laptop) {
-          padding-top: 30px;
-          padding-bottom: 30px;
-    } 
-        
+            padding-top: 30px;
+            padding-bottom: 30px;
+        }
+
 
         &:nth-child(1n) {
             padding-right: 20px;
@@ -129,16 +129,16 @@
         }
 
         @media (min-width: $laptop) {
-           &:nth-child(2n){
-            padding-left: 40px;
-           }
-           
-    }
+            &:nth-child(2n) {
+                padding-left: 40px;
+            }
 
-            @media (min-width: $laptop) {
-           &:nth-child(3n){
-            padding-left: 40px;
-           }
+        }
+
+        @media (min-width: $laptop) {
+            &:nth-child(3n) {
+                padding-left: 40px;
+            }
         }
     }
 
@@ -151,8 +151,8 @@
         font-weight: 600;
 
         @media (min-width: $laptop) {
-          font-size: 30px;
-    } 
+            font-size: 30px;
+        }
     }
 
     &__plus {
@@ -167,26 +167,26 @@
         font-family: $inter ;
         font-weight: 400;
         color: $grey-60 ;
-        
-    @media (min-width: $laptop) {
-        max-width: 199px;
-        margin-top: 2px;
-    } 
+
+        @media (min-width: $laptop) {
+            max-width: 199px;
+            margin-top: 2px;
+        }
     }
 
     &__side {
         position: relative;
         padding-left: 40px;
         padding-top: 100px;
-        padding-bottom: 40px ;
+        padding-bottom: 40px;
         box-sizing: border-box;
 
         @media (min-width: $laptop) {
-           padding-left: 50px;
-           padding-bottom: 50px;
-           max-width: 473px;
-           padding-top: 182px;
-    } 
+            padding-left: 50px;
+            padding-bottom: 50px;
+            max-width: 473px;
+            padding-top: 182px;
+        }
     }
 
     &__resources {
@@ -229,7 +229,7 @@
         @media (min-width: $laptop) {
             width: 50px;
             height: 50px;
-    }
+        }
     }
 
     &__sab-title {
@@ -242,10 +242,10 @@
         line-height: 150%;
         letter-spacing: -0.54px;
 
-            @media (min-width: $laptop) {
+        @media (min-width: $laptop) {
             font-size: 20px;
             margin-top: 20px;
-    } 
+        }
     }
 
     &__sab-text {
@@ -261,7 +261,8 @@
         @media (min-width: $laptop) {
             font-size: 16px;
             margin-top: 6px;
-    } 
+            min-width: 473px;
+        }
     }
 
     &__button {
@@ -276,7 +277,7 @@
         @media (min-width: $laptop) {
             width: 180px;
             height: 49px;
-    }
+        }
     }
 
     &__arrow {
@@ -292,35 +293,35 @@
         width: 100%;
         height: 1px;
 
-    @media (min-width: $laptop) {
-        top: 0;
-        bottom: 0;
-        left: 55%;    
-        width: 2px;
-        height: 66%;
-         z-index: 3;
-    } 
+        @media (min-width: $laptop) {
+            top: 0;
+            bottom: 0;
+            left: 55%;
+            width: 2px;
+            height: 66%;
+            z-index: 3;
+        }
     }
 
     &__hr-bootom {
-            @media (min-width: $laptop) {
-                position: absolute;
-                left: 0;
-                   bottom: 243px;
-        background-color: $dark-20;
-        width: 100%;
-        height: 1px;
-   }
+        @media (min-width: $laptop) {
+            position: absolute;
+            left: 0;
+            bottom: 243px;
+            background-color: $dark-20;
+            width: 100%;
+            height: 1px;
+        }
     }
 
     &__group {
         @include flex(flex-start, stretch, 0);
         flex-direction: column;
-        
-    @media (min-width: $laptop) {
-        flex-direction: row;
-          gap: 100px;        
-    }
+
+        @media (min-width: $laptop) {
+            flex-direction: row;
+            gap: 50px;
+        }
     }
 
     &__element {
@@ -356,44 +357,44 @@
             }
 
         }
-    
-    @media (min-width: $laptop) {
-       width: 33%;  
-       padding-top: 40px; 
-       padding-right: 50px;
-       padding-bottom: 40px;
+
+        @media (min-width: $laptop) {
+            width: 33%;
+            padding-top: 40px;
+            padding-right: 50px;
+            padding-bottom: 40px;
 
             &:nth-child(2n)::before {
                 top: 0;
-                left: -98px;
+                left: -54px;
                 width: 1px;
                 height: 100%;
                 transform: none;
                 border-top: none;
                 background-color: $dark-20;
-}
+            }
 
             &:nth-child(3n)::before {
                 top: 0;
-                left: -98px;
+                left: -54px;
                 width: 1px;
                 height: 100%;
                 transform: none;
                 border-top: none;
                 background-color: $dark-20;
-}
+            }
+        }
     }
-}
-       
+
 
     &__element-icon {
         width: 30px;
         height: 30px;
 
         @media (min-width: $laptop) {
-           width: 40px;
-           height: 40px;
-    } 
+            width: 40px;
+            height: 40px;
+        }
     }
 
     &__row {
@@ -413,7 +414,7 @@
         @media (min-width: $laptop) {
             font-size: 18px;
             margin-top: 20px;
-    } 
+        }
     }
 
     &__head {
@@ -428,8 +429,8 @@
 
         @media (min-width: $laptop) {
             font-size: 16px;
-       
-    } 
+
+        }
     }
 
     &__subtitle {
@@ -445,7 +446,7 @@
         @media (min-width: $laptop) {
             font-size: 16px;
             margin-top: 20px;
-    } 
+        }
     }
 
     &__pointer {
@@ -455,9 +456,8 @@
         @media (min-width: $laptop) {
             width: 44px;
             height: 44px;
-    } 
+        }
     }
 
 
 }
-
