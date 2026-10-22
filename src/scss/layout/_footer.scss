@@ -1,0 +1,44 @@
+@use '../abstracts/variables' as *;
+@use '../abstracts/mixins' as *;
+
+.footer {
+    padding-top: 40px;
+
+    &__top {
+        @include flex(flex-start, flex-star, );
+        flex-wrap: wrap;
+
+    }
+
+
+
+    &__manus {
+        width: 50%;
+        margin-bottom: 40px;
+        @include flex(flex-start, flex-start, 8px);
+        flex-direction: column;
+
+
+    }
+
+    &__title {
+        font-style: normal;
+        font-weight: 500;
+        line-height: 130%;
+        letter-spacing: -0.48px;
+        color: $white ;
+        font-size: 16px;
+        font-family: $inter ;
+        margin-bottom: 16px;
+
+    }
+
+    &__link {
+        font-family: $inter;
+        font-weight: 400;
+        line-height: 130%;
+        letter-spacing: -0.42px;
+        font-size: 14px;
+        color: $dark-40;
+    }
+}

@@ -388,7 +388,7 @@
         @media (min-width: $laptop) {
             top: 0;
             bottom: 0;
-            left: 55%;
+              left: calc(50% + 70px);
             width: 1px;
             height: 562px;
             z-index: 3;
