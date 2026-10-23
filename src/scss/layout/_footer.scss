@@ -4,14 +4,34 @@
 .footer {
     padding-top: 40px;
 
+    
+      @media (min-width: $laptop) {
+         &__manus_podcasts {
+                order: 4;
+            }
+
+            &__manus_blogs {
+                order: 3;
+            }
+
+            &__wrap {
+                order: 5;
+            }
+        
+      }
+
     &__top {
-        @include flex(flex-start, flex-start, );
+        @include flex(flex-start, flex-start, 0);
         flex-wrap: wrap;
 
-        @media (min-width: $laptop) {
-            @include flex(flex-start, flex-star, 0);
-            flex-wrap: nowrap;
-        }
+      @media (min-width: $laptop) {
+    @include flex(flex-start, flex-start, 80px);
+    flex-wrap: nowrap;
+    padding-top: 80px;
+    padding-bottom: 80px;
+
+   
+}
     }
 
     &__manus {
@@ -26,11 +46,15 @@
         font-weight: 500;
         line-height: 130%;
         letter-spacing: -0.48px;
-        color: $white ;
+        color: $white;
         font-size: 16px;
-        font-family: $inter ;
+        font-family: $inter;
         margin-bottom: 16px;
 
+          @media (min-width: $laptop) {
+            font-size: 20px;
+            
+        }
     }
 
     &__link {
@@ -40,6 +64,25 @@
         letter-spacing: -0.42px;
         font-size: 14px;
         color: $dark-40;
+
+        div {
+            width: 46px;
+            color: $white;
+            font-family: $inter;
+          
+            display: inline-block;
+            height: 22px;
+            background: $dark-10;
+            border-radius: 4px;
+            font-size: 12px;
+            padding: 2px  10px;
+
+        }
+
+        @media (min-width: $laptop) {
+          font-size: 18px;
+            
+        }
     }
 
     &__sub-title {
@@ -55,10 +98,12 @@
     &__wrap {
         @include flex(flex-start, center, 12px);
         flex-wrap: wrap;
+        padding-bottom: 40px;
 
         @media (min-width: $laptop) {
-            @include flex(flex-start, flex-start, 0);
+            @include flex(flex-start, flex-start, 18px);
             flex-direction: column;
+            
         }
     }
 
@@ -71,40 +116,135 @@
         height: 37px;
         @include flex(center, center, 8px);
 
+        @media (min-width: $laptop) {
+            font-size: 18px;
+            height: 47px;
+            border-radius: 8px;
+        }
+
         &_Whitepapers {
             width: 130px;
 
+            @media (min-width: $laptop) {
+                width: 165px;
+            }
         }
 
         &_Ebooks {
             width: 97px;
 
+            @media (min-width: $laptop) {
+                width: 122px;
+            }
         }
 
         &_Reports {
             width: 100px;
+
+             @media (min-width: $laptop) {
+                width: 126px;
+            }
         }
 
         &_Research {
             width: 156px;
+
+             @media (min-width: $laptop) {
+                width: 198px;
+            }
         }
 
-        @media (min-width: $laptop) {
-            @include flex(flex-start, center, 8px);
-            font-size: 18px;
-            font-style: normal;
-            font-weight: 400;
-            line-height: 150%;
-            letter-spacing: -0.42px;
-            margin-top: 36px;
-
-
-        }
     }
-
 
     &__arrow {
         width: 12px;
         height: 13px;
     }
+
+    &__bottom {
+        position: relative;
+        min-height: 100px;
+        padding-top: 24px;
+
+        @media (min-width: $laptop) {
+            @include flex(space-between, center, 0);
+        }
+    }
+
+    &__hr {
+        position: absolute;
+        bottom: 122px;
+        left: 0;
+        width: 100%;
+        height: 1px;
+        border: none;
+        background-color: $dark-20;
+
+        @media (min-width: $laptop) {
+           bottom: 100px;
+            
+        }
+    }
+
+    &__coleum {
+        @include flex(center, center, 14px);
+
+        @media (min-width: $laptop) {
+            order: 2;
+        }
+    }
+
+    &__info {
+        @include flex(center, center, 16px);
+        flex-direction: column;
+
+        @media (min-width: $laptop) {
+            display: contents;
+        }
+    }
+
+    &__legal {
+        @include flex(center, center, 12px);
+
+        @media (min-width: $laptop) {
+            order: 1;
+            display: flex;
+            gap: 20px;
+        }
+    }
+
+    &__copy {
+        color: $dark-40;
+        font-family: $inter;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 130%;
+        letter-spacing: -0.42px;
+
+        @media (min-width: $laptop) {
+            order: 3;
+        }
+    }
+
+    &__legal-link {
+        color: $dark-40;
+        font-size: 14px;
+        font-family: $inter;
+        font-weight: 400;
+        line-height: 130%;
+        letter-spacing: -0.42px;
+        margin-top: 20px;
+
+        @media (min-width: $laptop) {}
+    }
+
+    &__twitter-icon,
+    &__medium-icon,
+    &__linkedin-icon {
+        width: 20px;
+        height: 20px;
+    }
+
+      
+
 }
