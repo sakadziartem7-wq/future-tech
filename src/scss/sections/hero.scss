@@ -21,6 +21,7 @@
 
         @media (min-width: $desktop) {
             top: 550px;
+            width: 1031px;
         }
     }
 
@@ -380,7 +381,7 @@
     &__bottom {
         position: absolute;
         left: 0;
-        bottom: 572px;
+        bottom: 597px;
         background-color: $dark-20;
         width: 100%;
         height: 1px;
@@ -388,25 +389,30 @@
         @media (min-width: $laptop) {
             top: 0;
             bottom: 0;
-              left: calc(50% + 70px);
+            left: calc(50% + 70px);
             width: 1px;
             height: 562px;
             z-index: 3;
         }
 
         @media (min-width: $desktop) {
-            height: 75%;
+            height: 741px;
         }
+
     }
 
     &__hr-bootom {
         @media (min-width: $laptop) {
             position: absolute;
             left: 0;
-            bottom: 243px;
+            bottom: 246px;
             background-color: $dark-20;
             width: 100%;
             height: 1px;
+        }
+
+          @media (min-width: $desktop) {
+            bottom: 284px;
         }
     }
 
@@ -480,6 +486,10 @@
                 background-color: $dark-20;
             }
         }
+
+          @media (min-width: $desktop) {
+           padding-top: 50px;
+        }
     }
 
 
@@ -490,6 +500,11 @@
         @media (min-width: $laptop) {
             width: 40px;
             height: 40px;
+        }
+
+          @media (min-width: $desktop) {
+            width: 49px;
+            height: 49px;
         }
     }
 
@@ -511,6 +526,10 @@
             font-size: 18px;
             margin-top: 20px;
         }
+
+          @media (min-width: $desktop) {
+            font-size:20px;
+        }
     }
 
     &__head {
@@ -525,6 +544,11 @@
 
         @media (min-width: $laptop) {
             font-size: 16px;
+        }
+
+          @media (min-width: $desktop) {
+            font-size: 18px;
+            margin-top: 4px;
         }
     }
 
@@ -542,6 +566,10 @@
             font-size: 16px;
             margin-top: 20px;
         }
+
+          @media (min-width: $desktop) {
+            font-size: 20px;
+        }
     }
 
     &__pointer {
@@ -551,6 +579,11 @@
         @media (min-width: $laptop) {
             width: 44px;
             height: 44px;
+        }
+
+          @media (min-width: $desktop) {
+            width: 52px;
+            height: 52px;
         }
     }
 }
