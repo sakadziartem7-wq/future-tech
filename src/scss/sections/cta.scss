@@ -66,13 +66,16 @@
     }
 
     &__list {
-         @include flex(center, center, 20px);
+         @include flex(center, center, 10px);
         flex-direction: column;
         padding: 10px;
         border-radius: 10px;
         border: 1px solid $dark-15;
         background: $dark-08;
 
+          @media (min-width: $laptop) {
+            flex-direction: row;
+        }
     }
 
     &__item {
