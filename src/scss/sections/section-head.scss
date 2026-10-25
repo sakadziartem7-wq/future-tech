@@ -1,0 +1,38 @@
+@use '../abstracts/variables' as *;
+@use '../abstracts/mixins' as *;
+
+.section-head {
+
+&__tag {
+    background: $dark-20; 
+    border-radius: 4px;
+    color: $white;
+    font-family: $inter;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 150%;
+    letter-spacing: -0.42px;
+    padding: 4px 8px;
+
+        
+    @media (min-width: $laptop) {
+        font-size: 16px;
+    }
+    }
+
+    &__title {
+        color: $white;
+        font-family: $font-kumbh;
+        font-size: 28px;
+        font-weight: 500;
+        line-height: 130%;
+        letter-spacing: -0.84px;
+
+        
+    @media (min-width: $laptop) {
+       font-size: 44px;
+       margin-top: 4px;
+    }
+    }
+
+}
