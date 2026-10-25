@@ -18,6 +18,11 @@
     @media (min-width: $laptop) {
         font-size: 16px;
     }
+
+    @media (min-width: $desktop) {
+         font-size: 20px;
+         padding: 6px 10px;
+        }
     }
 
     &__title {
@@ -27,12 +32,15 @@
         font-weight: 500;
         line-height: 130%;
         letter-spacing: -0.84px;
-
-        
+     
     @media (min-width: $laptop) {
        font-size: 44px;
        margin-top: 4px;
     }
+
+    @media (min-width: $desktop) {
+           font-size: 58px;
+        }
     }
 
 }
