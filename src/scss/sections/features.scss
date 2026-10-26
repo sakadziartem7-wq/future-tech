@@ -1,0 +1,54 @@
+@use '../abstracts/variables' as *;
+
+.features {
+  
+    &__info {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    &__icon {
+        width:50px;
+         height:50px;
+
+        @media (min-width: $laptop) {
+            width: 48px;
+            height: 48px;
+        }
+
+    }
+
+    &__title {
+        color: $white;
+        font-family: $font-kumbh;
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 150%;
+        letter-spacing: -0.72px;
+        margin-top: 20px;
+      
+        @media (min-width: $laptop) {
+           font-size: 30px;
+           margin-top: 40px;
+        }
+
+    }
+
+    &__text {
+        color: $grey-60;
+        font-family: $inter;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 150%;
+        letter-spacing: -0.42px;
+        margin-top: 6px;
+        
+        @media (min-width: $laptop) {
+            font-size: 16px;
+            margin-top: 10px;
+        }
+
+    }
+
+
+}
