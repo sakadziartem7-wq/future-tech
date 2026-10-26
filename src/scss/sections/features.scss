@@ -20,6 +20,7 @@
         @media (min-width: $laptop) {
             max-width: 413px;
             padding-bottom: 122px;
+            padding-top: 0;
         }
 
         @media (min-width: $desktop) {
@@ -41,7 +42,7 @@
         @media (min-width: $laptop) {
             @include flex(space-between, flex-end, 60px);
             flex-wrap: wrap;
-           row-gap: 0;
+            row-gap: 0;
         }
     }
 
@@ -52,6 +53,11 @@
         @media (min-width: $laptop) {
             width: 48px;
             height: 48px;
+        }
+
+        @media (min-width: $desktop) {
+            width: 80px;
+            height: 80px;
         }
 
     }
@@ -70,6 +76,12 @@
             margin-top: 40px;
         }
 
+        @media (min-width: $desktop) {
+            font-size: 40px;
+            margin-top: 50px;
+            max-width: 519px;
+        }
+
     }
 
     &__text {
@@ -85,6 +97,11 @@
         @media (min-width: $laptop) {
             font-size: 16px;
             margin-top: 10px;
+        }
+
+        @media (min-width: $desktop) {
+            font-size: 18px;
+            max-width: 496px;
         }
 
     }
@@ -112,6 +129,8 @@
         @media (min-width: $desktop) {
             max-width: 1001px;
             padding-left: 80px;
+            padding-top: 80px;
+            padding-bottom: 80px;
         }
 
     }
@@ -124,9 +143,12 @@
         border: 1px solid $dark-15;
 
         @media (min-width: $laptop) {
-         
             width: calc(50% - 10px);
             padding: 30px;
+        }
+
+        @media (min-width: $desktop) {
+           padding: 40px;
         }
     }
 
@@ -142,8 +164,26 @@
             font-size: 20px;
         }
 
+        @media (min-width: $desktop) {
+            font-size: 24px;
+        }
+
     }
 
+    &__icon_logo {
+        width: 50px;
+        height: 50px;
+
+        @media (min-width: $laptop) {
+            width: 48px;
+            height: 48px;
+        }
+
+        @media (min-width: $desktop) {
+            width: 80px;
+            height: 80px;
+        }
+    }
 
     &__sab_text {
         color: $grey-60;
@@ -158,6 +198,12 @@
 
         @media (min-width: $laptop) {
             font-size: 16px;
+        }
+
+        @media (min-width: $desktop) {
+            font-size: 18px;
+            margin-top: 20px;
+            max-width: 363px;
         }
     }
 }
