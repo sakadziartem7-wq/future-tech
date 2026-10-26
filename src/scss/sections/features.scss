@@ -4,6 +4,7 @@
 .features {
 
     &__top {
+        position: relative;
         padding-top: 40px;
         border-top: 1px solid $dark-15;
         border-bottom: 1px solid $dark-15;
@@ -25,16 +26,15 @@
         }
     }
 
-&__hr {
-     @media (min-width: $laptop) {
-          position: absolute;
-        top: 391px;
-        left: 0;
-        width: 100vh;
-        height: 1px;
-        background-color: $dark-20;
+    &__hr {
+        @media (min-width: $laptop) {
+            width: 100vw;
+            height: 1px;
+            background-color: $dark-20;
+            margin-left: calc(50% - 50vw);
+            flex-shrink: 0;
         }
-}
+    }
 
     &__row {
         @media (min-width: $laptop) {
@@ -42,7 +42,6 @@
             flex-wrap: wrap;
             padding-top: 60px;
             padding-bottom: 60px;
-            position: relative;
         }
     }
 
@@ -100,7 +99,7 @@
 
 
         @media (min-width: $laptop) {
-            @include flex(flex-start, stretch, 20px );
+            @include flex(flex-start, stretch, 20px);
             flex-direction: row;
             flex-wrap: wrap;
             padding-left: 60px;
@@ -110,8 +109,8 @@
             border: none;
         }
 
-        
-         @media (min-width: $desktop) {
+
+        @media (min-width: $desktop) {
             max-width: 1001px;
             padding-left: 80px;
         }
@@ -131,7 +130,7 @@
             padding: 30px;
         }
 
-          @media (min-width: $desktop) {
+        @media (min-width: $desktop) {
             max-width: 444px;
         }
     }
@@ -144,7 +143,7 @@
         line-height: 150%;
         letter-spacing: -0.54px;
 
-           @media (min-width: $laptop) {
+        @media (min-width: $laptop) {
             font-size: 20px;
         }
 
@@ -162,7 +161,7 @@
         max-width: 278px;
 
 
-          @media (min-width: $laptop) {
+        @media (min-width: $laptop) {
             font-size: 16px;
         }
     }
