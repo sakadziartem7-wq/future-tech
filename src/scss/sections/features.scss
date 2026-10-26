@@ -40,8 +40,7 @@
         @media (min-width: $laptop) {
             @include flex(flex-start, flex-start, 60px);
             flex-wrap: wrap;
-            padding-top: 60px;
-            padding-bottom: 60px;
+           row-gap: 0;
         }
     }
 
@@ -103,10 +102,11 @@
             flex-direction: row;
             flex-wrap: wrap;
             padding-left: 60px;
-            padding-top: 0;
-            padding-bottom: 0;
+            padding-top: 60px;
+            padding-bottom: 60px;
             max-width: 824px;
             border: none;
+            border-left: 1px solid $dark-20;
         }
 
 
