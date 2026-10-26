@@ -2,37 +2,41 @@
 @use '../abstracts/mixins' as *;
 
 .features {
-  
-&__top {
-    padding-top: 40px;
-    border-top: 1px solid $dark-15;
-    border-bottom: 1px solid $dark-15;
-    background: $dark-10;
-    padding-bottom: 40px;
-}
+
+    &__top {
+        padding-top: 40px;
+        border-top: 1px solid $dark-15;
+        border-bottom: 1px solid $dark-15;
+        background: $dark-10;
+        padding-bottom: 40px;
+    }
 
     &__info {
         padding-top: 50px;
         padding-bottom: 50px;
-        max-width:358px;
+        max-width: 358px;
 
-    @media (min-width: $laptop) {
-       max-width:413px;
-    }
+        @media (min-width: $laptop) {
+            max-width: 413px;
+        }
+
+        @media (min-width: $desktop) {
+            max-width: 519px;
+        }
     }
 
-   &__row {
-    @media (min-width: $laptop) {
-        @include flex(flex-start, flex-start, 60px);
-
-        padding-top:60px;
-        padding-bottom:60px;
+    &__row {
+        @media (min-width: $laptop) {
+            @include flex(space-between, flex-start, 60px);
+            flex-wrap: wrap;
+            padding-top: 60px;
+            padding-bottom: 60px;
+        }
     }
-}
- 
+
     &__icon {
-        width:50px;
-         height:50px;
+        width: 50px;
+        height: 50px;
 
         @media (min-width: $laptop) {
             width: 48px;
@@ -49,10 +53,10 @@
         line-height: 150%;
         letter-spacing: -0.72px;
         margin-top: 20px;
-      
+
         @media (min-width: $laptop) {
-           font-size: 30px;
-           margin-top: 40px;
+            font-size: 30px;
+            margin-top: 40px;
         }
 
     }
@@ -65,7 +69,8 @@
         line-height: 150%;
         letter-spacing: -0.42px;
         margin-top: 6px;
-        
+        max-width: 339px;
+
         @media (min-width: $laptop) {
             font-size: 16px;
             margin-top: 10px;
@@ -76,32 +81,42 @@
     &__list {
         border-top: 1px solid $dark-15;
         padding-top: 30px;
+        border-bottom: 1px solid $dark-15;
         padding-bottom: 30px;
-        @include flex(flex-start,  flex-start, 10px);
-          flex-direction: column;
+        @include flex(flex-start, flex-start, 10px);
+        flex-direction: column;
 
-               
-    @media (min-width: $laptop) {
-       @include flex(flex-start, stretch, 10px, );
-           flex-direction: row;
-    flex-wrap: wrap;
-        max-width: 730px;
-       border:none;
-    }
+
+        @media (min-width: $laptop) {
+            @include flex(flex-start, stretch, 10px, );
+            flex-direction: row;
+            flex-wrap: wrap;
+            max-width: 730px;
+            border: none;
+        }
+
+        
+         @media (min-width: $desktop) {
+            max-width: 917px;
+        }
 
     }
 
     &__item {
-        width:100%;
+        width: 100%;
         padding: 24px;
         background: $dark-10;
         border-radius: 10px;
         border: 1px solid $dark-15;
-        
-    @media (min-width: $laptop) {
-        width: calc(50% - 5px);
-        max-width:363px;
-    }
+
+        @media (min-width: $laptop) {
+            width: calc(50% - 5px);
+            max-width: 363px;
+        }
+
+          @media (min-width: $desktop) {
+            max-width: 444px;
+        }
     }
 
     &__sab_title {
@@ -115,14 +130,15 @@
     }
 
 
-&__sab_text {
-    color: $grey-60;
-    font-family: $inter;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 150%;
-    letter-spacing: -0.42px;
-    margin-top:4px;
+    &__sab_text {
+        color: $grey-60;
+        font-family: $inter;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 150%;
+        letter-spacing: -0.42px;
+        margin-top: 4px;
+        max-width: 278px;
 
     }
 }
