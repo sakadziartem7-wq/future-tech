@@ -25,12 +25,24 @@
         }
     }
 
+&__hr {
+     @media (min-width: $laptop) {
+          position: absolute;
+        top: 391px;
+        left: 0;
+        width: 100vh;
+        height: 1px;
+        background-color: $dark-20;
+        }
+}
+
     &__row {
         @media (min-width: $laptop) {
-            @include flex(space-between, flex-start, 60px);
+            @include flex(flex-start, flex-start, 60px);
             flex-wrap: wrap;
             padding-top: 60px;
             padding-bottom: 60px;
+            position: relative;
         }
     }
 
@@ -88,16 +100,20 @@
 
 
         @media (min-width: $laptop) {
-            @include flex(flex-start, stretch, 10px, );
+            @include flex(flex-start, stretch, 20px );
             flex-direction: row;
             flex-wrap: wrap;
-            max-width: 730px;
+            padding-left: 60px;
+            padding-top: 0;
+            padding-bottom: 0;
+            max-width: 824px;
             border: none;
         }
 
         
          @media (min-width: $desktop) {
-            max-width: 917px;
+            max-width: 1001px;
+            padding-left: 80px;
         }
 
     }
@@ -112,6 +128,7 @@
         @media (min-width: $laptop) {
             width: calc(50% - 5px);
             max-width: 363px;
+            padding: 30px;
         }
 
           @media (min-width: $desktop) {
@@ -127,6 +144,10 @@
         line-height: 150%;
         letter-spacing: -0.54px;
 
+           @media (min-width: $laptop) {
+            font-size: 20px;
+        }
+
     }
 
 
@@ -140,5 +161,9 @@
         margin-top: 4px;
         max-width: 278px;
 
+
+          @media (min-width: $laptop) {
+            font-size: 16px;
+        }
     }
 }
