@@ -1,12 +1,53 @@
 @use '../abstracts/variables' as *;
 @use '../abstracts/mixins' as *;
 
-.Blogs {
-      &__top {
+.blogs {
+
+    &__top {
         padding-top: 40px;
         padding-bottom: 40px;
         border-top: 1px solid $dark-15;
         border-bottom: 1px solid $dark-15;
         background: $dark-10;
+    }
+
+    &__content {
+        @include flex(flex-start, flex-start, 20px);
+        flex-direction: column;
+
+
+        @media (min-width: $laptop) {
+            @include flex(flex-start, center, 0);
+            justify-content: space-between;
+            flex-direction: row;
+        }
+    }
+
+    &__info {
+        @include flex(flex-start, flex-start, 20px);
+        flex-direction: column;
+
+          @media (min-width: $laptop) {
+            @include flex(flex-start, flex-start, 10px);
+        }
+    }
+
+
+    &__button {
+        width: 358px;
+        height: 49px;
+        border-radius: 8px;
+        font-size: 14px;
+        @include flex(center, center, 10px);
+
+        @media (min-width: $laptop) {
+            width: 152px;
+        }
+
+    }
+
+    &__arrow {
+        width: 20px;
+        height: 20px;
     }
 }
