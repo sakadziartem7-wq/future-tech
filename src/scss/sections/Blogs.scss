@@ -9,6 +9,16 @@
         border-top: 1px solid $dark-15;
         border-bottom: 1px solid $dark-15;
         background: $dark-10;
+
+        @media (min-width: $laptop) {
+            padding-top: 80px;
+            padding-bottom: 80px;
+        }
+
+        @media (min-width: $desktop) {
+            padding-top: 120px;
+            padding-bottom: 120px;
+        }
     }
 
     &__content {
@@ -27,7 +37,7 @@
         @include flex(flex-start, flex-start, 20px);
         flex-direction: column;
 
-          @media (min-width: $laptop) {
+        @media (min-width: $laptop) {
             @include flex(flex-start, flex-start, 10px);
         }
     }
@@ -44,10 +54,63 @@
             width: 152px;
         }
 
+        @media (min-width: $desktop) {
+            font-size: 18px;
+            width: 195px;
+            height: 63px;
+            border-radius: 12px;
+        }
+
     }
 
     &__arrow {
         width: 20px;
         height: 20px;
     }
+
+    &__filters {
+        padding-top: 20px;
+        padding-bottom: 20px;
+        @include flex(flex-start flex-start, 0);
+        flex-wrap: nowrap;
+        gap: 14px;
+        overflow-x: auto;
+        scrollbar-width: none;
+
+        @media (min-width: $desktop) {
+            gap: 20px;
+        }
+
+    }
+
+    &__filter {
+        border-radius: 7px;
+        width: 151px;
+        font-size: 14px;
+        height: 87px;
+        flex-shrink: 0;
+        white-space: nowrap;
+
+        &--active {
+            color: $white;
+            background: $dark-20;
+            border-color: $dark-25;
+        }
+
+
+        @media (min-width: $laptop) {
+            width: 201px;
+            height: 61px;
+        }
+
+
+        @media (min-width: $desktop) {
+            width: 249px;
+            height: 87px;
+            font-size: 18px;
+            border-radius: 8px;
+        }
+
+    }
+
 }

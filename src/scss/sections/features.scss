@@ -102,13 +102,11 @@
             font-size: 18px;
             max-width: 496px;
         }
-
     }
 
     &__list {
         border-top: 1px solid $dark-15;
         padding-top: 30px;
-        border-bottom: 1px solid $dark-15;
         padding-bottom: 30px;
         @include flex(flex-start, flex-start, 10px);
         flex-direction: column;
@@ -193,7 +191,6 @@
         letter-spacing: -0.42px;
         margin-top: 4px;
         max-width: 278px;
-
 
         @media (min-width: $laptop) {
             font-size: 16px;
