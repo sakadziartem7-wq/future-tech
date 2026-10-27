@@ -1,0 +1,12 @@
+@use '../abstracts/variables' as *;
+@use '../abstracts/mixins' as *;
+
+.Blogs {
+      &__top {
+        padding-top: 40px;
+        padding-bottom: 40px;
+        border-top: 1px solid $dark-15;
+        border-bottom: 1px solid $dark-15;
+        background: $dark-10;
+    }
+}
