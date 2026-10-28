@@ -263,6 +263,11 @@
     &__icon {
         width: 20px;
         height: 20px;
+
+        &:hover,
+        &--active {
+            --like-fill: red;
+        }
     }
 
     &__action {
@@ -272,7 +277,7 @@
         width: 80px;
         height: 33px;
 
-            @include flex(center, center, 2px);
+        @include flex(center, center, 2px);
 
         &--comments {
             width: 62px;
