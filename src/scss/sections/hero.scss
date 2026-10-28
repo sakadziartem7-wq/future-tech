@@ -389,7 +389,7 @@
         @media (min-width: $laptop) {
             top: 0;
             bottom: 0;
-            left: calc(50% + 91px);
+            left: calc(50% + 74px);
             width: 1px;
             height: 562px;
             z-index: 3;
@@ -397,6 +397,7 @@
 
         @media (min-width: $desktop) {
             height: 741px;
+            left: calc(50% + 94px);
         }
 
     }
