@@ -71,11 +71,12 @@
     &__filters {
         padding-top: 20px;
         padding-bottom: 20px;
+          overflow-x: auto;
+        scrollbar-width: none;
         @include flex(flex-start flex-start, 0);
         flex-wrap: nowrap;
         gap: 14px;
-        overflow-x: auto;
-        scrollbar-width: none;
+      
 
         @media (min-width: $desktop) {
             gap: 20px;
@@ -111,6 +112,43 @@
             border-radius: 8px;
         }
 
+    }
+
+    &__card {
+        position: relative;
+        padding-top: 40px;
+        padding-bottom: 40px;
+                @include flex(flex-start, center, 8px);
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 50%;
+            width: 100vw;
+            height: 1px;
+            background-color: $dark-20;
+            transform: translateX(-50%);
+        }
+        
+    }
+
+    &__info {
+     @include flex(center, flex-start, 2px);
+    flex-direction: column;
+}
+
+    &__avatar {
+        width: 60px;
+        height: 60px;
+    }
+
+    &__btn {
+        width: 127px;
+        height: 49px;
+        border-radius: 8px;
+        margin-left: auto;
+        @include flex(center, center, 10px);
     }
 
 }
