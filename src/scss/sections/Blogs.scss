@@ -77,7 +77,6 @@
         flex-wrap: nowrap;
         gap: 14px;
 
-
         @media (min-width: $desktop) {
             gap: 20px;
         }
@@ -125,6 +124,12 @@
             padding-bottom: 60px;
         }
 
+        
+        @media (min-width: $desktop) {
+            padding-top: 80px;
+            padding-bottom: 80px;
+        }
+
         &::before {
             content: '';
             position: absolute;
@@ -147,6 +152,10 @@
             width: 149px;
             flex-shrink: 0;
         }
+
+         @media (min-width: $desktop) {
+            width: 168px;  
+        }
     }
 
     &__name {
@@ -156,6 +165,12 @@
         font-weight: 600;
         line-height: 150%;
         letter-spacing: -0.54px;
+
+         @media (min-width: $desktop) {   
+            font-size: 20px;
+
+        }
+
     }
 
     &__text {
@@ -168,6 +183,11 @@
 
         @media (min-width: $laptop) {
             font-size: 16px;
+        }
+
+         @media (min-width: $desktop) {
+            font-size: 18px;
+            margin-top: 2px;
         }
 
     }
@@ -186,9 +206,11 @@
             order: 0;
             width: auto;
             padding-left: 126px;
-            max-width: 935px;
         }
 
+         @media (min-width: $desktop) {
+           padding-left: 170px;
+        }
     }
 
     &__date {
@@ -203,6 +225,10 @@
             font-size: 18px;
         }
 
+
+         @media (min-width: $desktop) {
+            font-size: 20px;
+        }
     }
 
     &__title {
@@ -215,12 +241,15 @@
         letter-spacing: -0.54px;
         margin-top: 20px;
 
-
         @media (min-width: $laptop) {
             font-size: 22px;
             margin-top: 24px;
         }
 
+            @media (min-width: $desktop) {
+            font-size: 26px;
+    
+        }
     }
 
     &__subtext {
@@ -238,6 +267,11 @@
             font-size: 16px;
         }
 
+        @media (min-width: $desktop) {
+            font-size: 18px;
+            max-width: 808px;
+            margin-top: 10px;
+        }
     }
 
     &__btn {
