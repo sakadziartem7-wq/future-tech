@@ -42,7 +42,6 @@
         }
     }
 
-
     &__button {
         width: 358px;
         height: 49px;
@@ -60,7 +59,6 @@
             height: 63px;
             border-radius: 12px;
         }
-
     }
 
     &__arrow {
@@ -80,7 +78,6 @@
         @media (min-width: $desktop) {
             gap: 20px;
         }
-
     }
 
     &__filter {
@@ -101,7 +98,6 @@
             width: 201px;
             height: 61px;
         }
-
 
         @media (min-width: $desktop) {
             width: 249px;
@@ -124,7 +120,6 @@
             padding-top: 60px;
             padding-bottom: 60px;
         }
-
         
         @media (min-width: $desktop) {
             padding-top: 80px;
@@ -141,13 +136,11 @@
             background-color: $dark-20;
             transform: translateX(-50%);
         }
-
     }
 
     &__author {
         @include flex(center, flex-start, 2px);
         flex-direction: column;
-
 
         @media (min-width: $laptop) {
             width: 149px;
@@ -227,14 +220,12 @@
             font-size: 18px;
         }
 
-
          @media (min-width: $desktop) {
             font-size: 20px;
         }
     }
 
     &__title {
-        align-self: stretch;
         color: $white;
         font-family: $inter;
         font-size: 18px;
@@ -330,5 +321,4 @@
         letter-spacing: -0.42px;
 
     }
-
 }
