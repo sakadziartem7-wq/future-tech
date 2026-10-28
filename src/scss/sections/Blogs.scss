@@ -119,6 +119,7 @@
         flex-wrap: wrap;
 
         @media (min-width: $laptop) {
+            @include flex(flex-start, flex-start, 8px);
             flex-wrap: nowrap;
             padding-top: 60px;
             padding-bottom: 60px;
@@ -204,6 +205,7 @@
 
         @media (min-width: $laptop) {
             order: 0;
+            margin-top: 0;
             width: auto;
             padding-left: 126px;
         }
@@ -286,6 +288,7 @@
         line-height: 150%;
         letter-spacing: -0.42px;
         @include flex(center, center, 10px);
+        align-self: center;
 
     }
 
