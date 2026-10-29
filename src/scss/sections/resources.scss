@@ -95,7 +95,6 @@
         letter-spacing: -0.42px;
 
         @media (min-width: $laptop) {
-            font-size: 16px;
             max-width: 376px;
             margin-top: 10px;
         }
@@ -114,7 +113,20 @@
         line-height: 150%;
         letter-spacing: -0.42px;
         @include flex(center, center, 4px);
+
+        @media (min-width: $laptop) {
+            width: 413px;
+
+        }
+
     }
+
+&__left {
+        @media (min-width: $laptop) {
+         padding-top: 150px;
+         padding-bottom: 150px;
+        }
+}
 
     &__users {
         width: 338px;
@@ -128,20 +140,35 @@
         background: $dark-10;
         @include flex(center, center, 4px);
 
+        @media (min-width: $laptop) {
+            width: 328px;
+            margin-bottom: 0;
+
+        }
+
     }
 
     &__avatars {
         padding: 8px;
         border-radius: 42px;
         border: 1px solid $dark-40;
-        width: max-content;
+        width: 149px;
+        height: 56px;
         margin-left: 30px;
-
-        @include flex(flex-start, center, 0);
+        @include flex(flex-start, flex-start, 0);
     }
 
     &__img {
         width: 40px;
         height: 40px;
+
+        &:nth-child(2n) {
+            margin-left: -7px;
+        }
+
+        &:nth-child(3n) {
+            margin-left: -15px;
+
+        }
     }
 }
