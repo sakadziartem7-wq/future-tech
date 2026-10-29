@@ -1,0 +1,40 @@
+@use '../abstracts/variables' as *;
+@use '../abstracts/mixins' as *;
+
+.resources {
+
+    &__top {
+          padding-top: 40px;
+        padding-bottom: 40px;
+        border-top: 1px solid $dark-15;
+        border-bottom: 1px solid $dark-15;
+        background: $dark-10;
+    }
+
+&__title {
+    margin-top: 10px;
+}
+
+
+       &__btn {
+        width: 358px;
+        height: 49px;
+        border-radius: 8px;
+        margin-left: auto;
+        margin-top: 30px;
+        color: $grey-60;
+        font-family: $inter;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 150%;
+        letter-spacing: -0.42px;
+        @include flex(center, center, 10px);
+        align-self: center;
+
+    }
+
+      &__arrow {
+        width: 20px;
+        height: 20px;
+    }
+}
