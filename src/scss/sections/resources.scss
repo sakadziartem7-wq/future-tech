@@ -4,24 +4,29 @@
 .resources {
 
     &__top {
-          padding-top: 40px;
+        padding-top: 40px;
         padding-bottom: 40px;
         border-top: 1px solid $dark-15;
         border-bottom: 1px solid $dark-15;
         background: $dark-10;
     }
 
-&__title {
-    margin-top: 10px;
-}
+    &__title {
+        margin-top: 10px;
 
-&__content {
-    @media (min-width: $laptop) {
-        @include flex(space-between, center, 20px);
+        @media (min-width: $laptop) {
+            max-width: 897px;
+
+        }
     }
-}
 
- &__info {
+    &__content {
+        @media (min-width: $laptop) {
+            @include flex(space-between, center, 20px);
+        }
+    }
+
+    &__info {
         @include flex(flex-start, flex-start, 20px);
         flex-direction: column;
 
@@ -30,7 +35,7 @@
         }
     }
 
-       &__btn {
+    &__btn {
         width: 358px;
         height: 49px;
         border-radius: 8px;
@@ -42,17 +47,101 @@
         font-weight: 400;
         line-height: 150%;
         letter-spacing: -0.42px;
-        @include flex(center, center, 10px);
-        align-self: center;
+        @include flex(center, center, 4px);
 
-          @media (min-width: $laptop) {
+        @media (min-width: $laptop) {
             margin-top: 0;
+            width: 183px;
         }
 
     }
 
-      &__arrow {
+    &__arrow {
         width: 20px;
         height: 20px;
+    }
+
+    &__ebooks {
+        padding-top: 40px;
+        padding-bottom: 40px;
+        @include flex(flex-start, stretch, 0);
+        flex-direction: column;
+    }
+
+    &__icon_webinars {
+        width: 50px;
+        height: 50px;
+    }
+
+    &__subtitle {
+        color: $white;
+        font-family: $font-kumbh;
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 150%;
+        letter-spacing: -0.72px;
+
+        @media (min-width: $laptop) {
+            font-size: 30px;
+        }
+    }
+
+    &__text {
+        color: $grey-60;
+        font-family: $inter;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 150%;
+        letter-spacing: -0.42px;
+
+        @media (min-width: $laptop) {
+            font-size: 16px;
+            max-width: 376px;
+            margin-top: 10px;
+        }
+
+    }
+
+    &__button {
+        width: 358px;
+        height: 57px;
+        border-radius: 6px;
+        margin-top: 24px;
+        color: $grey-60;
+        font-family: $inter;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 150%;
+        letter-spacing: -0.42px;
+        @include flex(center, center, 4px);
+    }
+
+    &__users {
+        width: 338px;
+        margin-top: 20px;
+        margin-bottom: 40px;
+        padding-top: 23px;
+        padding-bottom: 23px;
+        padding-left: 30px;
+        border-radius: 8px;
+        border: 1px solid $dark-15 ;
+        background: $dark-10;
+        @include flex(center, center, 4px);
+
+    }
+
+    &__avatars {
+        padding: 8px;
+        border-radius: 42px;
+        border: 1px solid $dark-40;
+        width: max-content;
+        margin-left: 30px;
+
+        @include flex(flex-start, center, 0);
+    }
+
+    &__img {
+        width: 40px;
+        height: 40px;
     }
 }
