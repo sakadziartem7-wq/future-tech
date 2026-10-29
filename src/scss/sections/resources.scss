@@ -62,10 +62,13 @@
     }
 
     &__ebooks {
-        padding-top: 40px;
-        padding-bottom: 40px;
         @include flex(flex-start, stretch, 0);
         flex-direction: column;
+
+        @media (min-width: $laptop) {
+            flex-direction: row;
+            justify-content: space-between;
+        }
     }
 
     &__icon_webinars {
@@ -96,7 +99,7 @@
 
         @media (min-width: $laptop) {
             max-width: 376px;
-            margin-top: 10px;
+            margin-top:0;
         }
 
     }
@@ -121,28 +124,32 @@
 
     }
 
-&__left {
+    &__left {
+        padding-top: 40px;
+        padding-bottom: 40px;
+        border-bottom: 1px solid $dark-15;
+
         @media (min-width: $laptop) {
-         padding-top: 150px;
-         padding-bottom: 150px;
+            padding-top: 150px;
+            padding-bottom: 150px;
         }
-}
+    }
 
     &__users {
         width: 338px;
         margin-top: 20px;
-        margin-bottom: 40px;
         padding-top: 23px;
         padding-bottom: 23px;
         padding-left: 30px;
         border-radius: 8px;
         border: 1px solid $dark-15 ;
         background: $dark-10;
-        @include flex(center, center, 4px);
+        @include flex(flex-start, center, 0);
 
         @media (min-width: $laptop) {
             width: 328px;
             margin-bottom: 0;
+            margin-top: 40px;
 
         }
 
@@ -170,5 +177,49 @@
             margin-left: -15px;
 
         }
+    }
+
+    &__right {
+        padding-top: 40px;
+        padding-bottom: 40px;
+
+        @media (min-width: $laptop) {
+            padding-top: 60px;
+            padding-bottom: 60px;
+            padding-left:60px;
+        }
+    }
+
+    &__variety {
+        @include flex(flex-start, flex-start,0);
+        flex-direction: column;
+
+        @media (min-width: $laptop) {
+
+            flex-direction: row;
+            justify-content: space-between;
+        }
+    }
+
+
+
+    &__sub_text {
+        color: $white;
+        font-family: $inter;
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 150%;
+        letter-spacing: -0.54px;
+        margin-top: 2px;
+    }
+
+    & &__sabtitle {
+        color: $white;
+        font-family: $inter;
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 150%;
+        letter-spacing: -0.54px;
+
     }
 }
