@@ -15,6 +15,20 @@
     margin-top: 10px;
 }
 
+&__content {
+    @media (min-width: $laptop) {
+        @include flex(space-between, center, 20px);
+    }
+}
+
+ &__info {
+        @include flex(flex-start, flex-start, 20px);
+        flex-direction: column;
+
+        @media (min-width: $laptop) {
+            @include flex(flex-start, flex-start, 10px);
+        }
+    }
 
        &__btn {
         width: 358px;
@@ -30,6 +44,10 @@
         letter-spacing: -0.42px;
         @include flex(center, center, 10px);
         align-self: center;
+
+          @media (min-width: $laptop) {
+            margin-top: 0;
+        }
 
     }
 
