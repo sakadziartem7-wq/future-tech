@@ -70,7 +70,7 @@
         letter-spacing: -0.42px;
         font-size: 14px;
         color: $dark-40;
-                @include flex(center, center, 8px);
+        @include flex(center, center, 8px);
 
         @media (min-width: $laptop) {
             font-size: 14px;
@@ -82,16 +82,24 @@
 
     }
 
-   &__badge-inner {
-        width: 46px;
-        color: $white;
-        font-family: $inter;
-        display: inline-block;
-        height: 22px;
+    &__badge {
+        display: flex;
+        align-items: center;
+        justify-content: center;
         border-radius: 4px;
-        font-size: 12px;
-        padding: 2px 10px;
-        background: linear-gradient(54deg, #262626 36%, #FFD119 100%);
+        padding: 1px;
+        background: linear-gradient(62deg,rgba(38, 38, 38, 1) 36%, rgba(237, 221, 83, 0.5) 100%);
+
+        &-inner {
+            padding: 1px 9px;
+            border-radius: 4px;
+            background-color: $dark-10;
+            color: $white;
+            font-family: $inter;
+            font-size: 12px;
+        }
+
+        // НАПИСАТЬ ТУТ АНИМАЦИЮ МИГАНИЯ!!!
     }
 
     &__sub-title {
