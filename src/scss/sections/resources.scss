@@ -62,7 +62,7 @@
     }
 
     &__ebooks {
-        @include flex(flex-start, stretch, 0);
+        @include flex(flex-start, flex-start, 0);
         flex-direction: column;
 
         @media (min-width: $laptop) {
@@ -133,6 +133,7 @@
         @media (min-width: $laptop) {
             padding-top: 150px;
             padding-bottom: 150px;
+            border: none;
         }
     }
 
@@ -186,7 +187,7 @@
 
         @media (min-width: $laptop) {
             padding-top: 60px;
-     
+            padding-bottom: 60px;
             padding-left: 60px;
         }
     }
