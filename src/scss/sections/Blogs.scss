@@ -293,8 +293,8 @@
         height: 20px;
 
         &:hover,
-        &--active {
-            --like-fill: red;
+        &:active {
+            fill: #FF5500;
         }
     }
 
