@@ -2,6 +2,63 @@
 @use '../abstracts/mixins' as *;
 
 .section-head {
+  padding-top: 40px;
+    padding-bottom: 40px;
+    border-top: 1px solid $dark-15;
+    border-bottom: 1px solid $dark-15;
+    background: $dark-10;
+
+    &__content {
+        @media (min-width: $laptop) {
+            @include flex(space-between, center, 20px);
+        }
+    }
+
+  &__info {
+        @include flex(flex-start, flex-start, 20px);
+        flex-direction: column;
+
+        @media (min-width: $laptop) {
+            @include flex(flex-start, flex-start, 10px);
+        }
+    }
+
+
+    &__title {
+        margin-top: 10px;
+
+        @media (min-width: $laptop) {
+            max-width: 897px;
+
+        }
+    }
+
+
+    &__btn {
+        width: 358px;
+        height: 49px;
+        border-radius: 8px;
+        margin-left: auto;
+        margin-top: 30px;
+        color: $grey-60;
+        font-family: $inter;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 150%;
+        letter-spacing: -0.42px;
+        @include flex(center, center, 4px);
+
+        @media (min-width: $laptop) {
+            margin-top: 0;
+            width: 183px;
+        }
+
+    }
+
+  &__arrow {
+        width: 20px;
+        height: 20px;
+    }
 
 &__tag {
     background: $dark-20; 
