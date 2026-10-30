@@ -3,4 +3,6 @@
 
 body {
     background-color: $dark-08;
+    overflow-x: hidden;
+    overflow-x: clip;
 }

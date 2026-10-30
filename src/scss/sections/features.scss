@@ -106,6 +106,7 @@
 
     &__list {
         border-top: 1px solid $dark-15;
+        border-bottom: 1px solid $dark-15;
         padding-top: 30px;
         padding-bottom: 30px;
         @include flex(flex-start, flex-start, 10px);
