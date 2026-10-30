@@ -21,6 +21,11 @@
     &__icon_webinars {
         width: 50px;
         height: 50px;
+
+        @media (min-width: $desktop) {
+            width: 80px;
+            height: 80px;
+        }
     }
 
     &__subtitle {
@@ -34,6 +39,12 @@
 
         @media (min-width: $laptop) {
             font-size: 30px;
+            margin-top: 30px;
+        }
+
+        @media (min-width: $desktop) {
+            font-size: 40px;
+            margin-top: 50px;
         }
     }
 
@@ -47,7 +58,12 @@
 
         @media (min-width: $laptop) {
             max-width: 376px;
-            margin-top: 0;
+            margin-top: 10px;
+        }
+
+        @media (min-width: $desktop) {
+            font-size: 20px;
+            margin-top: 16px;
         }
     }
 
@@ -66,6 +82,13 @@
 
         @media (min-width: $laptop) {
             width: 413px;
+            margin-top: 30px;
+        }
+
+        @media (min-width: $desktop) {
+            width: 519px;
+            height: 63px;
+            margin-top: 50px;
         }
     }
 
@@ -79,6 +102,7 @@
             padding-top: 150px;
             padding-bottom: 150px;
             border: none;
+
         }
     }
 
@@ -98,6 +122,12 @@
             margin-bottom: 0;
             margin-top: 40px;
         }
+
+        @media (min-width: $desktop) {
+            width: 433px;
+            height: 130px;
+            margin-top: 60px;
+        }
     }
 
     &__avatars {
@@ -108,11 +138,23 @@
         height: 56px;
         margin-left: 30px;
         @include flex(flex-start, flex-start, 0);
+
+        @media (min-width: $desktop) {
+            margin-left: 50px;
+            width: 194px;
+            height: 70px;
+            padding: 10px;
+        }
     }
 
     &__img {
         width: 40px;
         height: 40px;
+
+        @media (min-width: $desktop) {
+            width: 50px;
+            height: 50px;
+        }
 
         &:nth-child(2n) {
             margin-left: -7px;
@@ -134,6 +176,12 @@
             padding-left: 60px;
             border-left: 1px solid $dark-20;
         }
+
+        @media (min-width: $desktop) {
+            padding-top: 80px;
+            padding-bottom: 80px;
+            padding-left: 80px;
+        }
     }
 
     &__variety {
@@ -145,6 +193,10 @@
             justify-content: space-between;
             gap: 16px;
         }
+
+        @media (min-width: $desktop) {
+            gap: 20px;
+        }
     }
 
     &__sub_text {
@@ -155,6 +207,16 @@
         line-height: 150%;
         letter-spacing: -0.54px;
         margin-top: 2px;
+
+        @media (min-width: $laptop) {
+            font-size: 20px;
+        }
+
+        @media (min-width: $desktop) {
+            font-size: 24px;
+            margin-top: 4px;
+        }
+
     }
 
     & &__sabtitle {
@@ -167,9 +229,11 @@
 
         @media (min-width: $laptop) {
             font-size: 20px;
-
         }
 
+        @media (min-width: $desktop) {
+            font-size: 24px;
+        }
     }
 
     &__texteri {
@@ -184,6 +248,11 @@
             font-size: 16px;
             max-width: 535px;
         }
+
+        @media (min-width: $desktop) {
+            font-size: 18px;
+            max-width: 654px;
+        }
     }
 
     &__photo {
@@ -194,6 +263,12 @@
         @media (min-width: $laptop) {
             min-width: 747px;
             height: 275px;
+        }
+
+        @media (min-width: $desktop) {
+            min-width: 917px;
+            height: 332px;
+            margin-top: 30px;
         }
     }
 
@@ -206,6 +281,9 @@
             gap: 16px;
         }
 
+        @media (min-width: $desktop) {
+            gap: 20px;
+        }
     }
 
     &__card {
@@ -218,6 +296,13 @@
 
         @media (min-width: $laptop) {
             width: 222px;
+
+            @media (min-width: $desktop) {
+                width: 216px;
+                height: 121px;
+                margin-top: 30px;
+                padding: 30px;
+            }
         }
 
         &__formats {
@@ -227,6 +312,9 @@
                 width: 509px;
             }
 
+            @media (min-width: $desktop) {
+                width: 681px;
+            }
         }
     }
 
@@ -238,6 +326,13 @@
         line-height: 150%;
         letter-spacing: -0.42px;
 
+        @media (min-width: $laptop) {
+            font-size: 16px;
+        }
+
+        @media (min-width: $desktop) {
+            font-size: 18px;
+        }
     }
 
     &__note {
@@ -249,6 +344,14 @@
         letter-spacing: -0.48px;
         margin-top: 2px;
 
+        @media (min-width: $laptop) {
+            font-size: 18px;
+        }
+
+        @media (min-width: $desktop) {
+            font-size: 20px;
+            margin-top: 4px;
+        }
     }
 
     &__legend {
@@ -259,6 +362,13 @@
         line-height: 150%;
         letter-spacing: -0.42px;
 
+        @media (min-width: $laptop) {
+            font-size: 16px;
+        }
+
+        @media (min-width: $desktop) {
+            font-size: 18px;
+        }
     }
 
     &__eye {
@@ -279,6 +389,12 @@
         line-height: 150%;
         letter-spacing: -0.42px;
         @include flex(center, center, 7px);
+
+        @media (min-width: $desktop) {
+            width: 147px;
+            height: 63px;
+            font-size: 18px;
+        }
     }
 
     &__row {
@@ -292,6 +408,13 @@
 
         @media (min-width: $laptop) {
             margin-top: 24px;
+
+        }
+
+        @media (min-width: $desktop) {
+            width: 917px;
+            height: 121px;
+            margin-top: 30px;
         }
     }
 
@@ -304,6 +427,14 @@
         letter-spacing: -0.48px;
         margin-top: 2px;
 
+        @media (min-width: $laptop) {
+            font-size: 18px;
+        }
+
+        @media (min-width: $desktop) {
+            font-size: 20px;
+            margin-top: 4px;
+        }
     }
 
     &__hr {
