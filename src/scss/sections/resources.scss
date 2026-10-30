@@ -83,6 +83,7 @@
         font-weight: 600;
         line-height: 150%;
         letter-spacing: -0.72px;
+        margin-top: 24px;
 
         @media (min-width: $laptop) {
             font-size: 30px;
@@ -119,7 +120,6 @@
 
         @media (min-width: $laptop) {
             width: 413px;
-
         }
 
     }
@@ -127,6 +127,7 @@
     &__left {
         padding-top: 40px;
         padding-bottom: 40px;
+        border-top: 1px solid $dark-15;
         border-bottom: 1px solid $dark-15;
 
         @media (min-width: $laptop) {
@@ -185,7 +186,7 @@
 
         @media (min-width: $laptop) {
             padding-top: 60px;
-            padding-bottom: 60px;
+     
             padding-left: 60px;
         }
     }
@@ -246,7 +247,7 @@
         margin-top: 24px;
 
         @media (min-width: $laptop) {
-            min-width:  747px;
+            min-width: 747px;
             height: 275px;
 
         }
@@ -271,19 +272,17 @@
         background: $dark-10;
         width: 358px;
 
-          @media (min-width: $laptop) {
-           width: 222px;
+        @media (min-width: $laptop) {
+            width: 222px;
         }
 
 
         &__formats {
-            @include flex(center, center, 20px);
+            @include flex(space-between, center, 20px);
 
-              @media (min-width: $laptop) {
-            width: 509px;
-            justify-content: space-between;
-           
-        }
+            @media (min-width: $laptop) {
+                width: 509px;
+            }
 
         }
     }
@@ -309,7 +308,15 @@
 
     }
 
+    &__legend {
+        color: $grey-60;
+        font-family: $inter;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 150%;
+        letter-spacing: -0.42px;
 
+    }
 
     &__eye {
         width: 17px;
@@ -331,4 +338,41 @@
         @include flex(center, center, 7px);
 
     }
+
+    &__row {
+        padding: 20px;
+        border-radius: 8px;
+        border: 1px solid $dark-15;
+        background: $dark-10;
+        @include flex(flex-start, flex-start, 7px);
+        flex-direction: column;
+        margin-top: 16px;
+
+        @media (min-width: $laptop) {
+           margin-top: 24px;
+
+        }
+    }
+
+    &__summary {
+        color: $white;
+        font-family: $inter;
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 150%;
+        letter-spacing: -0.48px;
+        margin-top: 2px;
+
+    }
+
+    &__hr {
+        @media (min-width: $laptop) {
+            width: 100vw;
+            height: 1px;
+            background-color: $dark-20;
+            margin-left: calc(50% - 50vw);
+            flex-shrink: 0;
+        }
+    }
+
 }
