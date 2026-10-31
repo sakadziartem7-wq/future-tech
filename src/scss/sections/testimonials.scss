@@ -9,15 +9,14 @@
         flex-direction: column;
 
         @media (min-width: $laptop) {
+            @include flex(center, stretch, 0);
             flex-direction: row;
             flex-wrap: wrap;
-            gap: 40px;
+            column-gap: 40px;
         }
-
     }
 
     &__item {
-        position: relative;
         border-bottom: 1px solid $dark-15;
         padding-top: 40px;
         padding-bottom: 40px;
@@ -30,25 +29,20 @@
             @media (min-width: $laptop) {
                 display: flex;
             }
-
         }
 
         @media (min-width: $laptop) {
             width: calc((100% - 80px) / 3);
-            padding-top: 80px;
-            padding-bottom: 80px;
+            padding-top: 60px;
+            padding-bottom: 60px;
+            padding-left: 40px;
+            border-bottom: none;
 
-        }
 
-        &::after {
-            content: "";
-            position: absolute;
-            bottom: 0;
-            left: 50%;
-            width: 100vw;
-            margin-left: -50vw; 
-            height: 1px;
-            background: $dark-15;
+            &:nth-child(4n + 2),
+            &:nth-child(4n + 3) {
+                border-left: 1px solid $dark-20;
+            }
         }
     }
 
@@ -59,7 +53,6 @@
 
     &__avatar {
         @include flex(flex-start, center, 10px);
-
     }
 
     &__title {
@@ -77,6 +70,10 @@
         font-weight: 400;
         line-height: 150%;
 
+        @media (min-width: $laptop) {
+            font-size: 16px;
+            margin-top: 2px;
+        }
     }
 
     &__stars {
@@ -89,9 +86,7 @@
         border-radius: 100px;
         border: 1px solid $dark-15;
         background: $dark-08;
-
     }
-
 
     &__stars-icon {
         width: 114px;
@@ -112,5 +107,21 @@
         line-height: 150%;
         max-width: 336px;
         min-height: 133px;
+
+        @media (min-width: $laptop) {
+            padding: 40px 24px 24px 24px;
+            font-size: 16px;
+            min-height: 179px;
+        }
+    }
+
+
+    &__hr {
+        @media (min-width: $laptop) {
+            width: 100vw;
+            height: 1px;
+            background-color: $dark-20;
+            flex-shrink: 0;
+        }
     }
 }
