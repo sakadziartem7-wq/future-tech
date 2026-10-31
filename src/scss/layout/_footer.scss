@@ -42,6 +42,7 @@
         width: 50%;
         @include flex(flex-start, flex-start, 8px);
         flex-direction: column;
+          animation: menu-blink 4s ease-in-out infinite;
     }
 
     &__title {
@@ -97,6 +98,7 @@
             color: $white;
             font-family: $inter;
             font-size: 12px;
+            
         }
 
         // НАПИСАТЬ ТУТ АНИМАЦИЮ МИГАНИЯ!!!
