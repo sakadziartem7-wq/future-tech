@@ -1,0 +1,67 @@
+@use '../abstracts/variables' as *;
+@use '../abstracts/mixins' as *;
+
+.news {
+
+    &__info {
+        padding-top: 40px;
+        padding-bottom: 40px;
+        @include flex(flex-start, stretch, 0);
+        flex-direction: column;
+
+        @media (min-width: $laptop) {
+            padding-top: 80px;
+            padding-bottom: 100px;
+            flex-direction: row;
+            align-items: flex-end;
+        }
+
+        @media (min-width: $desktop) {
+            padding-top: 130px;
+            padding-bottom: 150px;
+        }
+    }
+
+    &__title {
+        color: $white;
+        font-family: $font-kumbh ;
+        font-size: 28px;
+        font-weight: 500;
+        line-height: 130%;
+        letter-spacing: -0.84px;
+        max-width: 358px;
+
+        @media (min-width: $laptop) {
+            font-size: 55px;
+            max-width: 303px;
+            white-space: nowrap;
+        }
+
+        @media (min-width: $desktop) {
+            font-size: 80px;
+            max-width: 472px;
+        }
+    }
+
+    &__text {
+        color: $grey-60;
+        font-family: $inter;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 150%;
+        letter-spacing: -0.42px;
+        max-width: 336px;
+        margin-top: 14px;
+
+        @media (min-width: $laptop) {
+            font-size: 16px;
+            max-width: 993px;
+        }
+
+        @media (min-width: $desktop) {
+            font-size: 18px;
+            max-width: 1185px;
+            margin-top: 45px;
+        }
+    }
+}
