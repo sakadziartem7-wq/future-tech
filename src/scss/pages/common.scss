@@ -1,4 +1,8 @@
-@use '../layout/header';
-@use '../layout/footer';
+@use '../base/reset';
+@use '../base/common';
+@use '../base/container';
+@use '../base/button';
 @use '../sections/common/Blogs.scss';
-@use '../sections/common/cta.scss';
+@use '../sections/common/cta';
+@use '../sections/common/subscribe';
+@use '../sections/common/section-head.scss';

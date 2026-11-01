@@ -1,8 +1,9 @@
 @use '../base/reset';
-@use '../sections/common/subscribe';
 @use '../base/common';
 @use '../base/container';
 @use '../base/button';
-@use '../sections/section-head';
+@use '../layout/header';
+@use '../layout/footer';
 @use '../sections/news/news.scss';
 @use '../sections/news/latest.scss';
+
