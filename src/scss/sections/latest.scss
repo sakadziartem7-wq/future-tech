@@ -1,0 +1,49 @@
+@use '../abstracts/variables' as *;
+@use '../abstracts/mixins' as *;
+
+.latest {
+    border-top: 1px solid $dark-15;
+    padding-top: 40px;
+    padding-bottom: 40px;
+
+
+    &__windmills {
+        width: 358px;
+        height: 213px;
+    }
+
+
+    &__flex {
+        @include flex(flex-start, stretch, 0);
+        flex-direction: column;
+
+        @media (min-width: $laptop) {
+            flex-direction: row;
+            gap: 40px;
+        }
+    }
+
+    &__title {
+        color: $white;
+        font-family: $inter;
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 150%;
+        letter-spacing: -0.6px;
+        margin-top: 30px;
+
+    }
+
+
+    &__text {
+        color: $grey-60;
+        font-family: $inter;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 150%;
+        letter-spacing: -0.48px;
+        margin-top: 6px;
+        max-width: 336px;
+
+    }
+}
