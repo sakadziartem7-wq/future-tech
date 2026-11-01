@@ -215,4 +215,36 @@
         margin-top: 4px;
     }
 
+    &__footer {
+        margin-top: 10px;
+        margin-bottom: 30px;
+
+          @media (min-width: $laptop) {
+            margin-top: 16px;
+            margin-bottom: 0px;
+        }
+
+    }
+
+    &__link {
+        color: $grey-60;
+        font-family: $inter;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 150%;
+        letter-spacing: -0.42px;
+        width: 164px;
+        height: 49px;
+        border: 1px solid $dark-15;
+        background: $dark-08;
+        border-radius: 8px;
+        margin-left: auto;
+        @include flex(center, center, 4px);
+    }
+
+    &__arrow {
+        width: 20px;
+        height: 20px;
+    }
+
 }

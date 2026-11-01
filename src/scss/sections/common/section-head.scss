@@ -24,10 +24,8 @@
     }
 
     &__title {
-
         @media (min-width: $laptop) {
             max-width: 897px;
-
         }
     }
 
@@ -49,7 +47,6 @@
             margin-top: 0;
             width: 183px;
         }
-
     }
 
   &__arrow {
