@@ -2,46 +2,7 @@
 @use '../abstracts/mixins' as *;
 
 .blogs {
-
-    &__top {
-        padding-top: 40px;
-        padding-bottom: 40px;
-        border-top: 1px solid $dark-15;
-        border-bottom: 1px solid $dark-15;
-        background: $dark-10;
-
-        @media (min-width: $laptop) {
-            padding-top: 80px;
-            padding-bottom: 80px;
-        }
-
-        @media (min-width: $desktop) {
-            padding-top: 120px;
-            padding-bottom: 120px;
-        }
-    }
-
-    &__content {
-        @include flex(flex-start, flex-start, 20px);
-        flex-direction: column;
-
-
-        @media (min-width: $laptop) {
-            @include flex(flex-start, center, 0);
-            justify-content: space-between;
-            flex-direction: row;
-        }
-    }
-
-    &__info {
-        @include flex(flex-start, flex-start, 20px);
-        flex-direction: column;
-
-        @media (min-width: $laptop) {
-            @include flex(flex-start, flex-start, 10px);
-        }
-    }
-
+    
     &__button {
         width: 358px;
         height: 49px;
