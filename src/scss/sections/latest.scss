@@ -6,12 +6,21 @@
     padding-top: 40px;
     padding-bottom: 40px;
 
+          @media (min-width: $laptop) {
+           padding-top: 60px;
+           padding-bottom: 60px;
+        }
+
 
     &__windmills {
         width: 358px;
         height: 213px;
-    }
 
+              @media (min-width: $laptop) {
+           width: 515px;
+           height: 325px;
+        }
+    }
 
     &__flex {
         @include flex(flex-start, stretch, 0);
@@ -21,6 +30,17 @@
             flex-direction: row;
             gap: 40px;
         }
+    }
+
+    &__content {
+        max-width: 358px;
+
+
+              @media (min-width: $laptop) {
+           max-width: 725px;
+        }
+
+
     }
 
     &__title {
