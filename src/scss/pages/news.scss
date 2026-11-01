@@ -1,12 +1,8 @@
 @use '../base/reset';
-@use '../sections/subscribe';
+@use '../sections/common/subscribe';
 @use '../base/common';
 @use '../base/container';
 @use '../base/button';
-@use '../layout/header';
-@use '../layout/footer';
 @use '../sections/section-head';
-@use '../sections/cta';
-@use '../sections/blogs.scss';
-@use '../sections/news.scss';
-@use '../sections/latest.scss';
+@use '../sections/news/news.scss';
+@use '../sections/news/latest.scss';
