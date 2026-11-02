@@ -2,11 +2,21 @@
 @use '../abstracts/mixins' as *;
 
 .section-head {
-  padding-top: 40px;
+    padding-top: 40px;
     padding-bottom: 40px;
     border-top: 1px solid $dark-15;
     border-bottom: 1px solid $dark-15;
     background: $dark-10;
+
+    @media (min-width: $laptop) {
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+
+    @media (min-width: $desktop) {
+        padding-top: 120px;
+        padding-bottom: 120px;
+    }
 
     &__content {
         @media (min-width: $laptop) {
@@ -14,7 +24,7 @@
         }
     }
 
-  &__info {
+    &__info {
         @include flex(flex-start, flex-start, 20px);
         flex-direction: column;
 
@@ -49,30 +59,30 @@
         }
     }
 
-  &__arrow {
+    &__arrow {
         width: 20px;
         height: 20px;
     }
 
-&__tag {
-    background: $dark-20; 
-    border-radius: 4px;
-    color: $white;
-    font-family: $inter;
-    font-size: 14px;
-    font-weight: 500;
-    line-height: 150%;
-    letter-spacing: -0.42px;
-    padding: 4px 8px;
+    &__tag {
+        background: $dark-20;
+        border-radius: 4px;
+        color: $white;
+        font-family: $inter;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 150%;
+        letter-spacing: -0.42px;
+        padding: 4px 8px;
 
-        
-    @media (min-width: $laptop) {
-        font-size: 16px;
-    }
 
-    @media (min-width: $desktop) {
-         font-size: 20px;
-         padding: 6px 10px;
+        @media (min-width: $laptop) {
+            font-size: 16px;
+        }
+
+        @media (min-width: $desktop) {
+            font-size: 20px;
+            padding: 6px 10px;
         }
     }
 
@@ -83,14 +93,14 @@
         font-weight: 500;
         line-height: 130%;
         letter-spacing: -0.84px;
-     
-    @media (min-width: $laptop) {
-       font-size: 44px;
-       margin-top: 4px;
-    }
 
-    @media (min-width: $desktop) {
-           font-size: 58px;
+        @media (min-width: $laptop) {
+            font-size: 44px;
+            margin-top: 4px;
+        }
+
+        @media (min-width: $desktop) {
+            font-size: 58px;
         }
     }
 }

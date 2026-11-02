@@ -125,7 +125,6 @@
             font-size: 20px;
 
         }
-
     }
 
     &__text {
@@ -144,7 +143,6 @@
             font-size: 18px;
             margin-top: 2px;
         }
-
     }
 
     &__avatar {
@@ -265,7 +263,6 @@
         background: $dark-10;
         width: 80px;
         height: 33px;
-
         @include flex(center, center, 2px);
 
         &--comments {

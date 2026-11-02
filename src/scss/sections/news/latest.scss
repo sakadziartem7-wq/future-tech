@@ -89,7 +89,7 @@
         }
 
         
-        @media (min-width: $laptop) {
+        @media (min-width: $desktop) {
             font-size: 20px;
             max-width: 1001px;
             margin-top: 30px;
@@ -114,7 +114,7 @@
             margin-top: 30px;
         }
   
-        @media (min-width: $laptop) {
+        @media (min-width: $desktop) {
            margin-top: 50px;
            gap: 50px;
         }
@@ -132,7 +132,7 @@
             font-size: 16px;
         }
     
-        @media (min-width: $laptop) {
+        @media (min-width: $desktop) {
             font-size: 18px;
         }
     }
@@ -150,7 +150,7 @@
             font-size: 16px;
         }
     
-        @media (min-width: $laptop) {
+        @media (min-width: $desktop) {
             font-size: 18px;
             margin-top: 4px;
         }
@@ -180,6 +180,12 @@
         line-height: 150%;
         letter-spacing: -0.42px;
          @include flex(center, center, 2px);
+
+            @media (min-width: $desktop) {
+            font-size: 18px;
+            width: 96px;
+            height: 43px;
+        }
     }
 
     &__icon {
@@ -204,8 +210,7 @@
             width: 109px;
         }
 
-        
-        @media (min-width: $laptop) {
+        @media (min-width: $desktop) {
             font-size: 18px;
             width: 136px;
             height: 63px;
@@ -233,6 +238,10 @@
             gap: 30px;
         }
 
+           @media (min-width: $desktop) {
+            padding-top: 80px;
+            padding-bottom: 80px;
+        }
     }
 
     &__img {
@@ -241,6 +250,12 @@
 
          @media (min-width: $laptop) {
            width: 406px;
+        }
+      
+        @media (min-width: $desktop) {
+            font-size: 18px;
+            width: 512px;
+            height: 222px;
         }
     }
 
@@ -252,6 +267,11 @@
         line-height: 150%;
         letter-spacing: -0.48px;
         margin-top: 16px;
+
+           @media (min-width: $desktop) {
+            font-size: 20px;
+            margin-top: 20px;
+        }
     }
 
     &__sab_text {
@@ -265,6 +285,11 @@
 
          @media (min-width: $laptop) {
             font-size: 16px;
+        }
+
+           @media (min-width: $desktop) {
+            font-size:20px;
+            margin-top: 10px;
         }
     }
 
@@ -297,11 +322,16 @@
          @media (min-width: $laptop) {
             width: 201px;
         }
+
+           @media (min-width: $desktop) {
+            font-size: 18px;
+            width: 277px;
+            border-radius: 12px;
+        }
     }
 
     &__arrow {
         width: 20px;
         height: 20px;
     }
-
 }
