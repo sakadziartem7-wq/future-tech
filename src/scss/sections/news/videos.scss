@@ -1,0 +1,117 @@
+@use '../abstracts/variables' as *;
+@use '../abstracts/mixins' as *;
+
+.videos {
+    overflow: hidden;
+
+    &__vidio {
+        width: 358px;
+        height: 210px;
+
+        @media (min-width: $laptop) {
+            width: 590px;
+            height: 331px;
+        }
+    }
+
+    &__list {
+        position: relative;
+        @include flex(flex-start, flex-start, 0);
+        flex-direction: column;
+
+        @media (min-width: $laptop) {
+            flex-direction: row;
+            flex-wrap: wrap;
+            column-gap: 50px;
+            
+             &::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 50%;
+            width: 1px;
+            background-color: $dark-20;
+        }
+        }
+    }
+
+    &__media {
+        position: relative;
+    }
+
+    &__play {
+        position: absolute;
+        bottom: 22px;
+        left: 26px;
+    }
+
+    &__item {
+        padding-top: 40px;
+        padding-bottom: 40px;
+        border-bottom: 1px solid $dark-20;
+        &:last-child {
+            border-bottom: none;
+        }
+
+        @media (min-width: $laptop) {
+            width: calc(50% - 25px);
+            border: none;
+            padding-top: 60px;
+            padding-bottom: 60px;
+
+        &:nth-child(4) { order: 1; } 
+        &:nth-child(5) { order: 2;padding-left: 25px;} 
+        &:nth-child(1) { order: 4; } 
+        &:nth-child(2) { order: 5;padding-left: 25px; } 
+        }
+    }
+
+    &__title {
+        color: $white;
+        font-family: $inter;
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 150%;
+        letter-spacing: -0.54px;
+        margin-top: 20px;
+
+        @media (min-width: $laptop) {
+            font-size: 20px;
+        }
+    }
+
+    &__text {
+        color: $grey-60;
+        font-family: $inter;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 150%;
+        letter-spacing: -0.42px;
+        margin-top: 4px;
+        max-width: 348px;
+
+
+        @media (min-width: $laptop) {
+            font-size: 16px;
+            margin-top: 6px;
+            max-width: 523px;
+        }
+    }
+
+    &__hr {
+        @media (min-width: $laptop) {
+            order: 3;
+            width: 100vw;
+            height: 1px;
+            background-color: $dark-20;
+            margin-left: calc(50% - 50vw);
+            flex-shrink: 0;
+        }
+    }
+
+    svg {
+        width: 41px;
+        height: 41px;
+    }
+}
