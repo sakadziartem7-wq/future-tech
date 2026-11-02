@@ -1,36 +1,63 @@
 @use '../abstracts/variables' as *;
 @use '../abstracts/mixins' as *;
 
-    .similar {
+.similar {
 
+    padding-top: 40px;
+    padding-bottom: 40px;
 
-           &__actions {
+    @media (min-width: $laptop) {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
+    @media (min-width: $desktop) {
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+
+    &__actions {
         margin-top: 20px;
         @include flex(flex-start, flex-start, 0);
         justify-content: space-between;
 
     }
 
+    &__flex {
+        @include flex(space-between, center);
+    }
+
+    &__value {
+        color: $grey-80;
+        font-family: $font-kumbh;
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 130%;
+        letter-spacing: -0.6px;
+
+        @media (min-width: $laptop) {
+            font-size: 22px;
+        }
+
+        @media (min-width: $desktop) {
+            font-size: 28px;
+
+        }
+    }
+
+
     &__stats {
         @include flex(flex-start, center, 8px);
     }
 
-        &__cards {
-        padding-top: 40px;
-        padding-bottom: 40px;
+    &__cards {
+        margin-top: 40px;
         @include flex(flex-start, stretch, 0);
         flex-direction: column;
 
         @media (min-width: $laptop) {
-            padding-top: 60px;
-            padding-bottom: 60px;
             flex-direction: row;
             gap: 30px;
-        }
-
-           @media (min-width: $desktop) {
-            padding-top: 80px;
-            padding-bottom: 80px;
         }
     }
 
@@ -46,16 +73,16 @@
         font-weight: 400;
         line-height: 150%;
         letter-spacing: -0.42px;
-         @include flex(center, center, 2px);
+        @include flex(center, center, 2px);
 
-            @media (min-width: $desktop) {
+        @media (min-width: $desktop) {
             font-size: 18px;
             width: 96px;
             height: 43px;
         }
     }
 
- &__icon {
+    &__icon {
         width: 20px;
         height: 20px;
     }
@@ -65,10 +92,10 @@
         width: 358px;
         height: 185px;
 
-         @media (min-width: $laptop) {
-           width: 406px;
+        @media (min-width: $laptop) {
+            width: 406px;
         }
-      
+
         @media (min-width: $desktop) {
             font-size: 18px;
             width: 512px;
@@ -85,7 +112,7 @@
         letter-spacing: -0.48px;
         margin-top: 16px;
 
-           @media (min-width: $desktop) {
+        @media (min-width: $desktop) {
             font-size: 20px;
             margin-top: 20px;
         }
@@ -100,12 +127,12 @@
         letter-spacing: -0.42px;
         margin-top: 4px;
 
-         @media (min-width: $laptop) {
+        @media (min-width: $laptop) {
             font-size: 16px;
         }
 
-           @media (min-width: $desktop) {
-            font-size:20px;
+        @media (min-width: $desktop) {
+            font-size: 20px;
             margin-top: 10px;
         }
     }
@@ -114,7 +141,7 @@
         margin-top: 10px;
         margin-bottom: 30px;
 
-          @media (min-width: $laptop) {
+        @media (min-width: $laptop) {
             margin-top: 16px;
             margin-bottom: 0px;
         }
@@ -136,11 +163,11 @@
         margin-left: auto;
         @include flex(center, center, 4px);
 
-         @media (min-width: $laptop) {
+        @media (min-width: $laptop) {
             width: 201px;
         }
 
-           @media (min-width: $desktop) {
+        @media (min-width: $desktop) {
             font-size: 18px;
             width: 277px;
             border-radius: 12px;
@@ -151,6 +178,4 @@
         width: 20px;
         height: 20px;
     }
-    }
-
- 
+}
