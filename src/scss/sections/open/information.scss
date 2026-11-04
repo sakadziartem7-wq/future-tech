@@ -70,11 +70,13 @@
 
     }
 
+
+
     &__stats {
         padding-top: 20px;
         padding-bottom: 20px;
         background: $dark-08;
-   @include flex(center, center, 14px);
+        @include flex(center, center, 14px);
 
     }
 
@@ -85,7 +87,6 @@
         border: 1px solid $dark-15;
         background: $dark-08;
         @include flex(center, center, 4px);
-
     }
 
     &__icon {
@@ -102,11 +103,86 @@
         letter-spacing: -0.42px;
 
     }
+
     &__botton {
-          width: 100vw;
+        width: 100vw;
         height: 1px;
         background-color: $dark-20;
         margin-left: calc(50% - 50vw);
-        flex-shrink: 0;  
+        flex-shrink: 0;
+    }
+
+    &__details {
+        padding-top: 40px;
+        padding-bottom: 40px
+    }
+
+
+    &__list {
+        @include flex(center, center, 20px);
+        flex-wrap: wrap;
+    }
+
+
+    &__item {
+        width: calc(50% - 20px);
+        @include flex(flex-start, flex-start, 4px);
+        flex-direction: column;
+        width: calc(50% - 20px);
+    }
+
+    &__label {
+        color: $grey-60;
+        font-family: $inter;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 150%;
+        letter-spacing: -0.42px;
+
+    }
+
+    &__value {
+        color: $white;
+        font-family: $inter;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 150%;
+        letter-spacing: -0.42px;
+
+    }
+
+    &__contents-title {
+        color: $grey-60, ;
+        font-family: $inter;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 150%;
+        letter-spacing: -0.48px;
+        margin-top: 30px;
+    }
+
+    &__contents-item {
+        border-radius: 10px;
+        background: $dark-10;
+        padding: 18px;
+    }
+
+    &__contents-text {
+        @include flex(flex-start,center, 12px);
+        color: $white;
+        font-family: $inter;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 150%;
+        letter-spacing: -0.42px;
+        margin-top: 16px;
+
+        &::before {
+            content: "";
+            width: 4px;
+            height: 4px;
+            border-radius: 50%;
+            background: $white;
+        }
     }
 }
