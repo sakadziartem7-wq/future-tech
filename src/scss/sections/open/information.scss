@@ -26,6 +26,7 @@
             display: inline-block;
             width: 1440px;
             height: 439px;
+            margin-left: -81px;
         }
 
         @media (min-width: $desktop) {
@@ -78,6 +79,11 @@
         background: $dark-08;
         @include flex(center, center, 14px);
 
+        @media (min-width: $laptop) {
+            padding-top: 40px;
+            padding-bottom: 40px;
+        }
+
     }
 
     &__action {
@@ -105,16 +111,42 @@
     }
 
     &__botton {
-        width: 100vw;
         height: 1px;
         background-color: $dark-20;
-        margin-left: calc(50% - 50vw);
-        flex-shrink: 0;
+        box-shadow: 0 0 0 100vmax $dark-20;
+        clip-path: inset(0 -100vmax);
+
+        @media (min-width: $laptop) {
+            box-shadow: none;
+            clip-path: none;
+            margin-right: -100vmax;
+        }
+    }
+
+    &__right {
+        @media (min-width: $laptop) {
+            width: 30%;
+            border-left: 1px solid $dark-20;
+        }
+    }
+
+    &__body {
+        @include flex(flex-start, flex-start, 4px);
+        flex-direction: column;
+
+        @media (min-width: $laptop) {
+            flex-direction: row-reverse;
+        }
     }
 
     &__details {
         padding-top: 40px;
-        padding-bottom: 40px
+        padding-bottom: 40px;
+
+        @media (min-width: $laptop) {
+            padding-left: 60px;
+        }
+
     }
 
 
@@ -129,6 +161,8 @@
         @include flex(flex-start, flex-start, 4px);
         flex-direction: column;
         width: calc(50% - 20px);
+
+
     }
 
     &__label {
@@ -161,14 +195,23 @@
         margin-top: 30px;
     }
 
+
+    &__contents-list {
+        margin-top: 10px;
+
+    }
+
     &__contents-item {
         border-radius: 10px;
         background: $dark-10;
         padding: 18px;
+        width: 342px;
+
+
     }
 
     &__contents-text {
-        @include flex(flex-start,center, 12px);
+        @include flex(flex-start, center, 12px);
         color: $white;
         font-family: $inter;
         font-size: 14px;
@@ -183,6 +226,67 @@
             height: 4px;
             border-radius: 50%;
             background: $white;
+        }
+    }
+
+    &__line {
+        width: 100vw;
+        height: 1px;
+        background-color: $dark-20;
+        margin-left: calc(50% - 50vw);
+        flex-shrink: 0;
+
+        @media (min-width: $laptop) {
+            display: none;
+        }
+
+    }
+
+    &__left {
+        @media (min-width: $laptop) {
+            flex: 1;
+        }
+    }
+
+    &__block {
+        padding-top: 40px;
+        padding-bottom: 40px;
+
+        @media (min-width: $laptop) {
+            padding-top: 60px;
+            padding-bottom: 60px;
+            max-width: 730px;
+        }
+    }
+
+
+    &__subtitle {
+        color: white;
+        font-family: $inter;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 150%;
+        letter-spacing: -0.54px;
+
+        @media (min-width: $laptop) {
+            font-size: 20px;
+        }
+
+    }
+
+    &__paragraph {
+        color: $grey-60;
+        font-family: $inter;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 150%;
+        letter-spacing: -0.42px;
+        max-width: 315px;
+
+        @media (min-width: $laptop) {
+            font-size: 16px;
+            max-width: 699px;
+            margin-top: 6px;
         }
     }
 }
