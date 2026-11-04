@@ -2,8 +2,7 @@
 @use '../abstracts/mixins' as *;
 
 .information {
-    overflow: hidden;
-    overflow: visible;
+    overflow-x: hidden;
 
     &__top {
         position: relative;
@@ -16,20 +15,24 @@
 
         @media (min-width: $laptop) {
             display: none;
-        width: 1440px;
-        height: 439px;
-    }
+        }
     }
 
 
     &__covid {
         display: none;
-        
+
         @media (min-width: $laptop) {
-          display: inline-block;
-        width: 1440px;
-        height: 439px;
-    }
+            display: inline-block;
+            width: 1440px;
+            height: 439px;
+        }
+
+        @media (min-width: $desktop) {
+            width: 1920px;
+            height: 598px;
+        }
+
     }
 
     &__title {
@@ -38,15 +41,72 @@
         color: $white;
         font-family: $inter;
         font-size: 28px;
+        text-align: center;
         font-weight: 600;
         line-height: 150%;
         letter-spacing: -0.84px;
 
         @media (min-width: $laptop) {
             font-size: 44px;
-            top: 306px;
-            left: 197px;
+            top: 336px;
+            left: 236px;
+        }
+
+        @media (min-width: $desktop) {
+            font-size: 64px;
+            letter-spacing: -1.92px;
+            top: 456px;
+            white-space: nowrap;
+        }
+
     }
 
+    &__hr {
+        width: 100vw;
+        height: 1px;
+        background-color: $dark-20;
+        margin-left: calc(50% - 50vw);
+        flex-shrink: 0;
+
+    }
+
+    &__stats {
+        padding-top: 20px;
+        padding-bottom: 20px;
+        background: $dark-08;
+   @include flex(center, center, 14px);
+
+    }
+
+    &__action {
+        width: 92px;
+        height: 42px;
+        border-radius: 100px;
+        border: 1px solid $dark-15;
+        background: $dark-08;
+        @include flex(center, center, 4px);
+
+    }
+
+    &__icon {
+        width: 26px;
+        height: 26px;
+    }
+
+    &__count {
+        color: $grey-60;
+        font-family: $font-kumbh;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 150%;
+        letter-spacing: -0.42px;
+
+    }
+    &__botton {
+          width: 100vw;
+        height: 1px;
+        background-color: $dark-20;
+        margin-left: calc(50% - 50vw);
+        flex-shrink: 0;  
     }
 }
