@@ -35,7 +35,6 @@
             min-width: 1920px;
             height: 598px;
         }
-
     }
 
     &__title {
@@ -135,12 +134,10 @@
     &__right {
         @media (min-width: $laptop) {
             width: 34%;
-            height: 910px;
             border-left: 1px solid $dark-20;
-        }
-
-        @media (min-width: $desktop) {
-            height: 1160px;
+            @include flex(flex-start, flex-start, 0);
+            flex-direction: column;
+            align-items: stretch;
         }
     }
 
@@ -150,6 +147,7 @@
 
         @media (min-width: $laptop) {
             flex-direction: row-reverse;
+            align-items: stretch;
         }
     }
 
@@ -159,11 +157,16 @@
 
         @media (min-width: $laptop) {
             padding-left: 60px;
+            padding-top: 60px;
+            padding-bottom: 60px;
             width: 570px;
+            flex: 1;
         }
 
         @media (min-width: $desktop) {
             padding-left: 80px;
+            padding-top: 80px;
+            padding-bottom: 80px;
         }
     }
 
@@ -190,6 +193,11 @@
         @media (min-width: $laptop) {
             font-size: 16px;
         }
+
+        @media (min-width: $desktop) {
+            font-size: 18px;
+        }
+
     }
 
     &__value {
@@ -204,6 +212,11 @@
             font-size: 16px;
             margin-top: 6px;
         }
+
+        @media (min-width: $desktop) {
+            font-size: 18px;
+            margin-top: 10px;
+        }
     }
 
     &__contents-title {
@@ -214,10 +227,27 @@
         line-height: 150%;
         letter-spacing: -0.48px;
         margin-top: 30px;
+
+        @media (min-width: $laptop) {
+            margin-top: 40px;
+        }
+
+        @media (min-width: $desktop) {
+            font-size: 18px;
+            margin-top: 50px;
+        }
     }
 
     &__contents-list {
         margin-top: 10px;
+
+        @media (min-width: $laptop) {
+            margin-top: 14px;
+        }
+
+        @media (min-width: $desktop) {
+            margin-top: 16px;
+        }
     }
 
     &__contents-item {
@@ -227,7 +257,12 @@
         width: 342px;
 
         @media (min-width: $laptop) {
-            min-width: 430px;
+            width: 430px;
+        }
+
+        @media (min-width: $desktop) {
+            width: 440px;
+            padding: 20px;
         }
 
     }
@@ -252,6 +287,11 @@
 
         @media (min-width: $laptop) {
             font-size: 16px;
+        }
+
+        @media (min-width: $desktop) {
+            font-size: 18px;
+            margin-top: 20px;
         }
 
     }
@@ -428,6 +468,7 @@
 
         @media (min-width: $desktop) {
             font-size: 18px;
+            margin-top: 24px;
         }
     }
 
