@@ -1,0 +1,40 @@
+@use '../abstracts/variables' as *;
+@use '../abstracts/mixins' as *;
+
+.information {
+    overflow: hidden;
+    overflow: visible;
+
+    &__top {
+        position: relative;
+    }
+
+    &__img {
+        width: 390px;
+        height: 281px;
+        margin-left: -16px;
+
+        @media (min-width: $laptop) {
+        width: 1440px;
+        height: 439px;
+    }
+    }
+
+    &__title {
+        position: absolute;
+        top: 181px;
+        color: $white;
+        font-family: $inter;
+        font-size: 28px;
+        font-weight: 600;
+        line-height: 150%;
+        letter-spacing: -0.84px;
+
+        @media (min-width: $laptop) {
+            font-size: 44px;
+            top: 306px;
+            left: 197px;
+    }
+
+    }
+}
