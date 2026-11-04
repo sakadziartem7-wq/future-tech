@@ -18,7 +18,6 @@
         }
     }
 
-
     &__covid {
         display: none;
 
@@ -70,8 +69,6 @@
         flex-shrink: 0;
 
     }
-
-
 
     &__stats {
         padding-top: 20px;
@@ -126,7 +123,7 @@
     &__right {
         @media (min-width: $laptop) {
             width: 30%;
-            height: 920px;
+            height: 906px;
             border-left: 1px solid $dark-20;
         }
     }
@@ -208,7 +205,6 @@
         padding: 18px;
         width: 342px;
 
-
     }
 
     &__contents-text {
@@ -288,6 +284,19 @@
             &::after {
                 right: -166px;
             }
+
+            &--hr {
+                &::after {
+                    content: "";
+                    position: absolute;
+                    bottom: 0;
+                    left: -100vmax;
+                    right: -100vmax;
+                    height: 1px;
+                    background-color: $dark-20;
+                }
+
+            }
         }
     }
 
@@ -330,6 +339,9 @@
         line-height: 150%;
         letter-spacing: -0.54px;
 
+        @media (min-width: $laptop) {
+            font-size: 22px;
+        }
     }
 
     &__article-text {
@@ -347,6 +359,11 @@
             @media (min-width: $laptop) {
                 display: block;
             }
+        }
+
+             @media (min-width: $laptop) {
+            font-size: 16px;
+            max-width: 696px;
         }
     }
 
