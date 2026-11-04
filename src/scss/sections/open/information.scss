@@ -15,6 +15,18 @@
         margin-left: -16px;
 
         @media (min-width: $laptop) {
+            display: none;
+        width: 1440px;
+        height: 439px;
+    }
+    }
+
+
+    &__covid {
+        display: none;
+        
+        @media (min-width: $laptop) {
+          display: inline-block;
         width: 1440px;
         height: 439px;
     }
