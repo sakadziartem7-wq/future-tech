@@ -205,7 +205,7 @@
 
         @media (min-width: $laptop) {
             font-size: 22px;
-            max-width: 424px;
+            max-width: 662px;
             margin-top: 24px;
         }
     }
@@ -279,5 +279,17 @@
             font-size: 18px;
         }
 
+    }
+
+    &__hr {
+
+        @media (min-width: $laptop) {
+            width: 100vw;
+            height: 1px;
+            background-color: $dark-20;
+            margin-left: calc(50% - 50vw);
+            flex-shrink: 0;
+
+        }
     }
 }
