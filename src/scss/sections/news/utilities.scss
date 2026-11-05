@@ -1,7 +1,7 @@
 @use '../abstracts/variables' as *;
 @use '../abstracts/mixins' as *;
 
-.news {
+.utilities {
 
     &__info {
         padding-top: 40px;
@@ -29,17 +29,25 @@
         font-weight: 500;
         line-height: 130%;
         letter-spacing: -0.84px;
-        max-width: 358px;
+        max-width: 339px;
 
         @media (min-width: $laptop) {
             font-size: 55px;
             max-width: 303px;
             white-space: nowrap;
+
+            &--offset {
+                max-width: 478px;            
+            }
         }
 
         @media (min-width: $desktop) {
             font-size: 80px;
             max-width: 472px;
+
+            &--offset {
+                max-width: 691px;
+            }
         }
     }
 
@@ -56,12 +64,23 @@
         @media (min-width: $laptop) {
             font-size: 16px;
             max-width: 993px;
+
+            &--accent {
+                max-width: 733px;
+                margin-top: 20px;
+            }
         }
 
         @media (min-width: $desktop) {
             font-size: 18px;
             max-width: 1185px;
             margin-top: 45px;
+
+               &--accent {
+                max-width: 848px;
+                margin-top: 20px;
+            }
         }
     }
+
 }
