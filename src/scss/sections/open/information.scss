@@ -179,7 +179,6 @@
         width: calc(50% - 20px);
         @include flex(flex-start, flex-start, 4px);
         flex-direction: column;
-        width: calc(50% - 20px);
     }
 
     &__label {
