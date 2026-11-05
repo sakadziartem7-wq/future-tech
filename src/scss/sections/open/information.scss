@@ -489,4 +489,41 @@
             font-size: 28px;
         }
     }
+
+    &__icons {
+        width: 13px;
+        height: 13px;
+    }
+
+    &__article-preview {
+        position: relative;
+
+        &::after {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(180deg, rgba(20, 20, 20, 0.6) 0%, #141414 100%);
+        }
+    }
+
+    &__button {
+        position: absolute;
+        top: 70%;
+        left: 50%;
+        z-index: 1;
+        width: 152px;
+        height: 49px;
+        transform: translate(-50%, -50%);
+        font-size: 14px;
+        color: #fff;
+        border-radius: 8px;
+        @include flex(center, center, 8px);
+      
+        @media (min-width: $desktop) {
+            width: 195px;
+            height: 55px;
+            font-size: 18px;
+            border-radius: 12px;        
+        }
+    }
 }
