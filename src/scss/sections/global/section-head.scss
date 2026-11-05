@@ -33,11 +33,6 @@
         }
     }
 
-    &__title {
-        @media (min-width: $laptop) {
-            max-width: 897px;
-        }
-    }
 
     &__btn {
         width: 358px;
@@ -97,11 +92,12 @@
         @media (min-width: $laptop) {
             font-size: 44px;
             margin-top: 4px;
+            max-width: 897px;
         }
 
         @media (min-width: $desktop) {
             font-size: 58px;
-            max-width:1200px;
+            max-width: 1200px;
         }
     }
 }
