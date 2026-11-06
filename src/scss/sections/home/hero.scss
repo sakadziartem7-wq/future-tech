@@ -354,15 +354,11 @@
 
     &__button {
         width: 310px;
-        height: 49px;
         margin-top: 20px;
         border-radius: 8px;
-        font-size: 14px;
-        @include flex(center, center, 8px);
 
         @media (min-width: $laptop) {
             width: 180px;
-            height: 49px;
         }
 
         @media (min-width: $desktop) {

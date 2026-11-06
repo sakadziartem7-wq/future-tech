@@ -39,9 +39,7 @@
     }
 
     &__button {
-        font-size: 14px;
         width: 153px;
-        height: 49px;
         border-radius: 8px;
         @include flex(center, center, 2px);
 

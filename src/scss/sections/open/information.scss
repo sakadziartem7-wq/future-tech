@@ -505,12 +505,9 @@
         left: 50%;
         z-index: 1;
         width: 152px;
-        height: 49px;
         transform: translate(-50%, -50%);
-        font-size: 14px;
         color: $white;
         border-radius: 8px;
-        @include flex(center, center, 8px);
       
         @media (min-width: $desktop) {
             width: 195px;

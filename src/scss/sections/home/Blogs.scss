@@ -228,16 +228,9 @@
 
     &__btn {
         width: 127px;
-        height: 49px;
         border-radius: 8px;
         margin-left: auto;
         color: $grey-60;
-        font-family: $inter;
-        font-size: 14px;
-        font-weight: 400;
-        line-height: 150%;
-        letter-spacing: -0.42px;
-        @include flex(center, center, 10px);
         align-self: center;
 
     }

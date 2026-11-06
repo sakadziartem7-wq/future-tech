@@ -159,14 +159,7 @@
 
     &__button {
         width: 157px;
-        height: 49px;
         border-radius: 8px;
-        font-family: $inter;
-        font-size: 14px;
-        font-weight: 400;
-        line-height: 150%;
-        letter-spacing: -0.42px;
-        @include flex(center, center, 8px);
 
         @media (min-width: $desktop) {
             font-size: 18px;
