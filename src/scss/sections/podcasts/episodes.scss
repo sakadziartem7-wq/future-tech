@@ -129,7 +129,6 @@
     &__button {
         width: 358px;
         color: $grey-60;
-        border-radius: 8px;
         margin-top: 20px;
 
         @media (min-width: $laptop) {
@@ -139,9 +138,6 @@
 
            @media (min-width: $desktop) {
             width: 201px;
-            height: 63px;
-            border-radius: 12px;
-            font-size: 18px;
             margin-top: 30px;
         }
 

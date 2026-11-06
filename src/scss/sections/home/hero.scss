@@ -355,7 +355,6 @@
     &__button {
         width: 310px;
         margin-top: 20px;
-        border-radius: 8px;
 
         @media (min-width: $laptop) {
             width: 180px;
@@ -363,9 +362,6 @@
 
         @media (min-width: $desktop) {
             width: 231px;
-            height: 63px;
-            border-radius: 12px;
-            font-size: 18px;
         }
     }
 

@@ -40,13 +40,9 @@
 
     &__button {
         width: 153px;
-        border-radius: 8px;
-        @include flex(center, center, 2px);
 
         @media (min-width: $desktop) {
-            border-radius: 12px;
             width: 196px;
-            height: 63px;
         }
     }
 

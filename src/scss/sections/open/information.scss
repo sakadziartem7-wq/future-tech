@@ -507,13 +507,10 @@
         width: 152px;
         transform: translate(-50%, -50%);
         color: $white;
-        border-radius: 8px;
       
         @media (min-width: $desktop) {
             width: 195px;
-            height: 55px;
-            font-size: 18px;
-            border-radius: 12px;        
+            height: 55px;       
         }
     }
 }

@@ -6,7 +6,7 @@
     padding: 20px 0;
     height: 75px;
     position: relative;
-    overflow-x: hidden;
+   
 
     @media (min-width: $laptop) {
         height: 81px;
@@ -86,7 +86,7 @@
         display: none;
 
         @media (min-width: $laptop) {
-            display: flex;
+            display: block;
             margin-left: auto;
             width: 103px;
             height: 41px;
