@@ -8,33 +8,47 @@
         flex-direction: column;
 
         @media (min-width: $laptop) {
+            @include flex(space-between, stretch, 0);
             flex-direction: row;
             flex-wrap: wrap;
-            gap: 30px;
+        }
+    }
+&__item {
+    border-bottom: 1px solid $dark-15;
+    padding-top: 40px;
+    padding-bottom: 40px;
+
+    &:nth-child(n + 4) {
+        display: none;
+    }
+
+    @media (min-width: $laptop) {
+        width: calc((100% - 80px) / 3);
+        padding-top: 60px;
+        padding-bottom: 60px;
+        border: none;
+
+        &:nth-child(n + 4) {
+            display: block;
+        }
+
+        &:nth-child(4n + 2),
+        &:nth-child(4n + 3) {
+            border-left: 1px solid $dark-20;
+            padding-left: 30px;
         }
     }
 
-    &__item {
-        border-bottom: 1px solid $dark-15;
-        padding-top: 40px;
-        padding-bottom: 40px;
+    @media (min-width: $desktop) {
+        padding-top: 80px;
+        padding-bottom: 80px;
 
-        @media (min-width: $laptop) {
-             width: calc((100% - 80px) / 3);
-            padding-top: 60px;
-            padding-bottom: 60px;
-            border: none;
+        &:nth-child(4n + 2),
+        &:nth-child(4n + 3) {
+            padding-left: 46px;
         }
-
-         &:nth-child(n + 4) {
-            display: none;
-
-            @media (min-width: $laptop) {
-                display: block;
-            }
-        } 
     }
-
+}
     &__video {
         width: 358px;
         height: 208px;
@@ -42,6 +56,11 @@
         @media (min-width: $laptop) {
             width: 386px;
             height: 244px;
+        }
+
+        @media (min-width: $desktop) {
+            width: 470px;
+            height: 290px;
         }
     }
 
@@ -53,11 +72,6 @@
         position: absolute;
         bottom: 18px;
         left: 35px;
-
-        @media (min-width: $desktop) {
-            bottom: 200px;
-            left: 456px;
-        }
     }
 
     &__play-icon {
@@ -79,6 +93,15 @@
         letter-spacing: -0.48px;
         margin-top: 20px;
 
+        @media (min-width: $laptop) {
+            font-size: 18px;
+            margin-top: 24px;
+        }
+
+          @media (min-width: $desktop) {
+            font-size: 22px;
+            margin-top: 30px;
+        }
     }
 
     &__text {
@@ -90,6 +113,17 @@
         letter-spacing: -0.42px;
         margin-top: 6px;
         max-width: 345px;
+
+        @media (min-width: $laptop) {
+            font-size: 16px;
+            margin-top: 10px;
+        }
+
+          @media (min-width: $desktop) {
+            font-size: 18px;
+            margin-top: 14px;
+            max-width: 400px;
+        }
     }
 
     &__button {
@@ -103,17 +137,29 @@
         letter-spacing: -0.42px;
         border-radius: 8px;
         margin-top: 20px;
-        @include flex(center, center, 0);
+        @include flex(center, center, 7px);
+
+        @media (min-width: $laptop) {
+            width: 157px;
+            margin-top: 24px;
+        }
+
+           @media (min-width: $desktop) {
+            width: 201px;
+            height: 63px;
+            border-radius: 12px;
+            font-size: 18px;
+            margin-top: 30px;
+        }
+
     }
-
-
 
     &__arrow {
         width: 20px;
         height: 20px;
     }
 
-      &__hr {
+    &__hr {
 
         @media (min-width: $laptop) {
             width: 100vw;
@@ -121,7 +167,6 @@
             background-color: $dark-20;
             margin-left: calc(50% - 50vw);
             flex-shrink: 0;
-
         }
     }
 }
