@@ -63,12 +63,7 @@
     }
 
     &__hr {
-        width: 100vw;
-        height: 1px;
-        background-color: $dark-20;
-        margin-left: calc(50% - 50vw);
-        flex-shrink: 0;
-
+           @include full-line;
     }
 
     &__stats {
@@ -389,7 +384,6 @@
             }
         }
     }
-
 
     &__subtitle {
         color: white;

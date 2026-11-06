@@ -218,11 +218,7 @@
     }
 
     &__hr {
-        width: 100vw;
-        margin-left: calc(50% - 50vw);
-        height: 1px;
-        background-color: $dark-20;
-        flex-shrink: 0;
+         @include full-line;
     }
 
     &__cards {

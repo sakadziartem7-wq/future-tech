@@ -153,10 +153,7 @@
 
     &__hr {
         @media (min-width: $laptop) {
-            width: 100vw;
-            height: 1px;
-            background-color: $dark-20;
-            flex-shrink: 0;
+             @include full-line;
         }
     }
 }

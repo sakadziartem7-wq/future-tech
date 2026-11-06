@@ -1,6 +1,15 @@
+@use '../abstracts/variables' as *;
+
 @mixin flex($justify: flex-start, $align: center, $gap: 0) {
     display: flex;
     justify-content: $justify;
     align-items: $align;
     gap: $gap;
+}
+
+@mixin full-line {
+    width: 100vw;
+    height: 1px;
+    background-color: $dark-20;
+    margin-left: calc(50% - 50vw);
 }
