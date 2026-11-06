@@ -1,0 +1,127 @@
+@use '../abstracts/variables' as *;
+@use '../abstracts/mixins' as *;
+
+.episodes {
+
+    &__list {
+        @include flex(flex-start, flex-start, 0);
+        flex-direction: column;
+
+        @media (min-width: $laptop) {
+            flex-direction: row;
+            flex-wrap: wrap;
+            gap: 30px;
+        }
+    }
+
+    &__item {
+        border-bottom: 1px solid $dark-15;
+        padding-top: 40px;
+        padding-bottom: 40px;
+
+        @media (min-width: $laptop) {
+             width: calc((100% - 80px) / 3);
+            padding-top: 60px;
+            padding-bottom: 60px;
+            border: none;
+        }
+
+         &:nth-child(n + 4) {
+            display: none;
+
+            @media (min-width: $laptop) {
+                display: block;
+            }
+        } 
+    }
+
+    &__vidio {
+        width: 358px;
+        height: 208px;
+
+        @media (min-width: $laptop) {
+            width: 386px;
+            height: 244px;
+        }
+    }
+
+    &__media {
+        position: relative;
+    }
+
+    &__play {
+        position: absolute;
+        bottom: 18px;
+        left: 35px;
+
+        @media (min-width: $desktop) {
+            bottom: 200px;
+            left: 456px;
+        }
+    }
+
+    &__play-icon {
+        width: 41px;
+        height: 41px;
+    }
+
+    &__info {
+        @include flex(flex-start, flex-start, 0);
+        flex-direction: column;
+    }
+
+    &__title {
+        color: $white;
+        font-family: $inter;
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 150%;
+        letter-spacing: -0.48px;
+        margin-top: 20px;
+
+    }
+
+    &__text {
+        color: $grey-60;
+        font-family: $inter;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 150%;
+        letter-spacing: -0.42px;
+        margin-top: 6px;
+        max-width: 345px;
+    }
+
+    &__button {
+        width: 358px;
+        height: 49px;
+        color: $grey-60;
+        font-family: $inter;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 150%;
+        letter-spacing: -0.42px;
+        border-radius: 8px;
+        margin-top: 20px;
+        @include flex(center, center, 0);
+    }
+
+
+
+    &__arrow {
+        width: 20px;
+        height: 20px;
+    }
+
+      &__hr {
+
+        @media (min-width: $laptop) {
+            width: 100vw;
+            height: 1px;
+            background-color: $dark-20;
+            margin-left: calc(50% - 50vw);
+            flex-shrink: 0;
+
+        }
+    }
+}
