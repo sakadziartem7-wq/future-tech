@@ -194,15 +194,12 @@
     }
 
     &__button {
-        color: $grey-60;
         font-family: $inter;
         font-size: 14px;
         font-weight: 400;
         line-height: 150%;
         letter-spacing: -0.42px;
-        border-radius: 8px;
-        border: 1px solid $dark-15;
-        background: $dark-08;
+        border-radius: 8px;;
         width: 140px;
         height: 49px;
 

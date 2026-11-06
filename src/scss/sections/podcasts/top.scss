@@ -122,7 +122,7 @@
     }
 
     &__host-label {
-        color: $grey-60, ;
+        color: $grey-60 ;
         font-family: $inter;
         font-size: 14px;
         font-weight: 400;
@@ -161,9 +161,6 @@
         width: 157px;
         height: 49px;
         border-radius: 8px;
-        border: 1px solid $dark-15;
-        background: $dark-08;
-        color: $grey-60, ;
         font-family: $inter;
         font-size: 14px;
         font-weight: 400;
@@ -333,7 +330,7 @@
     }
 
     &__card-label {
-        color: $grey-60, ;
+        color: $grey-60 ;
         font-family: $inter;
         font-size: 14px;
         font-weight: 400;
