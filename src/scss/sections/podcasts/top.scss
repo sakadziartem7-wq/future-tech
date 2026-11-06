@@ -17,6 +17,16 @@
         }
     }
 
+    &__left_mark {
+        width: 50px;
+        height: 50px;
+
+        @media (min-width: $desktop) {
+            width: 80px;
+            height: 80px;
+        }
+    }
+
     &__left {
         @include flex(flex-start, stretch, 0);
         flex-direction: column;
@@ -43,6 +53,10 @@
         @media (min-width: $laptop) {
             margin-top: 40px;
         }
+
+        @media (min-width: $desktop) {
+            width: 519px;
+        }
     }
 
     &__title {
@@ -57,6 +71,11 @@
         @media (min-width: $laptop) {
             font-size: 24px;
         }
+
+        @media (min-width: $desktop) {
+            font-size: 40px;
+            margin-top: 50px;
+        }
     }
 
     &__stars {
@@ -66,6 +85,10 @@
         border-radius: 100px;
         border: 1px solid $dark-15;
         background: $dark-08;
+
+        @media (min-width: $desktop) {
+            margin-top: 50px;
+        }
     }
 
     &__stars-icon {
@@ -87,6 +110,10 @@
             width: 413px;
             padding: 24px;
         }
+
+        @media (min-width: $desktop) {
+            width: 519px;
+        }
     }
 
     &__host-info {
@@ -107,6 +134,9 @@
             font-size: 16px;
         }
 
+        @media (min-width: $desktop) {
+            font-size: 18px;
+        }
     }
 
     &__host-name {
@@ -122,7 +152,10 @@
             margin-top: 2px;
         }
 
-
+        @media (min-width: $desktop) {
+            font-size: 18px;
+            margin-top: 4px;
+        }
     }
 
     &__button {
@@ -138,6 +171,12 @@
         line-height: 150%;
         letter-spacing: -0.42px;
         @include flex(center, center, 8px);
+
+        @media (min-width: $desktop) {
+            font-size: 18x;
+            width: 201px;
+            height: 63px;
+        }
     }
 
     &__arrow {
