@@ -33,7 +33,6 @@
         }
     }
 
-
     &__btn {
         width: 358px;
         height: 49px;
@@ -95,6 +94,7 @@
         font-weight: 500;
         line-height: 130%;
         letter-spacing: -0.84px;
+        max-width: 314px;
 
         @media (min-width: $laptop) {
             font-size: 44px;
@@ -108,3 +108,4 @@
         }
     }
 }
+

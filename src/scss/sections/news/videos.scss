@@ -154,8 +154,19 @@
         }
     }
 
-    svg {
+    &__pick {
         width: 41px;
         height: 41px;
     }
+
+    .section-head__btn {
+     @media (min-width: $laptop) {
+             width: 114px;
+        }  
+
+          @media (min-width: $desktop) {
+           width: 146px;
+        }
+  }
 }
+
