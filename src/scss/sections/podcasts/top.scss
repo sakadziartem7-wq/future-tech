@@ -3,7 +3,6 @@
 
 .top {
     border-top: 1px solid $dark-15;
-    border-bottom: 1px solid $dark-15;
 
     @media (min-width: $laptop) {}
 
@@ -188,6 +187,7 @@
         padding-top: 40px;
         padding-bottom: 40px;
         border-top: 1px solid $dark-15;
+        border-bottom: 1px solid $dark-15;
         @include flex(flex-start, center, 0);
         flex-direction: column;
 
