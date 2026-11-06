@@ -3,25 +3,6 @@
 
 .blogs {
 
-    &__button {
-        width: 358px;
-        height: 49px;
-        border-radius: 8px;
-        font-size: 14px;
-        @include flex(center, center, 10px);
-
-        @media (min-width: $laptop) {
-            width: 152px;
-        }
-
-        @media (min-width: $desktop) {
-            font-size: 18px;
-            width: 195px;
-            height: 63px;
-            border-radius: 12px;
-        }
-    }
-
     &__arrow {
         width: 20px;
         height: 20px;
@@ -239,6 +220,17 @@
         letter-spacing: -0.42px;
         @include flex(center, center, 10px);
         align-self: center;
+
+          @media (min-width: $laptop) {
+            width: 133px;
+        }
+
+        @media (min-width: $desktop) {
+            font-size: 18px;
+            width: 170px;
+            height: 63px;
+            border-radius: 12px;
+        }
 
     }
 

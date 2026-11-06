@@ -52,6 +52,13 @@
             margin-top: 0;
             width: 183px;
         }
+
+        @media (min-width: $desktop) {
+            font-size: 18px;
+            width: 235px;
+            height: 63px;
+        }
+
     }
 
     &__arrow {
