@@ -99,7 +99,7 @@
         width: 358px;
         padding: 20px;
         border-radius: 8px;
-        border: 1px solid $dark-15;
+        border: $border;
         margin-top: 20px;
         background: $dark-10;
         @include flex(space-between, center, 0);
@@ -314,7 +314,7 @@
     &__card {
         padding: 20px;
         border-radius: 8px;
-        border: 1px solid $dark-15;
+        border: $border;
         background: $dark-10 ;
 
         @media (min-width: $laptop) {
