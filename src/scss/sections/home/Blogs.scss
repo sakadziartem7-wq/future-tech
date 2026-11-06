@@ -2,25 +2,6 @@
 @use '../abstracts/mixins' as *;
 
 .blogs {
-    
-    &__button {
-        width: 358px;
-        height: 49px;
-        border-radius: 8px;
-        font-size: 14px;
-        @include flex(center, center, 10px);
-
-        @media (min-width: $laptop) {
-            width: 152px;
-        }
-
-        @media (min-width: $desktop) {
-            font-size: 18px;
-            width: 195px;
-            height: 63px;
-            border-radius: 12px;
-        }
-    }
 
     &__arrow {
         width: 20px;
@@ -28,6 +9,7 @@
     }
 
     &__filters {
+        width: 358px;
         padding-top: 20px;
         padding-bottom: 20px;
         overflow-x: auto;
@@ -35,6 +17,9 @@
         @include flex(flex-start flex-start, 0);
         flex-wrap: nowrap;
         gap: 14px;
+
+        @media (min-width: $laptop) {
+        }
 
         @media (min-width: $desktop) {
             gap: 20px;
@@ -81,7 +66,7 @@
             padding-top: 60px;
             padding-bottom: 60px;
         }
-        
+
         @media (min-width: $desktop) {
             padding-top: 80px;
             padding-bottom: 80px;
@@ -108,8 +93,8 @@
             flex-shrink: 0;
         }
 
-         @media (min-width: $desktop) {
-            width: 168px;  
+        @media (min-width: $desktop) {
+            width: 168px;
         }
     }
 
@@ -121,7 +106,7 @@
         line-height: 150%;
         letter-spacing: -0.54px;
 
-         @media (min-width: $desktop) {   
+        @media (min-width: $desktop) {
             font-size: 20px;
 
         }
@@ -139,7 +124,7 @@
             font-size: 16px;
         }
 
-         @media (min-width: $desktop) {
+        @media (min-width: $desktop) {
             font-size: 18px;
             margin-top: 2px;
         }
@@ -162,8 +147,8 @@
             padding-left: 126px;
         }
 
-         @media (min-width: $desktop) {
-           padding-left: 170px;
+        @media (min-width: $desktop) {
+            padding-left: 170px;
         }
     }
 
@@ -179,7 +164,7 @@
             font-size: 18px;
         }
 
-         @media (min-width: $desktop) {
+        @media (min-width: $desktop) {
             font-size: 20px;
         }
     }
@@ -198,9 +183,9 @@
             margin-top: 24px;
         }
 
-            @media (min-width: $desktop) {
+        @media (min-width: $desktop) {
             font-size: 26px;
-    
+
         }
     }
 
