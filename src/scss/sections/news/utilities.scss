@@ -2,6 +2,7 @@
 @use '../abstracts/mixins' as *;
 
 .utilities {
+    overflow: hidden;
 
     &__info {
         padding-top: 40px;
@@ -92,5 +93,4 @@
             }
         }
     }
-
 }

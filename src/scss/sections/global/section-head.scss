@@ -96,5 +96,37 @@
             max-width: 1200px;
         }
     }
-}
 
+    &__tabs {
+        width: 358px;
+        padding: 10px;
+        border-radius: 10px;
+        border: $border;
+        background: $dark-08;
+        margin-top: 16px;
+        @include flex(flex-start, flex-start, 10px);
+        flex-direction: row;
+
+        @media (min-width: $laptop) {
+            width: 361px;
+            margin-top: 0;
+        }
+
+          @media (min-width: $desktop) {
+            width: 495px;
+        }
+    }
+
+    &__tab {
+        width: 106px;
+      
+        @media (min-width: $laptop) {
+            width: 128px;
+        }
+
+        @media (min-width: $desktop) {
+            width: 179px;
+        }
+
+    }
+}

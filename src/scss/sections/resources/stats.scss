@@ -3,6 +3,7 @@
 
 .stats {
     border-top: 1px solid $dark-20;
+    overflow: hidden;
 
     &__list {
         @include flex(flex-start, stretch, 0);
@@ -13,7 +14,6 @@
             flex-direction: row;
         }
     }
-
 
     &__item {
         padding: 20px 0;
