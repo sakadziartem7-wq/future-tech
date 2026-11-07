@@ -37,7 +37,7 @@
             white-space: nowrap;
 
             &--offset {
-                max-width: 478px;            
+                max-width: 478px;
             }
         }
 
@@ -61,6 +61,11 @@
         max-width: 336px;
         margin-top: 14px;
 
+        span {
+            display: none;
+        }
+
+
         @media (min-width: $laptop) {
             font-size: 16px;
             max-width: 993px;
@@ -69,6 +74,11 @@
                 max-width: 733px;
                 margin-top: 20px;
             }
+
+            span {
+                display: inline;
+            }
+
         }
 
         @media (min-width: $desktop) {
@@ -76,7 +86,7 @@
             max-width: 1185px;
             margin-top: 45px;
 
-               &--accent {
+            &--accent {
                 max-width: 848px;
                 margin-top: 20px;
             }
