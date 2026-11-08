@@ -293,7 +293,6 @@
 
         @media (min-width: $laptop) {
             flex-direction: row;
-            width: 747px;
         }
 
         @media (min-width: $desktop) {
@@ -306,6 +305,7 @@
         border-radius: 8px;
         border: $border;
         background: $dark-10 ;
+        width: 174px;
 
         @media (min-width: $laptop) {
             padding: 24px;
