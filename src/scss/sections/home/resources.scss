@@ -8,7 +8,7 @@
         height: 20px;
     }
 
-    &__ebooks {
+    &__wrapper {
         @include flex(flex-start, flex-start, 0);
         flex-direction: column;
 
