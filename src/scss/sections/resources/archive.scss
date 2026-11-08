@@ -21,6 +21,23 @@
             padding-top: 208px;
             padding-bottom: 208px;
         }
+
+        @media (min-width: $desktop) {
+            padding-top: 233px;
+            padding-bottom: 233px;
+        }
+    }
+
+    &__icon {
+        @media (min-width: $laptop) {
+            width: 60px;
+            height: 60px;
+        }
+
+        @media (min-width: $desktop) {
+            width: 80px;
+            height: 80px;
+        }
     }
 
     &__title {
@@ -37,6 +54,11 @@
             max-width: 345px;
         }
 
+        @media (min-width: $desktop) {
+            font-size: 40px;
+            max-width: 456px;
+            margin-top: 50px;
+        }
     }
 
     &__text {
@@ -51,6 +73,12 @@
         @media (min-width: $laptop) {
             font-size: 16px;
             max-width: 456px;
+            margin-top: 20px;
+        }
+
+        @media (min-width: $desktop) {
+            font-size: 18px;
+            margin-top: 30px;
         }
     }
 
@@ -66,9 +94,13 @@
             padding-bottom: 60px;
             border-left: 1px solid $dark-15;
             padding-left: 60px;
-
         }
 
+        @media (min-width: $desktop) {
+            padding-top: 80px;
+            padding-bottom: 80px;
+            padding-left: 80px;
+        }
     }
 
     &__img {
@@ -78,6 +110,11 @@
         @media (min-width: $laptop) {
             width: 748px;
             height: 303px;
+        }
+
+        @media (min-width: $desktop) {
+            width: 917px;
+            height: 332px;
         }
     }
 
@@ -93,6 +130,11 @@
         @media (min-width: $laptop) {
             font-size: 20px;
             margin-top: 24px;
+        }
+
+        @media (min-width: $desktop) {
+            font-size: 26px;
+            margin-top: 30px;
         }
     }
 
@@ -121,6 +163,12 @@
             margin-top: 10px;
             max-width: 540px;
         }
+
+        @media (min-width: $desktop) {
+            font-size: 18px;
+            margin-top: 14px;
+            max-width: 600px;
+        }
     }
 
     &__button {
@@ -129,6 +177,10 @@
         @media (min-width: $laptop) {
             width: 189px;
             margin-top: 0;
+        }
+
+        @media (min-width: $desktop) {
+            width: 243px;
         }
     }
 
@@ -153,6 +205,15 @@
         @media (min-width: $laptop) {
             width: 239px;
             height: 98px;
+            padding: 24px;
+        }
+
+        @media (min-width: $desktop) {
+            width: 292px;
+            height: 121px;
+            margin-top: 50px;
+            border-radius: 13px;
+            padding: 30px;
         }
     }
 
@@ -166,6 +227,10 @@
 
         @media (min-width: $laptop) {
             font-size: 16px;
+        }
+
+        @media (min-width: $desktop) {
+            font-size: 18px;
         }
 
     }
@@ -182,10 +247,15 @@
             font-size: 16px;
             margin-top: 2px;
         }
+
+        @media (min-width: $desktop) {
+            font-size: 20px;
+            margin-top: 4px;
+        }
     }
 
     &__hr {
-            @include full-line;      
+        @include full-line;
     }
 
 }
