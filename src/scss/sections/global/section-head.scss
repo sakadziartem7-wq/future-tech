@@ -121,12 +121,11 @@
         width: 106px;
 
         &:hover,
-        &--active {
+        &.section-head__tab--active {
             color: $white;
             background: $dark-20;
             border-color: $dark-25;
         }
-
 
         @media (min-width: $laptop) {
             width: 128px;

@@ -147,11 +147,6 @@
     &__pointer {
         width: 40px;
         height: 40px;
-            display: inline-block;
-            
-    path:last-child {
-        animation: arrow-jump 1.2s ease-in-out infinite;
-    }
     }
 
     &__sab_text {
@@ -172,9 +167,4 @@
             max-width: 374px;
         }
     }
-}
-
-@keyframes arrow-jump {
-    0%, 60%, 100% { transform: translateY(0); }
-    30%           { transform: translateY(-4px); }
 }

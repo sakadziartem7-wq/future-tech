@@ -9,7 +9,6 @@
         @include flex(flex-start, stretch, 0);
         flex-wrap: wrap;
 
-
         @media (min-width: $laptop) {
             flex-direction: row;
         }

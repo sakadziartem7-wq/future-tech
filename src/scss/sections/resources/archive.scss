@@ -258,4 +258,53 @@
         @include full-line;
     }
 
+    &__line {
+        @include full-line;
+    }
+
+    &__link {
+        padding-top: 40px;
+        padding-bottom: 40px;
+        @include flex(flex-start, stretch, 0);
+        flex-direction: column;
+    }
+
+    &__poster {
+        width: 358px;
+        height: 223px;
+    }
+
+    &__sub_title {
+        color: $white;
+        font-family: $inter;
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 150%;
+        letter-spacing: -0.48px;
+        margin-top: 20px;
+    }
+
+    &__sub_text {
+        color: $grey-60;
+        font-family: $inter;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 150%;
+        letter-spacing: -0.42px;
+        max-width: 324px;
+    }
+
+    &__actions {
+        @include flex(flex-start, stretch, 10px);
+    }
+
+    &__button {
+        width: 174px;
+
+          &--active {
+            color: $white;
+            background: $dark-20;
+            border-color: $dark-25;
+        }
+    }
 }
