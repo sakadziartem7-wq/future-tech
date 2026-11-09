@@ -580,3 +580,13 @@
         }
     }
 }
+
+.hero__pointer {
+  animation: pointer-bounce 1s ease-in-out infinite;
+}
+
+@keyframes pointer-bounce {
+  50% {
+    transform: translateY(-6px);
+  }
+}
