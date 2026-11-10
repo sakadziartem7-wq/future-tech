@@ -355,7 +355,6 @@
     }
 
     &__hr {
-            @include full-line;
-        
+            @include full-line;       
     }
 }
