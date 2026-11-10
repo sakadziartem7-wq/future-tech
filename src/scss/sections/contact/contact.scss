@@ -154,7 +154,7 @@
 
           @media (min-width: $laptop) {
                 font-size: 44px;
-                    max-width: 600px;
+                max-width: 600px;
         }
     }
 
@@ -188,7 +188,7 @@
         flex-direction: column;
 
         @media (min-width: $laptop) {
-            width: calc((100% - 197px) / 2);
+            width: calc((100% - 132px) / 2);
         }
     }
 
