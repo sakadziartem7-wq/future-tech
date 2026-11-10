@@ -2,10 +2,34 @@
 @use '../abstracts/mixins' as *;
 
 .contact {
+    border-top: 1px solid $dark-20;
+
+    &__list {
+        @include flex(flex-start, stretch, 0);
+        flex-direction: column;
+
+        @media (min-width: $laptop) {
+            @include flex(flex-start, stretch, 30px);
+            flex-direction: row;
+        }
+    }
 
     &__item {
         padding-top: 20px;
         padding-bottom: 20px;
+        border-top: 1px solid $dark-15;
+
+        @media (min-width: $laptop) {
+            padding-top: 60px;
+            padding-bottom: 60px;
+
+            &:nth-child(-n + 3) {
+                width: calc((100% - 60px) / 4);
+                border-right: 1px solid $dark-20;
+            }
+        }
+
+
     }
 
     &__title {
@@ -16,12 +40,37 @@
         line-height: 130%;
         letter-spacing: -0.48px;
 
+        @media (min-width: $laptop) {
+            font-size: 18px;
+        }
     }
 
     &__button {
         width: 229px;
-       margin-left: auto;
-       margin-right: auto;
+        margin-top: 20px;
+        margin-left: calc((100% - 229px) / 2);
+
+              &:hover,
+        &--active {
+            color: $white;
+            background: $dark-20;
+            border-color: $dark-25;
+        }
+
+        @media (min-width: $laptop) {
+            margin-left: 0;
+            margin-top: 30px;
+        }
+
+        &--width {
+            width: 182px;
+            margin-top: 10px;
+        }
+
+        &--span {
+            width: 153px;
+            margin-top: 12px;
+        }
     }
 
     &__arrow {
@@ -29,5 +78,42 @@
         height: 20px;
     }
 
+    &__text {
+        color: $grey-60;
+        font-family: $inter;
+        font-size: 16px;
+        margin-left: auto;
+        margin-right: auto;
+        font-weight: 400;
+        line-height: 150%;
+        letter-spacing: -0.48px;
+        max-width: 287px;
+        margin-top: 20px;
+    }
 
+    &__socials {
+        margin-top: 20px;
+        @include flex(flex-start, flex-start, 10px);
+    }
+
+    &__social {
+        width: 96px;
+        height: 48px;
+        border: $border;
+        background: $dark-08;
+        border-radius: 6px;
+          @include flex(center, center, 0);
+
+            &:hover,
+        &--active {
+            color: $white;
+            background: $dark-20;
+            border-color: $dark-25;
+        }
+    }
+
+    &__icon {
+        width: 20px;
+        height: 20px;
+    }
 }
