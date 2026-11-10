@@ -86,7 +86,7 @@
         display: none;
 
         @media (min-width: $laptop) {
-            display: block;
+            display: flex;
             margin-left: auto;
             width: 103px;
             height: 41px;
