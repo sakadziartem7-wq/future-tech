@@ -1,0 +1,33 @@
+@use '../abstracts/variables' as *;
+@use '../abstracts/mixins' as *;
+
+.contact {
+
+    &__item {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    &__title {
+        color: $white;
+        font-family: $inter;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 130%;
+        letter-spacing: -0.48px;
+
+    }
+
+    &__button {
+        width: 229px;
+       margin-left: auto;
+       margin-right: auto;
+    }
+
+    &__arrow {
+        width: 20px;
+        height: 20px;
+    }
+
+
+}
