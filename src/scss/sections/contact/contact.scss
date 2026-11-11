@@ -29,6 +29,11 @@
             }
         }
 
+        @media (min-width: $desktop) {
+            padding-top: 80px;
+            padding-bottom: 80px;
+        }
+
     }
 
     &__title {
@@ -41,6 +46,10 @@
 
         @media (min-width: $laptop) {
             font-size: 18px;
+        }
+
+        @media (min-width: $desktop) {
+            font-size: 20px;
         }
     }
 
@@ -61,14 +70,30 @@
             margin-top: 30px;
         }
 
-        &--width {
-            width: 182px;
-            margin-top: 10px;
+
+        @media (min-width: $desktop) {
+            width: 294px;
+            margin-top: 50px;
         }
 
         &--span {
             width: 153px;
             margin-top: 12px;
+
+            @media (min-width: $desktop) {
+                width: 197px;
+                margin-top: 15px;
+            }
+        }
+
+        &--width {
+            width: 182px;
+            margin-top: 10px;
+
+            @media (min-width: $desktop) {
+                width: 233px;
+                margin-top: 15px;
+            }
         }
     }
 
@@ -88,6 +113,16 @@
         letter-spacing: -0.48px;
         max-width: 287px;
         margin-top: 20px;
+
+        @media (min-width: $laptop) {
+            margin-left: 0;
+            margin-right: 0;
+        }
+
+        @media (min-width: $desktop) {
+            font-size: 18px;
+            margin-top: 50px;
+        }
     }
 
     &__socials {
@@ -99,9 +134,13 @@
 
         @media (min-width: $laptop) {
             margin-left: 0;
+            margin-right: 0;
+            margin-top: 30px;
         }
 
-
+          @media (min-width: $desktop) {
+            margin-top: 50px;
+        }
     }
 
     &__social {
@@ -147,6 +186,7 @@
         @media (min-width: $laptop) {
             padding-top: 218px;
             padding-bottom: 218px;
+            border-bottom: none;
         }
     }
 
@@ -236,6 +276,10 @@
 
         &--phone {
             width: 228px;
+
+            @media (min-width: $laptop) {
+                width: 259px;
+            }
         }
     }
 
@@ -245,7 +289,6 @@
         @media (min-width: $laptop) {
             @include flex(space-between, center, 0);
         }
-
     }
 
     &__phone {
@@ -284,6 +327,7 @@
 
         @media (min-width: $laptop) {
             width: 103px;
+            margin-top: 0;
         }
     }
 }
