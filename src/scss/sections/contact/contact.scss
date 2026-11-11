@@ -201,12 +201,14 @@
         flex-direction: column;
 
         @media (min-width: $laptop) {
-            width: calc((100% - 132px) / 2);
+            width: calc((100% - 58px) / 2);
         }
     }
 
     &__input {
         padding: 16px;
+        width: 318px;
+        height: 53px;
         border-radius: 6px;
         border: 1px solid $dark-15 ;
         background: $dark-10;
@@ -232,6 +234,9 @@
             }
         }
 
+        &--phone {
+            width: 228px;
+        }
     }
 
     &__bottom {
@@ -241,6 +246,27 @@
             @include flex(space-between, center, 0);
         }
 
+    }
+
+    &__phone {
+        @include flex(flex-start, stretch, 10px);
+    }
+
+    &__flag {
+        width: 78px;
+        height: 53px;
+        border: $border;
+        padding: 10px 12px;
+        margin-top: 13px;
+        border-radius: 7px;
+        border: 1px solid $dark-15;
+        background: $dark-10;
+        @include flex(center, center, 6px);
+    }
+
+    &__icons {
+        width: 20px;
+        height: 20px;
     }
 
     &__agree {

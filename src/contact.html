@@ -137,7 +137,17 @@
                         </label>
                         <label class="contact__label" for="phone">
                             Phone Number
-                            <input class="contact__input" id="phone" name="phone" placeholder="Enter Phone Number">
+                            <div class="contact__phone">
+                                <span class="contact__flag">
+                                    <img class="contact__flag-img" src="assets/images/contact/india.png" 
+                                        width="30" height="30">
+                                   <svg class="contact__icons"  >
+                                        <use href="assets/icons.svg#arrow-down"></use>
+                                    </svg>
+                                </span>
+                                <input class="contact__input contact__input--phone" type="tel" id="phone" name="phone"
+                                    placeholder="Enter Phone Number">
+                            </div>
                         </label>
                         <label class="contact__label">
                             Message
