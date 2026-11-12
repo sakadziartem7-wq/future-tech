@@ -187,6 +187,14 @@
             padding-top: 218px;
             padding-bottom: 218px;
             border-bottom: none;
+               flex: 1;
+        }
+
+        &--padding {
+            @media (min-width: $laptop) {
+                padding-top: 190px;
+                padding-bottom: 190px;
+            }
         }
     }
 
@@ -208,6 +216,14 @@
         @media (min-width: $laptop) {
             font-size: 44px;
             max-width: 600px;
+        }
+
+        &--size {
+            font-size: 20px;
+
+            @media (min-width: $laptop) {
+                font-size: 28px;
+            }
         }
     }
 
@@ -352,7 +368,7 @@
 
         @media (min-width: $laptop) {
             font-size: 16px;
-            min-width: 472px;
+            max-width: 392px;
         }
 
 
@@ -372,11 +388,60 @@
         padding-bottom: 40px;
 
         @media (min-width: $laptop) {
-            width: 807px;
+            width: 808px;
             padding-top: 60px;
             padding-bottom: 60px;
             padding-left: 60px;
             border-left: 1px solid #333333;
         }
+    }
+
+    &__row {
+        @include flex(space-between, center, 0);
+    }
+
+    &__faq-item {
+        border: $border;
+        padding: 24px;
+        border-radius: 10px;
+        background: $dark-10;
+    }
+
+    &__faq-row {
+        border: $border;
+        padding: 24px;
+        border-radius: 10px;
+        background: $dark-10;
+        margin-top: 20px;
+    }
+
+    &__faq-answer {
+        color: $grey-50;
+        font-family: $inter;
+        font-size: 14px;
+        font-weight: 400;
+        margin-top: 16px;
+        max-width: 273px;
+        line-height: 150%;
+    }
+
+    &__faq-icon {
+        width: 20px;
+        height: 20px;
+        color: $white;
+    }
+
+    &__faq-question {
+        color: $white;
+        font-family: $inter;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 130%;
+    }
+
+    &__faq-plus {
+        color: $yellow-55 ;
+        width: 20px;
+        height: 20px;
     }
 }
