@@ -187,7 +187,7 @@
             padding-top: 218px;
             padding-bottom: 218px;
             border-bottom: none;
-               flex: 1;
+            flex: 1;
         }
 
         &--padding {
@@ -413,6 +413,10 @@
         border-radius: 10px;
         background: $dark-10;
         margin-top: 20px;
+
+        @media (min-width: $laptop) {
+            margin-top: 24px;
+        }
     }
 
     &__faq-answer {
@@ -420,9 +424,16 @@
         font-family: $inter;
         font-size: 14px;
         font-weight: 400;
-        margin-top: 16px;
         max-width: 273px;
         line-height: 150%;
+        padding-top: 16px;
+        border-top: 1px solid $dark-20;
+
+        @media (min-width: $laptop) {
+            font-size: 16px;
+            max-width: 599px;
+            padding-top: 20px;
+        }
     }
 
     &__faq-icon {
@@ -437,6 +448,10 @@
         font-size: 16px;
         font-weight: 500;
         line-height: 130%;
+
+        @media (min-width: $laptop) {
+            font-size: 18px;
+        }
     }
 
     &__faq-plus {
