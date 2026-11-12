@@ -138,7 +138,7 @@
             margin-top: 30px;
         }
 
-          @media (min-width: $desktop) {
+        @media (min-width: $desktop) {
             margin-top: 50px;
         }
     }
@@ -224,7 +224,8 @@
             padding-left: 60px;
             flex-direction: row;
             border-left: 1px solid #333333;
-            @include flex(flex-start, stretch, 50px);
+            @include flex(flex-start, stretch, 0);
+            column-gap: 30px;
             flex-direction: row;
             flex-wrap: wrap;
             width: 808px;
@@ -241,7 +242,7 @@
         flex-direction: column;
 
         @media (min-width: $laptop) {
-            width: calc((100% - 58px) / 2);
+            width: calc((100% - 30px) / 2);
         }
     }
 
@@ -328,6 +329,54 @@
         @media (min-width: $laptop) {
             width: 103px;
             margin-top: 0;
+        }
+    }
+
+    &__subtext {
+        color: $grey-60;
+        font-family: $inter;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 150%;
+        letter-spacing: -0.42px;
+        margin-top: 6px;
+        max-width: 335px;
+
+        span {
+            display: none;
+
+            @media (min-width: $laptop) {
+                display: inline;
+            }
+        }
+
+        @media (min-width: $laptop) {
+            font-size: 16px;
+            min-width: 472px;
+        }
+
+
+    }
+
+    &__toggle {
+        margin-top: 24px;
+
+        @media (min-width: $laptop) {
+            width: 140px;
+            margin-top: 30px;
+        }
+    }
+
+    &__faq-list {
+        padding-top: 40px;
+        padding-bottom: 40px;
+
+        @media (min-width: $laptop) {
+            width: 807px;
+            padding-top: 60px;
+            padding-bottom: 60px;
+            padding-left: 60px;
+            border-left: 1px solid #333333;
         }
     }
 }
