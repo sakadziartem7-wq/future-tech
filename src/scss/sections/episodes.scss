@@ -13,42 +13,44 @@
             flex-wrap: wrap;
         }
     }
-&__item {
-    border-bottom: 1px solid $dark-15;
-    padding-top: 40px;
-    padding-bottom: 40px;
 
-    &:nth-child(n + 4) {
-        display: none;
-    }
-
-    @media (min-width: $laptop) {
-        width: calc((100% - 80px) / 3);
-        padding-top: 60px;
-        padding-bottom: 60px;
-        border: none;
+    &__item {
+        border-bottom: 1px solid $dark-15;
+        padding-top: 40px;
+        padding-bottom: 40px;
 
         &:nth-child(n + 4) {
-            display: block;
+            display: none;
         }
 
-        &:nth-child(4n + 2),
-        &:nth-child(4n + 3) {
-            border-left: 1px solid $dark-20;
-            padding-left: 30px;
+        @media (min-width: $laptop) {
+            width: calc((100% - 80px) / 3);
+            padding-top: 60px;
+            padding-bottom: 60px;
+            border: none;
+
+            &:nth-child(n + 4) {
+                display: block;
+            }
+
+            &:nth-child(4n + 2),
+            &:nth-child(4n + 3) {
+                border-left: 1px solid $dark-20;
+                padding-left: 30px;
+            }
+        }
+
+        @media (min-width: $desktop) {
+            padding-top: 80px;
+            padding-bottom: 80px;
+
+            &:nth-child(4n + 2),
+            &:nth-child(4n + 3) {
+                padding-left: 46px;
+            }
         }
     }
 
-    @media (min-width: $desktop) {
-        padding-top: 80px;
-        padding-bottom: 80px;
-
-        &:nth-child(4n + 2),
-        &:nth-child(4n + 3) {
-            padding-left: 46px;
-        }
-    }
-}
     &__video {
         width: 358px;
         height: 208px;
@@ -98,7 +100,7 @@
             margin-top: 24px;
         }
 
-          @media (min-width: $desktop) {
+        @media (min-width: $desktop) {
             font-size: 22px;
             margin-top: 30px;
         }
@@ -119,7 +121,7 @@
             margin-top: 10px;
         }
 
-          @media (min-width: $desktop) {
+        @media (min-width: $desktop) {
             font-size: 18px;
             margin-top: 14px;
             max-width: 400px;
@@ -135,7 +137,7 @@
             margin-top: 24px;
         }
 
-           @media (min-width: $desktop) {
+        @media (min-width: $desktop) {
             width: 201px;
             margin-top: 30px;
         }
@@ -149,7 +151,15 @@
     &__hr {
 
         @media (min-width: $laptop) {
-          @include full-line;
+            @include full-line;
         }
+    }
+
+    &__time {
+        position: absolute;
+        right: 32px;
+        bottom: 35px;
+        color: rgba(255, 255, 255, .6);
+        font-size: 14px;
     }
 }

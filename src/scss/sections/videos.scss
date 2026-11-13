@@ -168,5 +168,13 @@
            width: 146px;
         }
   }
+
+      &__time {
+        position: absolute;
+        right: 32px;
+        bottom: 35px;
+        color: rgba(255, 255, 255, .6);
+        font-size: 14px;
+    }
 }
 
