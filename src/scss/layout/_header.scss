@@ -6,7 +6,6 @@
     padding: 20px 0;
     height: 75px;
     position: relative;
-   
 
     @media (min-width: $laptop) {
         height: 81px;
@@ -30,7 +29,6 @@
             width: 143px;
             height: 40px;
         }
-
 
         @media (min-width: $desktop) {
             width: 179px;
@@ -98,6 +96,12 @@
             height: 55px;
             border-radius: 10px;
         }
+    }
+
+    .header &__button--open {
+        display: flex;
+        margin-left: 20px;
+        width: 103px;
     }
 }
 
