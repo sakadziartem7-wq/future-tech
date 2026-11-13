@@ -28,14 +28,13 @@
     }
 
     &__filter {
-        border-radius: 7px;
         width: 151px;
-        font-size: 14px;
         height: 87px;
         flex-shrink: 0;
         white-space: nowrap;
 
-        &--active {
+        &.button--dark:hover,
+        &.button--dark.blogs__filter--active {
             color: $white;
             background: $dark-20;
             border-color: $dark-25;
@@ -216,7 +215,11 @@
         width: 127px;
         margin-left: auto;
         align-self: center;
+
+            @media (min-width: $desktop) {
+            width: 170px;
+        }
     }
 
- 
+
 }
