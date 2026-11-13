@@ -1,0 +1,45 @@
+@use '../abstracts/variables' as *;
+@use '../abstracts/mixins' as *;
+
+.actions {
+    margin-top: 20px;
+    @include flex(flex-start, flex-start, 8px);
+
+    &__icon {
+        width: 20px;
+        height: 20px;
+
+        &:hover,
+        &:active {
+            fill: #FF5500;
+        }
+    }
+
+    &__icon--big {
+        width: 26px;
+        height: 26px;
+    }
+
+    &__item {
+        border-radius: 100px;
+        border: $border;
+        background: $dark-10;
+        width: 80px;
+        height: 33px;
+        @include flex(center, center, 2px);
+
+        &--comments {
+            width: 62px;
+        }
+    }
+
+    &__count {
+        color: $grey-60;
+        font-family: $font-kumbh;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 150%;
+        letter-spacing: -0.42px;
+    }
+}
+    
