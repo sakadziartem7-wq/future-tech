@@ -188,11 +188,6 @@
         }
     }
 
-    &__icon {
-        width: 20px;
-        height: 20px;
-    }
-
     &__button {
         width: 140px;
 
@@ -290,6 +285,7 @@
     }
 
     &__link {
+        width: 153px;
         margin-left: auto;
         @include flex(center, center, 4px);
 
