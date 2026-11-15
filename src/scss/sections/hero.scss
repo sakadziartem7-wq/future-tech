@@ -132,7 +132,6 @@
 
     &__list {
         @include flex(flex-start, center, 0);
-
     }
 
     &__item {
@@ -410,8 +409,8 @@
     }
 
     &__group {
-        @include flex(flex-start, stretch, 0);
         flex-direction: column;
+        @include flex(flex-start, stretch, 0);
 
         @media (min-width: $laptop) {
             flex-direction: row;
@@ -580,4 +579,3 @@
         }
     }
 }
-

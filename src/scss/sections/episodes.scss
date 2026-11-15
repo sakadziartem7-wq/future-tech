@@ -4,8 +4,8 @@
 .episodes {
 
     &__list {
-        @include flex(flex-start, flex-start, 0);
         flex-direction: column;
+        @include flex(flex-start, flex-start, 0);
 
         @media (min-width: $laptop) {
             @include flex(space-between, stretch, 0);
@@ -82,8 +82,8 @@
     }
 
     &__info {
-        @include flex(flex-start, flex-start, 0);
         flex-direction: column;
+        @include flex(flex-start, flex-start, 0);
     }
 
     &__title {

@@ -63,7 +63,7 @@
     }
 
     &__hr {
-           @include full-line;
+        @include full-line;
     }
 
     &__stats {
@@ -120,9 +120,9 @@
         @media (min-width: $laptop) {
             width: 34%;
             border-left: 1px solid $dark-20;
-            @include flex(flex-start, flex-start, 0);
             flex-direction: column;
             align-items: stretch;
+            @include flex(flex-start, flex-start, 0);
         }
     }
 
@@ -162,8 +162,8 @@
 
     &__item {
         width: calc(50% - 20px);
-        @include flex(flex-start, flex-start, 4px);
         flex-direction: column;
+        @include flex(flex-start, flex-start, 4px);
     }
 
     &__label {
@@ -252,7 +252,6 @@
     }
 
     &__contents-text {
-        @include flex(flex-start, center, 12px);
         color: $white;
         font-family: $inter;
         font-size: 14px;
@@ -260,6 +259,7 @@
         line-height: 150%;
         letter-spacing: -0.42px;
         margin-top: 16px;
+        @include flex(flex-start, center, 12px);
 
         &::before {
             content: "";
@@ -497,10 +497,10 @@
         width: 152px;
         transform: translate(-50%, -50%);
         color: $white;
-      
+
         @media (min-width: $desktop) {
             width: 195px;
-            height: 55px;       
+            height: 55px;
         }
     }
 }

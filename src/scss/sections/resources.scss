@@ -9,8 +9,8 @@
     }
 
     &__wrapper {
-        @include flex(flex-start, flex-start, 0);
         flex-direction: column;
+        @include flex(flex-start, flex-start, 0);
 
         @media (min-width: $laptop) {
             flex-direction: row;
@@ -267,8 +267,8 @@
     }
 
     &__cards {
-        @include flex(flex-start, flex-start, 0);
         flex-direction: column;
+        @include flex(flex-start, flex-start, 0);
 
         @media (min-width: $laptop) {
             flex-direction: row;
@@ -394,9 +394,9 @@
         border-radius: 8px;
         border: $border;
         background: $dark-10;
-        @include flex(flex-start, flex-start, 7px);
         flex-direction: column;
         margin-top: 16px;
+        @include flex(flex-start, flex-start, 7px);
 
         @media (min-width: $laptop) {
             margin-top: 24px;

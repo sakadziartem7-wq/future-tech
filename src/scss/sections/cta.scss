@@ -24,11 +24,11 @@
     }
 
     &__top {
-        @include flex(flex-start, center, 20px);
         flex-wrap: wrap;
         row-gap: 20px;
         padding-bottom: 40px;
         padding-top: 40px;
+        @include flex(flex-start, center, 20px);
 
         @media (min-width: $laptop) {
             flex-wrap: nowrap;
@@ -91,12 +91,12 @@
     }
 
     &__list {
-        @include flex(center, center, 10px);
-        flex-direction: column;
         padding: 10px;
         border-radius: 10px;
         border: 1px solid $dark-15;
         background: $dark-08;
+        flex-direction: column;
+        @include flex(center, center, 10px);
 
         @media (min-width: $laptop) {
             flex-direction: row;

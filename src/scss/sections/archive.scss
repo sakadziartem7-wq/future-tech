@@ -4,8 +4,8 @@
 .archive {
 
     &__wrapper {
-        @include flex(flex-start, stretch, 0);
         flex-direction: column;
+        @include flex(flex-start, stretch, 0);
 
         @media (min-width: $laptop) {
             flex-direction: row;
@@ -86,8 +86,8 @@
         padding-top: 40px;
         padding-bottom: 40px;
         border-top: 1px solid $dark-15;
-        @include flex(flex-start, stretch, 0);
         flex-direction: column;
+        @include flex(flex-start, stretch, 0);
 
         @media (min-width: $laptop) {
             padding-top: 60px;
@@ -186,9 +186,9 @@
 
     &__cards {
         margin-top: 30px;
-        @include flex(flex-start, stretch, 10px);
         flex-direction: row;
         flex-wrap: wrap;
+        @include flex(flex-start, stretch, 10px);
     }
 
     &__card {

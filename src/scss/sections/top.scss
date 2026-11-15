@@ -7,8 +7,8 @@
     @media (min-width: $laptop) {}
 
     &__wrapper {
-        @include flex(flex-start, stretch, 0);
         flex-direction: column;
+        @include flex(flex-start, stretch, 0);
 
         @media (min-width: $laptop) {
             flex-direction: row;
@@ -46,8 +46,8 @@
 
     &__row {
         margin-top: 30px;
-        @include flex(space-between, center, 0);
         flex-direction: row;
+        @include flex(space-between, center, 0);
 
         @media (min-width: $laptop) {
             margin-top: 40px;
@@ -174,8 +174,8 @@
         padding-top: 40px;
         padding-bottom: 40px;
         border-top: 1px solid $dark-15;
-        @include flex(flex-start, center, 0);
         flex-direction: column;
+        @include flex(flex-start, center, 0);
 
         @media (min-width: $laptop) {
             border-left: 1px solid #333333;
@@ -193,8 +193,8 @@
     }
 
     &__content {
-        @include flex(flex-start, flex-start, 0);
         flex-direction: column;
+        @include flex(flex-start, flex-start, 0);
     }
 
     &__clip {
@@ -287,8 +287,8 @@
     &__cards {
         margin-top: 40px;
         width: 310px;
-        @include flex(flex-start, stretch, 14px);
         flex-direction: column;
+        @include flex(flex-start, stretch, 14px);
 
         @media (min-width: $laptop) {
             flex-direction: row;

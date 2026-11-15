@@ -6,8 +6,8 @@
     overflow: hidden;
 
     &__list {
-        @include flex(flex-start, stretch, 0);
         flex-wrap: wrap;
+        @include flex(flex-start, stretch, 0);
 
         @media (min-width: $laptop) {
             flex-direction: row;
@@ -18,8 +18,8 @@
         padding: 20px 0;
         position: relative;
         width: 50%;
-        @include flex(flex-start, center, 0);
         flex-direction: column;
+        @include flex(flex-start, center, 0);
 
         &::before {
             content: '';

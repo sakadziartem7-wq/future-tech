@@ -52,8 +52,8 @@
 
     &__cards {
         margin-top: 40px;
-        @include flex(flex-start, stretch, 0);
         flex-direction: column;
+        @include flex(flex-start, stretch, 0);
 
         @media (min-width: $laptop) {
             flex-direction: row;

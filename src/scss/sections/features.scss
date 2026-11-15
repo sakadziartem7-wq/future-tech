@@ -21,15 +21,15 @@
 
     &__hr {
         @media (min-width: $laptop) {
-              @include full-line;
+            @include full-line;
         }
     }
 
     &__row {
         @media (min-width: $laptop) {
-            @include flex(space-between, flex-end, 60px);
             flex-wrap: wrap;
             row-gap: 0;
+            @include flex(space-between, flex-end, 60px);
         }
     }
 
@@ -95,19 +95,19 @@
         border-bottom: 1px solid $dark-15;
         padding-top: 30px;
         padding-bottom: 30px;
-        @include flex(flex-start, flex-start, 10px);
         flex-direction: column;
+        @include flex(flex-start, flex-start, 10px);
 
         @media (min-width: $laptop) {
-            @include flex(flex-start, stretch, 20px);
-            flex-direction: row;
-            flex-wrap: wrap;
             padding-left: 60px;
             padding-top: 60px;
             padding-bottom: 60px;
             max-width: 824px;
             border: none;
-            border-left: 1px solid $dark-20;
+            border-left: 1px solid $dark-20;     
+            flex-direction: row;
+            flex-wrap: wrap;
+            @include flex(flex-start, stretch, 20px);
         }
 
         @media (min-width: $desktop) {
@@ -131,7 +131,7 @@
         }
 
         @media (min-width: $desktop) {
-           padding: 40px;
+            padding: 40px;
         }
     }
 

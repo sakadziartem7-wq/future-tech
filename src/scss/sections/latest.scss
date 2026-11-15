@@ -24,8 +24,8 @@
     &__flex {
         padding-top: 40px;
         padding-bottom: 40px;
-        @include flex(flex-start, stretch, 0);
         flex-direction: column;
+        @include flex(flex-start, stretch, 0);
 
         @media (min-width: $laptop) {
             padding-top: 60px;
@@ -106,8 +106,8 @@
     }
 
     &__meta {
-        @include flex(flex-start, flex-start, 20px);
         margin-top: 20px;
+        @include flex(flex-start, flex-start, 20px);
 
         @media (min-width: $laptop) {
             gap: 30px;
@@ -158,9 +158,8 @@
 
     &__actions {
         margin-top: 20px;
-        @include flex(flex-start, flex-start, 0);
         justify-content: space-between;
-
+        @include flex(flex-start, flex-start, 0);
     }
 
     &__stats {
@@ -208,8 +207,8 @@
     &__cards {
         padding-top: 40px;
         padding-bottom: 40px;
-        @include flex(flex-start, stretch, 0);
         flex-direction: column;
+        @include flex(flex-start, stretch, 0);
 
         @media (min-width: $laptop) {
             padding-top: 60px;

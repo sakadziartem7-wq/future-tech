@@ -21,8 +21,8 @@
 
     &__list {
         position: relative;
-        @include flex(flex-start, flex-start, 0);
         flex-direction: column;
+        @include flex(flex-start, flex-start, 0);
 
         @media (min-width: $laptop) {
             flex-direction: row;

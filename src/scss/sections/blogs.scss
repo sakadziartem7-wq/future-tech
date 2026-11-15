@@ -14,9 +14,9 @@
         padding-bottom: 20px;
         overflow-x: auto;
         scrollbar-width: none;
-        @include flex(flex-start flex-start, 0);
         flex-wrap: nowrap;
         gap: 14px;
+        @include flex(flex-start flex-start, 0);
 
         @media (min-width: $laptop) {
             width: 100%;
@@ -57,14 +57,14 @@
         position: relative;
         padding-top: 40px;
         padding-bottom: 40px;
-        @include flex(flex-start, center, 8px);
         flex-wrap: wrap;
+        @include flex(flex-start, center, 8px);
 
         @media (min-width: $laptop) {
-            @include flex(flex-start, flex-start, 8px);
             flex-wrap: nowrap;
             padding-top: 60px;
             padding-bottom: 60px;
+            @include flex(flex-start, flex-start, 8px);
         }
 
         @media (min-width: $desktop) {
@@ -85,8 +85,8 @@
     }
 
     &__author {
-        @include flex(center, flex-start, 2px);
         flex-direction: column;
+        @include flex(center, flex-start, 2px);
 
         @media (min-width: $laptop) {
             width: 149px;

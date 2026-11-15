@@ -5,8 +5,8 @@
     border-top: 1px solid $dark-20;
 
     &__list {
-        @include flex(flex-start, stretch, 0);
         flex-direction: column;
+        @include flex(flex-start, stretch, 0);
 
         @media (min-width: $laptop) {
             @include flex(flex-start, stretch, 30px);
@@ -170,8 +170,8 @@
     }
 
     &__wrapper {
-        @include flex(flex-start, stretch, 0);
         flex-direction: column;
+        @include flex(flex-start, stretch, 0);
 
         @media (min-width: $laptop) {
             flex-direction: row;
@@ -258,8 +258,8 @@
     form {
         padding-top: 40px;
         padding-bottom: 40px;
-        @include flex(flex-start, stretch, 20px);
         flex-direction: column;
+        @include flex(flex-start, stretch, 20px);
 
         @media (min-width: $laptop) {
             padding-top: 60px;
@@ -267,11 +267,11 @@
             padding-left: 60px;
             flex-direction: row;
             border-left: 1px solid #333333;
-            @include flex(flex-start, stretch, 0);
             column-gap: 30px;
             flex-direction: row;
             flex-wrap: wrap;
             width: 808px;
+            @include flex(flex-start, stretch, 0);
         }
 
         @media (min-width: $desktop) {
@@ -289,8 +289,8 @@
         font-size: 16px;
         font-weight: 500;
         line-height: 150%;
-        @include flex(flex-start, stretch, 0);
         flex-direction: column;
+        @include flex(flex-start, stretch, 0);
 
         @media (min-width: $laptop) {
             width: calc((100% - 30px) / 2);
@@ -578,7 +578,7 @@
         width: 20px;
         height: 20px;
 
-           @media (min-width: $desktop) {
+        @media (min-width: $desktop) {
             width: 24px;
             height: 24px;
         }

@@ -25,8 +25,8 @@
     }
 
     &__info {
-        @include flex(flex-start, flex-start, 20px);
         flex-direction: column;
+        @include flex(flex-start, flex-start, 20px);
 
         @media (min-width: $laptop) {
             @include flex(flex-start, flex-start, 10px);
@@ -104,8 +104,8 @@
         border: $border;
         background: $dark-08;
         margin-top: 16px;
-        @include flex(flex-start, flex-start, 10px);
         flex-direction: row;
+        @include flex(flex-start, flex-start, 10px);
 
         @media (min-width: $laptop) {
             width: 361px;
