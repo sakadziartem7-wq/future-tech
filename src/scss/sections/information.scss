@@ -63,7 +63,12 @@
     }
 
     &__hr {
-        @include full-line;
+        width: 100vw;
+        height: 1px;
+        background-color: $dark-20;
+        margin-left: calc(50% - 50vw);
+        flex-shrink: 0;
+
     }
 
     &__stats {
@@ -103,6 +108,16 @@
         height: 26px;
     }
 
+    &__count {
+        color: $grey-60;
+        font-family: $font-kumbh;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 150%;
+        letter-spacing: -0.42px;
+
+    }
+
     &__botton {
         height: 1px;
         background-color: $dark-20;
@@ -120,15 +135,15 @@
         @media (min-width: $laptop) {
             width: 34%;
             border-left: 1px solid $dark-20;
+            @include flex(flex-start, flex-start, 0);
             flex-direction: column;
             align-items: stretch;
-            @include flex(flex-start, flex-start, 0);
         }
     }
 
     &__body {
-        @include flex(flex-start, flex-start, 0);
         flex-direction: column;
+        @include flex(flex-start, flex-start, 0);
 
         @media (min-width: $laptop) {
             flex-direction: row-reverse;
@@ -156,8 +171,8 @@
     }
 
     &__list {
-        @include flex(center, center, 20px);
         flex-wrap: wrap;
+        @include flex(center, center, 20px);
     }
 
     &__item {
@@ -181,7 +196,6 @@
         @media (min-width: $desktop) {
             font-size: 18px;
         }
-
     }
 
     &__value {
@@ -248,7 +262,6 @@
             width: 440px;
             padding: 20px;
         }
-
     }
 
     &__contents-text {
@@ -375,6 +388,7 @@
         }
     }
 
+
     &__subtitle {
         color: white;
         font-family: $inter;
@@ -495,12 +509,18 @@
         left: 50%;
         z-index: 1;
         width: 152px;
+        height: 49px;
         transform: translate(-50%, -50%);
-        color: $white;
-
+        font-size: 14px;
+        color: #fff;
+        border-radius: 8px;
+        @include flex(center, center, 8px);
+      
         @media (min-width: $desktop) {
             width: 195px;
             height: 55px;
+            font-size: 18px;
+            border-radius: 12px;        
         }
     }
 }

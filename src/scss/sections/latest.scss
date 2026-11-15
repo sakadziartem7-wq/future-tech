@@ -158,8 +158,7 @@
 
     &__actions {
         margin-top: 20px;
-        justify-content: space-between;
-        @include flex(flex-start, flex-start, 0);
+        @include flex(space-between, flex-start, 0);
     }
 
     &__stats {
