@@ -69,8 +69,12 @@
         letter-spacing: -0.42px;
         font-size: 14px;
         color: $dark-40;
+        transition: all 0.3s;
         @include flex(center, center, 8px);
 
+        &:hover {
+            color:#4d4646 ;
+        }
        
         &:has(.footer__badge) {
             border-radius: 6px;
