@@ -1,10 +1,10 @@
 const burger =document.getElementById('burger');
-const menu =document.getElementById('menu');
+const headerAction =document.getElementById('header__action');
 const contactButton = document.getElementById('contact-button');
 
 
 burger.addEventListener('click', () => {
-  menu.classList.toggle('header__menu--open');
+ headerAction.classList.toggle('header__action--open');
     contactButton.classList.toggle('header__button--open');
 });
 

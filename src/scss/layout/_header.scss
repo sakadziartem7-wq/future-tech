@@ -36,11 +36,11 @@
         }
     }
 
-    &__menu {
+    &__action {
         display: none;
-        z-index: 10;
 
         &--open {
+            display: flex;
             flex-direction: column;
             position: absolute;
             top: 100%;
@@ -49,8 +49,21 @@
             padding: 16px 0;
             background: $dark-10;
             color: $grey-50;
+            z-index: 999;
             @include flex(flex-start, center, 0);
         }
+
+          @media (min-width: $laptop) {
+            flex: 1;
+            @include flex(flex-start, center, 0);
+        }
+
+    }
+
+    &__menu {
+        display: flex;
+        flex-direction: column;
+        z-index: 10;
 
         @media (min-width: $laptop) {
             color: $grey-50;
@@ -59,6 +72,7 @@
             margin-left: auto;
             max-width: 100%;
             @include flex(center, center, 24px);
+            flex-direction: row;
         }
 
         @media (min-width:$desktop) {
@@ -100,7 +114,6 @@
 
     .header &__button--open {
         display: flex;
-        margin-left: 20px;
         width: 103px;
     }
 }
