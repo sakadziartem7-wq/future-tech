@@ -1,1 +1,1 @@
-const burger=document.getElementById("burger"),menu=document.getElementById("menu");burger.addEventListener("click",()=>{menu.classList.toggle("header__menu--open")});
+const burger=document.getElementById("burger"),menu=document.getElementById("menu"),contactButton=document.getElementById("contact-button");burger.addEventListener("click",()=>{menu.classList.toggle("header__menu--open"),contactButton.classList.toggle("header__button--open")});

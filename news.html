@@ -6,11 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
     <meta name="description" content="Explore the Frontiers of Artificial Intelligence">
-    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/news.css">
 </head>
 
 <body>
-        <section class="subscribe">
+    <section class="subscribe">
         <div class="container">
             <a href="#" title="Subscribe to our Newsletter" class="subscribe__link">
                 <span>Subscribe to our Newsletter For <span class="line">New & latest</span>Blogs and Resources</span>
@@ -31,10 +32,10 @@
                 <nav class="header__menu" id="menu">
                     <a href="index.html" class="header__link" title="Home">Home</a>
                     <a href="news.html" class="header__link header__link--active" title="News">News</a>
-                    <a href="#" class="header__link" title="Podcasts">Podcasts</a>
-                    <a href="#" class="header__link" title="Resources">Resources</a>
+                    <a href="podcasts.html" class="header__link" title="Podcasts">Podcasts</a>
+                    <a href="podcasts.html" class="header__link" title="Resources">Resources</a>
                 </nav>
-                <button class="button header__button">Contact Us</button>
+                <a href="contact.html" class="header__button button">Contact Us</a>
                 <button class="burger" id="burger">
                     <svg class="burger__icon">
                         <use href="assets/icons.svg#burger"></use>
@@ -44,25 +45,439 @@
         </div>
     </header>
     <main>
-        <section>NEWS PAGE</section>
+        <section class="utilities">
+            <div class="container">
+                <div class="utilities__info">
+                    <h2 class="utilities__title">Today's Headlines: Stay <br> Informed</h2>
+                    <p class="utilities__text">Explore the latest news from around the world. We bring you
+                        up-to-the-minute
+                        updates on the most significant events, trends, and stories. Discover the world through our news
+                        coverage.</p>
+                </div>
+            </div>
+        </section>
+        <section class="latest">
+            <div class="container">
+                <div class="latest__flex">
+                    <img src="assets/images/latest/windmills.png" class="latest__windmills" alt="">
+                    <div class="latest__content">
+                        <div class="latest__info">
+                            <h2 class="latest__title">Global Climate Summit Addresses Urgent Climate Action</h2>
+                            <p class="latest__text">World leaders gathered at the Global Climate Summit to discuss
+                                urgent climate action, emissions reductions <span>, and renewable energy targets</span>
+                            </p>
+                            <div class="latest__meta">
+                                <div class="latest__meta-item">
+                                    <h3 class="latest__meta-label">Category</h3>
+                                    <p class="latest__meta-value">Environment</p>
+                                </div>
+                                <div class="latest__meta-item">
+                                    <h3 class="latest__meta-label">Publication Date</h3>
+                                    <p class="latest__meta-value">October 10, 2023</p>
+                                </div>
+                                <div class="latest__meta-item">
+                                    <h3 class="latest__meta-label">Author</h3>
+                                    <p class="latest__meta-value">Jane Smith</p>
+                                </div>
+                            </div>
+                            <div class="latest__actions">
+                                <div class="latest__stats">
+                                    <button class="latest__action">
+                                        <svg class="latest__icon  actions__icon actions__icon--big">
+                                            <use href="assets/actions.svg#like"></use>
+                                        </svg>
+                                        <span class="latest__count">14k</span>
+                                    </button>
+                                    <button class="latest__action">
+                                        <svg class="latest__icon actions__icon actions__icon--big ">
+                                            <use href="assets/actions.svg#share"></use>
+                                        </svg>
+                                        <span class="latest__count">204</span>
+                                    </button>
+                                </div>
+                                <button class="latest__button button--dark button">Read More</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="latest__hr"></div>
+                <div class="latest__cards">
+                    <div class="latest__card">
+                        <img src="assets/images/latest/handshake.png" class="latest__img" alt="">
+                        <h3 class="latest__sab_title">A Decisive Victory for Progressive Policies</h3>
+                        <p class="latest__sab_text">Politics</p>
+                        <div class="latest__footer">
+                            <div class="latest__stats">
+                                <button class="latest__action">
+                                    <svg class="latest__icon actions__icon actions__icon--big ">
+                                        <use href="assets/actions.svg#like"></use>
+                                    </svg>
+                                    <span class="latest__count">2.2k</span>
+                                </button>
+                                <button class="latest__action">
+                                    <svg class="latest__icon actions__icon actions__icon--big">
+                                        <use href="assets/actions.svg#share"></use>
+                                    </svg>
+                                    <span class="latest__count">60</span>
+                                </button>
+                                <a href="#" class="latest__link  button button--dark">
+                                    Read More
+                                    <svg class="latest__arrow">
+                                        <use href="assets/icons.svg#arrow_up_right"></use>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="latest__card">
+                        <img src="assets/images/latest/portrait.png" class="latest__img" alt="">
+                        <h3 class="latest__sab_title">Tech Giants Unveil Cutting-Edge AI Innovations</h3>
+                        <p class="latest__sab_text">Technology</p>
+                        <div class="latest__footer">
+                            <div class="latest__stats">
+                                <button class="latest__action">
+                                    <svg class="latest__icon actions__icon actions__icon--big">
+                                        <use href="assets/actions.svg#like"></use>
+                                    </svg>
+                                    <span class="latest__count">6k</span>
+                                </button>
+                                <button class="latest__action">
+                                    <svg class="latest__icon actions__icon actions__icon--big">
+                                        <use href="assets/actions.svg#share"></use>
+                                    </svg>
+                                    <span class="latest__count">92</span>
+                                </button>
+                                <a href="#" class="latest__link  button button--dark">
+                                    Read More
+                                    <svg class="latest__arrow">
+                                        <use href="assets/icons.svg#arrow_up_right"></use>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
 
+                    <div class="latest__card">
+                        <img src="assets/images/latest/covid.png" class="latest__img" alt="">
+                        <h3 class="latest__sab_title">COVID-19 Variants</h3>
+                        <p class="latest__sab_text">Health</p>
+                        <div class="latest__footer">
+                            <div class="latest__stats">
+                                <button class="latest__action">
+                                    <svg class="latest__icon actions__icon actions__icon--big">
+                                        <use href="assets/actions.svg#like"></use>
+                                    </svg>
+                                    <span class="latest__count">10k</span>
+                                </button>
+                                <button class="latest__action">
+                                    <svg class="latest__icon actions__icon actions__icon--big">
+                                        <use href="assets/actions.svg#share"></use>
+                                    </svg>
+                                    <span class="latest__count">124</span>
+                                </button>
+                                <a href="#" class="latest__link  button button--dark">
+                                    Read More
+                                    <svg class="latest__arrow">
+                                        <use href="assets/icons.svg#arrow_up_right"></use>
+                                    </svg>
+                                </a>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <section class="blogs">
+            <div class="section-head">
+                <div class="container section-head__content">
+                    <div class="section-head__info">
+                        <span class="section-head__tag">Welcome to Our News Hub</span>
+                        <h2 class="section-head__title">Discover the World of Headlines</h2>
+                    </div>
+                    <a href="#" class="button button--dark section-head__btn">View All News
+                        <svg class="section-head__arrow">
+                            <use href="assets/icons.svg#arrow_up_right"></use>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <div class="container blog__row">
+                <div class="blogs__filters">
+                    <button class="button button--dark blogs__filter blogs__filter--active">All</button>
+                    <button class="button button--dark blogs__filter">Technology</button>
+                    <button class="button button--dark blogs__filter">Politics</button>
+                    <button class="button button--dark blogs__filter">Health</button>
+                    <button class="button button--dark blogs__filter">Environment</button>
+                    <button class="button button--dark blogs__filter">Sports</button>
+                </div>
+                <div class="blogs__card">
+                    <img class="blogs__avatar" src="assets/images/blogs/techson.png" alt="">
+                    <div class="blogs__author">
+                        <h2 class="blogs__name">John Techson</h2>
+                        <p class="blogs__text">Technology</p>
+                    </div>
+                    <div class="blogs__body">
+                        <h2 class="blogs__date">October 15, 2023</h2>
+                        <h3 class="blogs__title">Tech Giants Announce New Product Line</h3>
+                        <p class="blogs__subtext">Explore the latest innovations from tech industry leaders, unveiling
+                            new products that promise to transform the digital landscape</p>
+                        <div class="blogs__actions actions">
+                            <button class="blogs__action actions__item">
+                                <svg class="blogs__icon actions__icon">
+                                    <use href="assets/actions.svg#like"></use>
+                                </svg>
+                                <span class="blogs__count actions__count">24.5k</span>
+                            </button>
+                            <button class="blogs__action blogs__action--comments actions__item actions__item--comments">
+                                <svg class="blogs__icon actions__icon">
+                                    <use href="assets/actions.svg#comments"></use>
+                                </svg>
+                                <span class="blogs__count actions__count">50</span>
+                            </button>
+                            <button class="blogs__action blogs__action--comments actions__item actions__item--comments">
+                                <svg class="blogs__icon actions__icon">
+                                    <use href="assets/actions.svg#share"></use>
+                                </svg>
+                                <span class="blogs__count actions__count">20</span>
+                            </button>
+                        </div>
+                    </div>
+                    <a href="open.html" class="button button--dark blogs__btn">Read More
+                        <svg class="blogs__arrow">
+                            <use href="assets/icons.svg#arrow_up_right"></use>
+                        </svg>
+                    </a>
+                </div>
+                <div class="blogs__card">
+                    <img class="blogs__avatar" src="assets/images/blogs/sarah.png" alt="">
+                    <div class="blogs__author">
+                        <h2 class="blogs__name">Sarah Ethicist</h2>
+                        <p class="blogs__text">Technology</p>
+                    </div>
+                    <div class="blogs__body">
+                        <h2 class="blogs__date">October 11, 2023</h2>
+                        <h3 class="blogs__title">The Future of Autonomous Vehicles</h3>
+                        <p class="blogs__subtext">An in-depth analysis of the rapid advancements in autonomous vehicle
+                            technology and their impact on transportation.</p>
+                        <div class="blogs__actions actions">
+                            <button class="blogs__action actions__item">
+                                <svg class="blogs__icon actions__icon">
+                                    <use href="assets/actions.svg#like"></use>
+                                </svg>
+                                <span class="blogs__count actions__count">32k</span>
+                            </button>
+                            <button class="blogs__action blogs__action--comments actions__item actions__item--comments">
+                                <svg class="blogs__icon actions__icon">
+                                    <use href="assets/actions.svg#comments"></use>
+                                </svg>
+                                <span class="blogs__count actions__count">72</span>
+                            </button>
+                            <button class="blogs__action blogs__action--comments actions__item actions__item--comments">
+                                <svg class="blogs__icon actions__icon">
+                                    <use href="assets/actions.svg#share"></use>
+                                </svg>
+                                <span class="blogs__count actions__count">18</span>
+                            </button>
+                        </div>
+                    </div>
+                    <a href="open.html" class="button button--dark blogs__btn">Read More
+                        <svg class="blogs__arrow">
+                            <use href="assets/icons.svg#arrow_up_right"></use>
+                        </svg>
+                    </a>
+                </div>
+                <div class="blogs__card">
+                    <img class="blogs__avatar" src="assets/images/blogs/astronomer.png" alt="">
+                    <div class="blogs__author">
+                        <h2 class="blogs__name">Astronomer X</h2>
+                        <p class="blogs__text">Technology</p>
+                    </div>
+                    <div class="blogs__body">
+                        <h2 class="blogs__date">December 10, 2023</h2>
+                        <h3 class="blogs__title">Tech Startups Secure Record Funding</h3>
+                        <p class="blogs__subtext">An overview of the recent surge in funding for tech startups, shaping
+                            the entrepreneurial landscape.
+                        </p>
+                        <div class="blogs__actions actions">
+                            <button class="blogs__action actions__item">
+                                <svg class="blogs__icon actions__icon">
+                                    <use href="assets/actions.svg#like"></use>
+                                </svg>
+                                <span class="blogs__count actions__count">20k</span>
+                            </button>
+                            <button class="blogs__action blogs__action--comments actions__item actions__item--comments">
+                                <svg class="blogs__icon actions__icon">
+                                    <use href="assets/actions.svg#comments"></use>
+                                </svg>
+                                <span class="blogs__count actions__count">31</span>
+                            </button>
+                            <button class="blogs__action blogs__action--comments actions__item actions__item--comments">
+                                <svg class="blogs__icon actions__icon">
+                                    <use href="assets/actions.svg#share"></use>
+                                </svg>
+                                <span class="blogs__count actions__count">12</span>
+                            </button>
+                        </div>
+                    </div>
+                    <a href="open.html" class="button button--dark blogs__btn">Read More
+                        <svg class="blogs__arrow">
+                            <use href="assets/icons.svg#arrow_up_right"></use>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </section>
+       <section class="videos">
+            <div class="section-head">
+                <div class="container section-head__content">
+                    <div class="section-head__info">
+                        <span class="section-head__tag">Featured Videos</span>
+                        <h2 class="section-head__title">Visual Insights for the Modern Viewer</h2>
+                    </div>
+                    <a href="#" class="button button--dark section-head__btn">View All
+                        <svg class="section-head__arrow">
+                            <use href="assets/icons.svg#arrow_up_right"></use>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <div class="container">
+                <ul class="videos__list">
+                    <li class="videos__item">
+                        <div class="videos__media">
+                            <video poster="assets/videos/mental-health.png" class="videos__video"></video>
+                            <button class="videos__play">
+                                <svg class="videos__pick">
+                                    <use href="assets/icons.svg#play"></use>
+                                </svg>
+                            </button>
+                             <span class="videos__time">2.30 min</span>
+                        </div>
+                        <h2 class="videos__title">Breaking the Silence: Mental Health Awareness in the Workplace</h2>
+                        <p class="videos__text">An exploration of the importance of mental health awareness and the
+                            initiatives reshaping workplaces for employee well-being.</p>
+
+                    </li>
+                    <li class="videos__item">
+                        <div class="videos__media">
+                            <video poster="assets/videos/investment-strategies.png" class="videos__video"></video>
+                            <button class="videos__play">
+                                <svg class="videos__pick">
+                                    <use href="assets/icons.svg#play"></use>
+                                </svg>
+                            </button>
+                            <span class="videos__time">2.30 min</span>
+                        </div>
+                        <h2 class="videos__title">Revolutionizing Investment Strategies</h2>
+                        <p class="videos__text">An in-depth look at global efforts to conserve biodiversity and
+                            safeguard endangered species from extinction</p>
+                    </li>
+                    <li class="videos__hr"></li>
+                    <li class="videos__item">
+                        <div class="videos__media">
+                            <video poster="assets/videos/mars-exploration.png" class="videos__video"></video>
+                            <button class="videos__play">
+                                <svg class="videos__pick">
+                                    <use href="assets/icons.svg#play"></use>
+                                </svg>
+                            </button>
+                        <span class="videos__time">2.30 min</span>
+                        </div>
+                        <h2 class="videos__title">Mars Exploration: Unveiling Alien Landscapes</h2>
+                        <p class="videos__text">Embark on a journey through the Red Planet's breathtaking landscapes and
+                            uncover the mysteries of Mars.</p>
+                    </li>
+                    <li class="videos__item">
+                        <div class="videos__media">
+                            <video poster="assets/videos/blockchain-explained.png" class="videos__video"></video>
+                            <button class="videos__play">
+                                <svg class="videos__pick">
+                                    <use href="assets/icons.svg#play"></use>
+                                </svg>
+                            </button>
+                          <span class="videos__time">2.30 min</span>
+                        </div>
+                        <h2 class="videos__title">Blockchain Explained: A Revolution in Finance</h2>
+                        <p class="videos__text">Delve into the world of blockchain technology and its transformative
+                            impact on the financial industry.</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="cta">
+            <div class="container">
+                <div class=" cta__top">
+                    <svg class="cta__emblem">
+                        <use href="assets/icons.svg#cta-emblem"></use>
+                    </svg>
+                    <div class="cta__content">
+                        <span class="section-head__tag ">Learn, Connect, and Innovate</span>
+                        <h2 class="section-head__title cta__title">Be Part of the Future Tech Revolution</h2>
+                        <p class=" cta__text">Immerse yourself in the world of future technology. Explore our
+                            comprehensive resources. <span> connect with fellow tech enthusiasts, and drive innovation
+                                in the industry. Join a dynamic community of forward-thinkers.</span></p>
+                    </div>
+                </div>
+                <ul class="cta__list">
+                    <li class="cta__item">
+                        <div class="cta__row">
+                            <h3 class="cta__sab_title">Resource Access</h3>
+                            <a href="#" class="cta__pointer-link">
+                                <svg class="cta__pointer">
+                                    <use href="assets/pointer.svg#pointer"></use>
+                                </svg>
+                            </a>
+                        </div>
+                        <p class="cta__sab_text">Visitors can access a wide range of resources, including ebooks,
+                            whitepapers, reports.</p>
+                    </li>
+                    <li class="cta__item">
+                        <div class="cta__row">
+                            <h3 class="cta__sab_title">Community Forum</h3>
+                            <a href="#" class="cta__pointer-link">
+                                <svg class="cta__pointer">
+                                    <use href="assets/pointer.svg#pointer"></use>
+                                </svg>
+                            </a>
+                        </div>
+                        <p class="cta__sab_text">Join our active community forum to discuss industry trends and
+                            collaborate with peers.</p>
+                    </li>
+                    <li class="cta__item">
+                        <div class="cta__row">
+                            <h3 class="cta__sab_title">Tech Events</h3>
+                            <a href="#" class="cta__pointer-link">
+                                <svg class="cta__pointer">
+                                    <use href="assets/pointer.svg#pointer"></use>
+                                </svg>
+                            </a>
+                        </div>
+                        <p class="cta__sab_text">Stay updated on upcoming tech events, webinars and conferences to
+                            enhance your knowledge.</p>
+                    </li>
+                </ul>
+
+            </div>
+        </section>
     </main>
- <footer class="footer">
+    <footer class="footer">
         <div class="container">
             <div class="footer__top">
-                <nav class="footer__manus">
+                <nav class="footer__menu">
                     <h3 class="footer__title">Home</h3>
                     <a href="#" class="footer__link">Features</a>
                     <a href="#" class="footer__link">Blogs</a>
                     <a href="#" class="footer__link">Resources <div class="footer__badge">
                             <div class="footer__badge-inner">New</div>
                         </div></a>
-                        <a href="#" class="footer__link">Testimonials</a>
-                        <a href="#" class="footer__link">Contact Us</a>
-                        <a href="#" class="footer__link">Newsletter</a>
+                    <a href="#" class="footer__link">Testimonials</a>
+                    <a href="#" class="footer__link">Contact Us</a>
+                    <a href="#" class="footer__link">Newsletter</a>
                 </nav>
 
-                <nav class="footer__manus">
+                <nav class="footer__menu">
                     <h3 class="footer__title">News</h3>
                     <a href="#" class="footer__link">Trending Stories</a>
                     <a href="#" class="footer__link">Featured Videos</a>
@@ -72,17 +487,17 @@
                     <a href="#" class="footer__link">Environment</a>
                 </nav>
 
-                <nav class="footer__manus footer__manus_podcasts ">
+                <nav class="footer__menu footer__menu_podcasts ">
                     <h3 class="footer__title">Podcasts</h3>
                     <a href="#" class="footer__link">AI Revolution</a>
                     <a href="#" class="footer__link">AI Revolution <div class="footer__badge">
                             <div class="footer__badge-inner">New</div>
                         </div> </a>
-                        <a href="#" class="footer__link">TechTalk AI</a>
-                        <a href="#" class="footer__link">AI Conversations</a>
+                    <a href="#" class="footer__link">TechTalk AI</a>
+                    <a href="#" class="footer__link">AI Conversations</a>
                 </nav>
 
-                <nav class="footer__manus footer__manus_blogs">
+                <nav class="footer__menu footer__menu_blogs">
                     <h3 class="footer__title">Blogs</h3>
                     <a href="#" class="footer__link">Quantum Computing</a>
                     <a href="#" class="footer__link">AI Ethics</a>
@@ -90,30 +505,30 @@
                     <a href="#" class="footer__link">Biotechnology<div class="footer__badge">
                             <div class="footer__badge-inner">New</div>
                         </div> </a>
-                        <a href="#" class="footer__link">Renewable Energy</a>
-                        <a href="#" class="footer__link">Biohacking</a>
+                    <a href="#" class="footer__link">Renewable Energy</a>
+                    <a href="#" class="footer__link">Biohacking</a>
                 </nav>
 
                 <div class="footer__wrap">
                     <h3 class="footer__sub-title">Resources</h3>
-                    <a href="#" class="footer__resource footer__resource_Whitepapers">Whitepapers
+                    <a href="#" class="footer__resource button--dark footer__resource_Whitepapers">Whitepapers
                         <svg class="footer__arrow">
-                            <use href="assets/icons.svg#arrow"></use>
+                            <use href="assets/icons.svg#arrow_up_right"></use>
                         </svg>
                     </a>
-                    <a href="#" class="footer__resource footer__resource_Ebooks">Ebooks
+                    <a href="#" class="footer__resource button--dark footer__resource_Ebooks">Ebooks
                         <svg class="footer__arrow">
-                            <use href="assets/icons.svg#arrow"></use>
+                            <use href="assets/icons.svg#arrow_up_right"></use>
                         </svg>
                     </a>
-                    <a href="#" class="footer__resource footer__resource_Reports">Reports
+                    <a href="#" class="footer__resource button--dark footer__resource_Reports">Reports
                         <svg class="footer__arrow">
-                            <use href="assets/icons.svg#arrow"></use>
+                            <use href="assets/icons.svg#arrow_up_right"></use>
                         </svg>
                     </a>
-                    <a href="#" class="footer__resource  footer__resource_Research">Research Papers
+                    <a href="#" class="footer__resource button--dark  footer__resource_Research">Research Papers
                         <svg class="footer__arrow">
-                            <use href="assets/icons.svg#arrow"></use>
+                            <use href="assets/icons.svg#arrow_up_right"></use>
                         </svg>
                     </a>
                 </div>
@@ -121,17 +536,17 @@
             <div class="footer__bottom">
                 <div class="footer__social">
                     <a href="#" class="footer__twitter">
-                        <svg class="footer__twitter-icon">
+                        <svg class="footer__img">
                             <use href="assets/icons.svg#twitter"></use>
                         </svg>
                     </a>
                     <a href="#" class="footer__medium">
-                        <svg class="footer__medium-icon">
+                        <svg class="footer__img">
                             <use href="assets/icons.svg#medium"></use>
                         </svg>
                     </a>
                     <a href="#" class="footer__linkedin">
-                        <svg class="footer__linkedin-icon">
+                        <svg class="footer__img">
                             <use href="assets/icons.svg#linkedin"></use>
                         </svg>
                     </a>
@@ -142,7 +557,10 @@
                 </div>
                 <p class="footer__copy">© 2024 FutureTech. All rights reserved.</p>
             </div>
-            </div>
+        </div>
     </footer>
-
+    <script src="js/filters.js"></script>
+    <script src="js/main.js" defer></script>
 </body>
+
+</html>
