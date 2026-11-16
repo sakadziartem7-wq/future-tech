@@ -28,8 +28,8 @@
     &__row {
         @media (min-width: $laptop) {
             flex-wrap: wrap;
-            row-gap: 0;
             @include flex(space-between, flex-end, 60px);
+            row-gap: 0;
         }
     }
 
