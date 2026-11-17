@@ -15,8 +15,8 @@
         overflow-x: auto;
         scrollbar-width: none;
         flex-wrap: nowrap;
-        gap: 14px;
         @include flex(flex-start flex-start, 0);
+        gap: 14px;
 
         @media (min-width: $laptop) {
             width: 100%;
