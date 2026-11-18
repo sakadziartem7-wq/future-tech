@@ -74,11 +74,6 @@
 
         &:hover {
             color:#4d4646 ;
-        }
-       
-        &:has(.footer__badge) {
-            border-radius: 6px;
-            animation: badge-blink 1.5s ease-in-out infinite;
         } 
 
         @media (min-width: $laptop) {
@@ -106,6 +101,7 @@
             color: $white;
             font-family: $inter;
             font-size: 12px;
+            animation: badge-blink 1.5s ease-in-out infinite;
         }
     }
 
