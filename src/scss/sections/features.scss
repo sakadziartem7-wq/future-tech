@@ -104,7 +104,7 @@
             padding-bottom: 60px;
             max-width: 824px;
             border: none;
-            border-left: 1px solid $dark-20;     
+            border-left: 1px solid $dark-20;
             flex-direction: row;
             flex-wrap: wrap;
             @include flex(flex-start, stretch, 20px);
@@ -115,6 +115,10 @@
             padding-left: 80px;
             padding-top: 80px;
             padding-bottom: 80px;
+        }
+
+        &:last-child {
+            border-bottom: none;
         }
     }
 

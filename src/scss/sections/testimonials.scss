@@ -6,7 +6,7 @@
 
     &__list {
         flex-direction: column;
-         @include flex(center, center, 0);
+        @include flex(center, center, 0);
 
         @media (min-width: $laptop) {
             flex-direction: row;
@@ -33,6 +33,10 @@
             @media (min-width: $laptop) {
                 display: flex;
             }
+        }
+
+        &:nth-child(3) {
+            border-bottom: none;
         }
 
         @media (min-width: $laptop) {
