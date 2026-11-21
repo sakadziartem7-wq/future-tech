@@ -168,3 +168,18 @@
         }
     }
 }
+
+.cta__pointer {
+  transition: transform 0.3s;
+}
+
+.cta__pointer-link:hover .cta__pointer {
+  animation: pointer-up 3s ease;
+}
+
+@keyframes pointer-up {
+  0%   { transform: translateY(0); }
+  10%  { transform: translateY(-10px); }
+  90%  { transform: translateY(-10px); }
+  100% { transform: translateY(0); }
+}
