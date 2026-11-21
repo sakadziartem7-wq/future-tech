@@ -7,10 +7,10 @@
     gap: $gap;
 }
 
-    @mixin full-line {
-        width: 100vw;
-        height: 1px;
-        background-color: $dark-20;
-        margin-left: calc(50% - 50vw);
-        margin-right: calc(50% - 50vw);
-    }
+@mixin full-line {
+    width: 100vw;
+    height: 1px;
+    background-color: $dark-20;
+    margin-left: calc(50% - 50vw);
+    margin-right: calc(50% - 50vw);
+}

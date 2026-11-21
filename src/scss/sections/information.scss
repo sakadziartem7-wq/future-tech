@@ -135,9 +135,8 @@
         @media (min-width: $laptop) {
             width: 34%;
             border-left: 1px solid $dark-20;
-            @include flex(flex-start, flex-start, 0);
             flex-direction: column;
-            align-items: stretch;
+            @include flex(flex-start, stretch, 0);
         }
     }
 
